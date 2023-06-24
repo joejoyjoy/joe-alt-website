@@ -1,0 +1,21 @@
+@import './sass/';
+
+body {
+  margin: 0px;
+  width: 100%;
+  min-height: 100%;
+  -webkit-font-smoothing: antialiased;
+  background-color: $background-color-primary;
+  color: $color-secondary;
+  font-family: $font-sans;
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+a, button {
+  cursor: pointer;
+}
+
+.highlighted {
+  color: $color-important;
+}

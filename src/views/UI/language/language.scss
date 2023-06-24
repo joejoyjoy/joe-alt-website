@@ -1,0 +1,42 @@
+@import '../../../sass/';
+
+.language-switcher {
+  display: flex;
+  gap: 1px;
+  background-color: $color-important;
+
+  button {
+    display: block;
+    font-size: 14px;
+    font-family: $font-mono;
+    color: $color-primary;
+    text-decoration: none;
+    border: 0;
+    background: $background-color-primary;
+    transition: $transition;
+
+    &:hover {
+      color: $color-important;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 1px;
+      background: $color-important;
+      transition: $transition;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
+
+
+}
+
+.lngs-switch-active::after {
+  width: 100% !important;
+  background: $color-important !important;
+}
