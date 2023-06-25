@@ -1,9 +1,9 @@
-import LandingPageLayout from './views/layouts/LandingPageLayout'
+import PageLayout from './views/layouts/PageLayout'
 import './app.scss'
 
 const App = () => {
   return (
-    <LandingPageLayout />
+    <PageLayout />
   )
 }
 

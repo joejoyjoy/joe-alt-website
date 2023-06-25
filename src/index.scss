@@ -8,14 +8,48 @@ body {
   background-color: $background-color-primary;
   color: $color-secondary;
   font-family: $font-sans;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.3;
 }
 
-a, button {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px 0px 10px;
+  font-weight: 700;
+  color: $color-primary;
+  line-height: 1.1;
+}
+
+a,
+button {
   cursor: pointer;
 }
 
 .highlighted {
   color: $color-important;
+}
+
+.marked {
+  display: inline-block;
+  color: $color-important;
+  text-decoration: none;
+  border: 0;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 1px;
+    background-color: $color-important;
+    opacity: 0.5;
+    transition: $transition;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
 }

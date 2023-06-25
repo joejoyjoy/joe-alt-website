@@ -1,9 +1,19 @@
-@import '../../../sass/variables';
+@import '../../../sass/';
 
 .nav-bar-component {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  background-color: rgba($background-color-primary, 0.85);
+  box-shadow: 0 10px 30px -10px $shadow-navy;
+  transform: translateY(0px);
+  z-index: 10;
 
   &__logo {
     display: block;
@@ -34,21 +44,8 @@
       }
 
       button {
-        font-size: 14px;
-        font-family: $font-mono;
-        color: $color-important;
-        padding: 0.75rem 1rem;
+        @include primaryButton();
         min-width: 112px;
-        border: 1px solid $color-important;
-        border-radius: 4px;
-        background: none;
-        transition: $transition;
-
-        &:hover {
-          outline: none;
-          box-shadow: 3px 3px 0 0 $color-important;
-          transform: translate(-4px, -4px);
-        }
       }
     }
   }

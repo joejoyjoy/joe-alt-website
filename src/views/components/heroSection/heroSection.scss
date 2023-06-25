@@ -1,0 +1,52 @@
+@import '../../../sass/';
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  height: 100vh;
+  padding: 0px;
+
+  &__welcome {
+    margin: 0px 0px 20px 4px;
+    color: $color-important;
+    font-family: $font-mono;
+    font-size: clamp(14px, 5vw, 16px);
+    font-weight: 400;
+  }
+
+  &__name {
+    margin: 0;
+    font-size: clamp(40px, 8vw, 80px);
+  }
+
+  &__position {
+    margin-top: 5px;
+    font-size: clamp(30px, 8vw, 60px);
+    color: $color-secondary;
+    line-height: 0.9;
+  }
+
+  &__description {
+    margin: 20px 0px 0px;
+    max-width: 540px;
+  }
+
+  &__btns {
+    display: flex;
+    gap: 1rem;
+    margin-top: 50px;
+
+    &--action {
+      @include primaryButton(1.25rem 1.75rem);
+    }
+
+    &--download {
+      @include primaryButton(1.25rem 1.75rem);
+      min-width: 150px;
+      background-color: $background-color-dark-green;
+    }
+  }
+}

@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-scroll'
 import { useTranslation } from 'react-i18next'
 import Language from '@/views/UI/language'
-import Logo from '@/assets/logo.jpg'
+import Logo from '@/assets/IMG/logo.jpg'
 import './navBarComponent.scss'
 
 const NavBarComponent = () => {

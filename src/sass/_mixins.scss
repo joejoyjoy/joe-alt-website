@@ -1,0 +1,16 @@
+@mixin primaryButton($padding: 0.75rem 1rem) {
+  font-size: 14px;
+  font-family: $font-mono;
+  color: $color-important;
+  padding: $padding;
+  border: 1px solid $color-important;
+  border-radius: 4px;
+  background: none;
+  transition: $transition;
+
+  &:hover {
+    outline: none;
+    box-shadow: 3px 3px 0 0 $color-important;
+    transform: translate(-4px, -4px);
+  }
+}

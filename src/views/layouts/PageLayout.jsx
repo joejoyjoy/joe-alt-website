@@ -2,18 +2,21 @@ import React from 'react'
 import { useTranslation } from 'react-i18next'
 import NavBarComponent from '@/views/components/header'
 import Socials from '@/views/UI/socials/Socials';
-import './landingPageLayout.scss'
+import LandingPage from '../page/LandingPage';
+import './pageLayout.scss'
 
-const LandingPageLayout = () => {
+const PageLayout = () => {
   const { t } = useTranslation();
 
   return (
-    <main className="landing-page-layout">
+    <main className="page-layout">
       <NavBarComponent />
-      {t("landingPage_title")}
+      <div className="page-layout__landing-page">
+        <LandingPage />
+      </div>
       <Socials />
     </main>
   )
 }
 
-export default LandingPageLayout
+export default PageLayout
