@@ -1,0 +1,33 @@
+@import '../../../sass/';
+
+.socials-bar {
+  position: fixed;
+  right: 2rem;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.2rem;
+
+  &__icon {
+    color: $color-light-gray;
+
+    svg {
+      color: inherit;
+      transition: $transition;
+
+      &:hover {
+        color: $color-important;
+        transform: translateY(-3px);
+      }
+    }
+  }
+
+  &__hr {
+    height: 90px;
+    width: 1px;
+    margin: 0 auto;
+    border: 0;
+    background-color: $color-light-gray;
+  }
+}
