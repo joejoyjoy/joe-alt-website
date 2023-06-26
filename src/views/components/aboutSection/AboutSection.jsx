@@ -12,17 +12,16 @@ const AboutSection = () => {
         </div>
         <div className="about-section__content--body">
           <span>
-            Hey! I'm Joe, someone who is deeply passionate about the web. I have been building real-case websites since 2019. I'm thankful to have been working as a freelancer for several years
+            Hey! I'm Joe, always deeply passionate about the web. I have been building <b>real-case websites</b> since 2019. I'm thankful to have been working as a <b>freelancer</b> for several years
             creating websites of all kinds, each with different functionalities involved. For example, product filtering and sorting, online payments, and API logistics, among others.
           </span>
           <span>
-            After creating several successful websites for different businesses, I started a <a href="https://assemblerinstitute.com" className="marked">Master's program</a> in Full Stack Web Development in 2022 to improve and learn more advanced technologies
-            along with implementing Agile methodologies like Scrum.
+            After creating several successful websites for different businesses, I started a <a href="https://assemblerinstitute.com" className="marked">Master's program</a> in <b>Full Stack Web Development</b> in 2022 to improve and learn more advanced technologies
+            along with implementing <b>Agile methodologies</b> like <b>Scrum</b>.
           </span>
           <span>
-            Fast-forward to today, and I've had the privilege of being a team leader twice during the <a href="https://assemblerinstitute.com" className="marked">Master's program</a>, utilizing my previous knowledge as much as possible.
-            My main focus these days is building accessible websites for all to further improve my knowledge, experience and my passion. I'm currently searching for a Job position as a 
-            Full Stack Web Developer or Front-end Web Developer where I can continue to grow.
+            Fast-forward to today, my main focus is building <b>accessible websites</b> for all to further improve my knowledge, experience and my passion. I'm currently searching for a Job position as a
+            <b> Full Stack Web Developer</b> or <b>Front-end Web Developer</b> where I can continue to grow.
           </span>
           <span>
             Here are a few technologies I've been working with recently:

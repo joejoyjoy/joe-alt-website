@@ -33,6 +33,11 @@ button {
   color: $color-important;
 }
 
+b {
+  color: $color-primary;
+  font-weight: inherit;
+}
+
 .marked {
   display: inline-block;
   color: $color-important;

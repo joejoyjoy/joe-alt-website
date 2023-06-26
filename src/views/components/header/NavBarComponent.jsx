@@ -1,15 +1,32 @@
-import React from 'react'
 import { Link } from 'react-scroll'
 import { useTranslation } from 'react-i18next'
+import useScrollDirection from '@/hooks/useScrollDirection'
+import useScrollPosition from '@/hooks/useScrollPosition'
 import Language from '@/views/UI/language'
 import Logo from '@/assets/IMG/logo.jpg'
 import './navBarComponent.scss'
 
 const NavBarComponent = () => {
   const { t } = useTranslation();
+  const scrollDirection = useScrollDirection();
+  const scrollPosition = useScrollPosition();
+
+  const headerState = () => {
+    if (scrollPosition < 50) {
+      return "no-shadow-header";
+    }
+
+    if (scrollDirection === "down") {
+      return "hide-header";
+    }
+
+    if (scrollDirection === "up") {
+      return "show-header";
+    }
+  }
 
   return (
-    <header className="nav-bar-component">
+    <header className={`nav-bar-component ${headerState()}`}>
       <div className="nav-bar-component__logo">
         <img src={Logo} alt={t("header_logo_alt") || ""} />
       </div>

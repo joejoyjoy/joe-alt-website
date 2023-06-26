@@ -16,10 +16,9 @@ const Language = () => {
 
   return (
     <div className="language-switcher">
-      {lngs.map((lng, i) => {
-        const { code, native } = lng;
-        return <button key={i} onClick={() => handleTrans(code)} className={i18n.language === code ? "lngs-switch-active" : ""}>{native}</button>;
-      })}
+      <button onClick={() => handleTrans("en")} className={i18n.language === "en" ? "lngs-switch-active" : ""}>EN</button>
+      <hr />
+      <button onClick={() => handleTrans("es")} className={i18n.language === "es" ? "lngs-switch-active" : ""}>ES</button>
     </div>
   )
 }
