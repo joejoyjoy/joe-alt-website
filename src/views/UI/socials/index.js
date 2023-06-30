@@ -1,1 +1,1 @@
-export { default } from './NavBarComponent';
+export { default } from './Socials';

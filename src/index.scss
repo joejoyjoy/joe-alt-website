@@ -29,13 +29,17 @@ button {
   cursor: pointer;
 }
 
+b {
+  color: $color-primary;
+  font-weight: inherit;
+}
+
 .highlighted {
   color: $color-important;
 }
 
-b {
-  color: $color-primary;
-  font-weight: inherit;
+.overflow-hidden {
+  overflow: auto;
 }
 
 .marked {
@@ -57,4 +61,20 @@ b {
   &:hover::after {
     width: 100%;
   }
+}
+
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background-color: $color-dark-slate;
+  border: 3px solid $background-color-primary;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: $background-color-primary;
 }

@@ -1,9 +1,12 @@
 import PageLayout from './views/layouts/PageLayout'
+import SiteContextProvider from './context/SiteContext'
 import './app.scss'
 
 const App = () => {
   return (
-    <PageLayout />
+    <SiteContextProvider>
+      <PageLayout />
+    </SiteContextProvider>
   )
 }
 

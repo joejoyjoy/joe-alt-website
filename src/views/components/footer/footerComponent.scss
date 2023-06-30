@@ -6,8 +6,10 @@
   width: 100%;
 
   &__paragraph {
+    color: $color-secondary;
     font-family: $font-mono;
     font-size: 15px;
+    text-decoration: none;
     cursor: pointer;
     transition: $transition;
 

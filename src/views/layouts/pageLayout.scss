@@ -1,3 +1,5 @@
+@import '../../sass/variables';
+
 .page-layout {
   position: relative;
 
@@ -6,5 +8,10 @@
     max-width: 1024px;
     margin: 0 auto;
     margin-top: calc(-4rem - 45px);
+
+    @media (max-width: $media-breakpoint-desktop-mobile) {
+      width: auto;
+      padding: 0 2rem 2rem;
+    }
   }
 }
