@@ -68,7 +68,6 @@ b {
   width: 12px;
 }
 
-
 ::-webkit-scrollbar-thumb {
   background-color: $color-dark-slate;
   border: 3px solid $background-color-primary;
@@ -77,4 +76,12 @@ b {
 
 ::-webkit-scrollbar-track {
   background: $background-color-primary;
+}
+
+::selection {
+  color: $selection-color;
+}
+
+::selection {
+  background-color: $selection-background;
 }

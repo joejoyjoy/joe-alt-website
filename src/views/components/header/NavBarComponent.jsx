@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next'
 import useScrollDirection from '@/hooks/useScrollDirection'
 import useScrollPosition from '@/hooks/useScrollPosition'
 import useWindowSizeReport from '@/hooks/useWindowSizeReport'
-import { responsiveBreak } from '@/utils/componentsConstants'
+import { responsiveDesktopBreak } from '@/utils/componentsConstants'
 import { SiteContext } from '@/context/SiteContext'
 import MobileNavMenu from '../mobile/mobileNavMenu'
 import NavBurger from '@/views/UI/navBurger'
@@ -34,10 +34,10 @@ export default function NavBarComponent() {
 
   return (
     <Suspense fallback={<></>}>
-      {(screenWidth > responsiveBreak) ? (
+      {(screenWidth > responsiveDesktopBreak) ? (
         <NavBarDesktop func={headerState} />
       ) : (
-        <NavBarMobile func={headerState} menuToggle={menuToggle} handleToggle={handleToggle} />
+        <NavBarMobile func={headerState} handleToggle={handleToggle} />
       )}
     </Suspense>
   )
@@ -49,38 +49,38 @@ const NavBarDesktop = ({ func }) => {
   return (
     <header className={`nav-bar-desktop-component ${func()}`}>
       <div className="nav-bar-desktop-component__logo">
-        <img src={Logo} alt={t("header_logo_alt") || ""} />
+        <img src={Logo} alt={t("header_logo_alt") || "image"} />
       </div>
       <nav className="nav-bar-desktop-component__navigation">
         <Link className="nav-bar-desktop-component__navigation--link">
-          <p><span className="highlighted">01. </span>{t("header_nav_link1") || ""}</p>
+          <p><span className="highlighted">01. </span>{t("header_nav_link1") || "link"}</p>
         </Link>
         <Link className="nav-bar-desktop-component__navigation--link">
-          <p><span className="highlighted">02. </span>{t("header_nav_link2") || ""}</p>
+          <p><span className="highlighted">02. </span>{t("header_nav_link2") || "link"}</p>
         </Link>
         <Link className="nav-bar-desktop-component__navigation--link">
-          <p><span className="highlighted">03. </span>{t("header_nav_link3") || ""}</p>
+          <p><span className="highlighted">03. </span>{t("header_nav_link3") || "link"}</p>
         </Link>
         <Link className="nav-bar-desktop-component__navigation--link">
-          <p><span className="highlighted">04. </span>{t("header_nav_link4") || ""}</p>
+          <p><span className="highlighted">04. </span>{t("header_nav_link4") || "link"}</p>
         </Link>
         <Language />
         <div className="nav-bar-desktop-component__navigation--link">
-          <button>{t("header_nav_action") || ""}</button>
+          <button>{t("header_nav_action") || "button"}</button>
         </div>
       </nav>
     </header>
   )
 }
 
-const NavBarMobile = ({ func, menuToggle, handleToggle }) => {
+const NavBarMobile = ({ func, handleToggle }) => {
   const { t } = useTranslation();
 
   return (
     <>
       <header className={`nav-bar-mobile-component ${func()}`}>
         <div className="nav-bar-mobile-component__logo">
-          <img src={Logo} alt={t("header_logo_alt") || ""} />
+          <img src={Logo} alt={t("header_logo_alt") || "image"} />
         </div>
       </header>
       <span onClick={() => handleToggle()} className={`nav-bar-mobile-component-btn ${func()}`}>

@@ -2,8 +2,14 @@
 
 .footer-component {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   width: 100%;
+
+  @media (max-width: $media-breakpoint-tablet-mobile) {
+    gap: 1rem;
+  }
 
   &__paragraph {
     color: $color-secondary;

@@ -1,6 +1,7 @@
 import React from 'react'
-import { useTranslation } from 'react-i18next'
+import useWindowSizeReport from '@/hooks/useWindowSizeReport'
 import NavBarComponent from '@/views/components/header'
+import { responsiveDesktopBreak, responsiveTabletBreak } from '@/utils/componentsConstants'
 import Socials from '@/views/UI/socials';
 import FooterComponent from '@/views/components/footer';
 import NavBackdrop from '@/views/components/mobile/backdrop';
@@ -8,17 +9,17 @@ import LandingPage from '@/views/page/LandingPage';
 import './pageLayout.scss'
 
 const PageLayout = () => {
-  const { t } = useTranslation();
+  const screenWidth = useWindowSizeReport();
 
   return (
     <>
-      <NavBackdrop />
+      {screenWidth < responsiveDesktopBreak && <NavBackdrop />}
       <main className="page-layout">
         <NavBarComponent />
         <div className="page-layout__landing-page">
           <LandingPage />
         </div>
-        <Socials />
+        {screenWidth > responsiveTabletBreak && <Socials />}
         <FooterComponent />
       </main>
     </>

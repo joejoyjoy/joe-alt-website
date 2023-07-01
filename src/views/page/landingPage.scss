@@ -2,4 +2,8 @@
 
 .landing-page {
   padding-left: calc(25px + 2rem);
+
+  @media (max-width: $media-breakpoint-tablet-mobile) {
+    padding-left: unset;
+  }
 }

@@ -1,17 +1,63 @@
-@import '../../../../sass/variables';
+@import '../../../../sass/';
 
 .mobile-nav-menu {
   position: fixed;
-  display: flex;
+  display: grid;
+  grid-template-rows: auto 1fr;
   top: 0;
   right: 0;
   height: 100dvh;
-  width: 520px;
+  width: 400px;
+  max-width: calc(100% - 35px - 4rem);
+  padding: 1rem;
   background-color: $background-color-important;
   box-shadow: -10px 0px 30px -15px $shadow-navy;
   transform: translateX(+100%);
   transition: all 0.4s;
   z-index: 30;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    height: 40px;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &--navigation {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+
+      &__link {
+        p {
+          font-size: 16px;
+          font-family: $font-mono;
+          color: $color-primary;
+          transition: $transition;
+
+          &:hover {
+            color: $color-important;
+          }
+
+          span {
+            display: flex;
+            justify-content: center;
+          }
+        }
+
+        button {
+          @include primaryButton(1.25rem 1.75rem);
+          min-width: 112px;
+          margin-top: 3rem;
+        }
+      }
+    }
+  }
 }
 
 .mobile-nav-menu--open {

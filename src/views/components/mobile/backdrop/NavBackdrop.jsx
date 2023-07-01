@@ -3,10 +3,10 @@ import { SiteContext } from '@/context/SiteContext'
 import './navBackdrop.scss'
 
 const NavBackdrop = () => {
-  const { menuToggle } = useContext(SiteContext);
+  const { menuToggle, setMenuToggle } = useContext(SiteContext);
 
   return (
-    <div className={`nav-backdrop${menuToggle ? " nav-backdrop-active" : ""}`}></div>
+    <div onClick={() => setMenuToggle(false)} className={`nav-backdrop${menuToggle ? " nav-backdrop-active" : ""}`}></div>
   )
 }
 

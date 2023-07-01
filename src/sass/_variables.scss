@@ -31,5 +31,13 @@ $font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
 $transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 
 
+// PSEUDO ELEMENT
+$selection-color: #134e4a;
+$selection-background: #5eead4;
+
+
 // MEDIA QUERY
-$media-breakpoint-desktop-mobile: 900px;
+$media-breakpoint-desktop-tablet: 900px;
+$media-breakpoint-tablet-mobile: 775px;
+
+$media-breakpoint-md: 450px;

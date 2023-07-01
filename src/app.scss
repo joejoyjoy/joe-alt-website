@@ -2,9 +2,5 @@
 
 #root {
   margin: 0 auto;
-  padding: 0 2rem 2rem;
-
-  @media (max-width: $media-breakpoint-desktop-mobile) {
-    padding: 0;
-  }
+  padding-bottom: 2rem;
 }
