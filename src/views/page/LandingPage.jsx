@@ -1,6 +1,6 @@
 import React from 'react'
-import HeroSection from '../components/heroSection/HeroSection'
-import AboutSection from '../components/aboutSection/AboutSection'
+import HeroSection from '@/views/components/landingPage/heroSection'
+import AboutSection from '@/views/components/landingPage/aboutSection'
 import './landingPage.scss'
 
 const LandingPage = () => {

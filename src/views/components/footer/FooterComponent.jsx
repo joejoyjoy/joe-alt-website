@@ -2,7 +2,7 @@ import React from 'react'
 import { useTranslation } from 'react-i18next'
 import useWindowSizeReport from '@/hooks/useWindowSizeReport'
 import { responsiveTabletBreak } from '@/utils/componentsConstants'
-import Socials from '@/views/UI/socials';
+import Socials from '@/views/components/socials'
 import './footerComponent.scss'
 
 const FooterComponent = () => {
