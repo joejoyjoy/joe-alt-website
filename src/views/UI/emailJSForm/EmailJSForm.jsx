@@ -1,10 +1,13 @@
-import React, { useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import BorderComposition from '@/views/UI/borderComposition'
 import './emailJSForm.scss';
 
 const EmailJSForm = () => {
   const form = useRef();
   const { VITE_EMAIL_SERVICE_ID, VITE_EMAIL_TEMPLATE_ID, VITE_EMAIL_PUBLIC_KEY } = import.meta.env
+  const [nameInput, setNameInput] = useState(false)
+  const [emailInput, setEmailInput] = useState(false)
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -24,11 +27,13 @@ const EmailJSForm = () => {
       <h3 className="emailjs-form__title">Send me a Message</h3>
       <div className="emailjs-form__wrap">
         <span className="emailjs-form__wrap--section">
-          <input type="text" name="user_name" className="input-text" required />
+          {nameInput && <BorderComposition />}
+          <input type="text" onFocus={() => setNameInput(true)} onBlur={(e) => e.target.value === "" && setNameInput(false)} name="user_name" className="input-text" required />
           <span className="floating-label">Enter your name</span>
         </span>
         <span className="emailjs-form__wrap--section">
-          <input type="email" name="user_email" className="input-text" required />
+          {emailInput && <BorderComposition />}
+          <input type="email" onFocus={() => setEmailInput(true)} onBlur={() => setEmailInput(false)} name="user_email" className="input-text" required />
           <span className="floating-label">Enter your email</span>
         </span>
         <span className="emailjs-form__wrap--section">

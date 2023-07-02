@@ -22,36 +22,47 @@
     &--section {
       position: relative;
       width: 450px;
-      padding-top: 10px;
+      height: 64px;
 
       .input-text {
+        position: absolute;
+        top: 1px;
+        left: 1px;
+        display: flex;
+        height: calc(58px - 2rem);
+        width: calc(448px - 2rem);
+        margin: 0;
+        padding: 1rem;
+        border: 2px solid $color-dark-slate;
+        border-radius: 4px;
+        outline: none;
+        background: none;
+
         font-size: 18px;
         font-family: $font-sans;
         color: $color-primary;
-        width: 100%;
-        padding: 1rem;
-        border: 2px solid $color-important;
-        border-radius: 4px;
-        background: none;
 
-        &:focus {
+        &:focus,
+        &:not(:focus):valid {
           outline: none;
+          border: 2px solid transparent;
+        }
+
+        &:focus~.floating-label,
+        &:not(:focus):valid~.floating-label {
+          top: calc(-1rem + 4px);
+          color: $color-important;
         }
       }
 
       .floating-label {
         position: absolute;
         pointer-events: none;
-        left: 1rem;
-        top: calc(1rem + 6px);
-        padding: 5px;
-        background-color: $background-color-primary;
+        left: calc(1rem + 2px);
+        top: calc(1rem + 2px);
+        padding: 0;
+        background: none;
         transition: 0.2s ease all;
-      }
-
-      .input-text:focus~.floating-label,
-      .input-text:not(:focus):valid~.floating-label {
-        top: -6px;
       }
     }
   }
