@@ -34,7 +34,7 @@ const spanishTranslation = {
   Actualmente estoy buscando un puesto de trabajo como <bold>Full Stack Web Developer</bold> o <bold>Front-end Web Developer</bold> donde puedo seguir creciendo.`,
   aboutSection_body_span4: "Tecnologías con las que he trabajando recientemente:",
   aboutSection_image_alt: "Imagen de retrato del desarrollador del sitio web Joe Alt",
-  aboutSection_image_location: "Malaga, España",
+  aboutSection_image_location: "Málaga, España",
 }
 
 export default spanishTranslation;

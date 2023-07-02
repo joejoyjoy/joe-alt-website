@@ -1,0 +1,57 @@
+@import '../../../sass/variables';
+
+.emailjs-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 450px;
+
+  &__title {
+    color: $color-primary;
+    font-size: clamp(24px, 5vw, 28px);
+    margin: 0;
+  }
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    &--section {
+      position: relative;
+      padding-top: 10px;
+
+      .input-text {
+        font-size: 18px;
+        font-family: $font-sans;
+        color: $color-primary;
+        width: 100%;
+        padding: 1rem;
+        border: 2px solid $color-important;
+        border-radius: 4px;
+        background: none;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      .floating-label {
+        position: absolute;
+        pointer-events: none;
+        left: 1rem;
+        top: calc(1rem + 6px);
+        padding: 5px;
+        background-color: $background-color-primary;
+        transition: 0.2s ease all;
+      }
+
+      .input-text:focus~.floating-label,
+      .input-text:not(:focus):valid~.floating-label {
+        top: -6px;
+      }
+    }
+  }
+}

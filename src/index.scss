@@ -79,9 +79,6 @@ b {
 }
 
 ::selection {
-  color: $selection-color;
-}
-
-::selection {
-  background-color: $selection-background;
+  color: $color-primary;
+  background-color: $background-color-light-blue;
 }
