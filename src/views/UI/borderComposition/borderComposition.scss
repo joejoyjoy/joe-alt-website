@@ -2,7 +2,7 @@
 
 .border-composition {
   &__shape {
-    stroke-dasharray: 300% 145;
+    stroke-dasharray: 865 145;
     stroke-dashoffset: -150;
     stroke-width: 2px;
     fill: none;
@@ -12,5 +12,10 @@
   .filledIn {
     stroke-width: 1px;
     stroke: rgba($color-important, 0.65);
+  }
+
+  .text-area-type {
+    stroke-dasharray: 1030 175;
+    stroke-dashoffset: -180;
   }
 }

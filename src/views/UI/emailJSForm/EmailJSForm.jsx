@@ -8,6 +8,7 @@ const EmailJSForm = () => {
   const { VITE_EMAIL_SERVICE_ID, VITE_EMAIL_TEMPLATE_ID, VITE_EMAIL_PUBLIC_KEY } = import.meta.env
   const [nameInput, setNameInput] = useState("none")
   const [emailInput, setEmailInput] = useState("none")
+  const [msgInput, setMsgInput] = useState("none")
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -58,8 +59,21 @@ const EmailJSForm = () => {
           />
           <span className="floating-label">Enter your email</span>
         </span>
-        <span className="emailjs-form__wrap--section">
-          <textarea name="message" className="input-text" required />
+        <span className="emailjs-form__wrap--section section-text-area">
+          {msgInput !== "none" && <BorderComposition style={msgInput === "value"} type={"textarea"} />}
+          <textarea
+            type="text"
+            onFocus={() => setMsgInput("focus")}
+            onBlur={(e) =>
+              e.target.value === "" ?
+                setMsgInput("none") :
+                setMsgInput("value")
+            }
+            name="message"
+            className="input-text section-input-area"
+            rows="5"
+            required
+          />
           <span className="floating-label">Write your message</span>
         </span>
       </div>
