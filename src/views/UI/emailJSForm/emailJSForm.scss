@@ -48,10 +48,14 @@
           border: 2px solid transparent;
         }
 
-        &:focus~.floating-label,
-        &:not(:focus):valid~.floating-label {
+        &:focus~.floating-label {
           top: calc(-1rem + 4px);
           color: $color-important;
+        }
+
+        &:not(:focus):valid~.floating-label {
+          top: calc(-1rem + 4px);
+          color: rgba($color-important, 0.65);
         }
       }
 
@@ -63,6 +67,18 @@
         padding: 0;
         background: none;
         transition: 0.2s ease all;
+      }
+
+      input:-webkit-autofill,
+      input:-webkit-autofill:hover,
+      input:-webkit-autofill:focus,
+      textarea:-webkit-autofill,
+      textarea:-webkit-autofill:hover,
+      textarea:-webkit-autofill:focus {
+        border: 2px solid transparent;
+        -webkit-text-fill-color: $color-primary;
+        -webkit-box-shadow: 0 0 0px 1000px $background-color-important inset;
+        transition: background-color 5000s ease-in-out 0s;
       }
     }
   }

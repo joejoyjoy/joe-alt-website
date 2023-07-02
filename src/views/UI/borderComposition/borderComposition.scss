@@ -8,4 +8,9 @@
     fill: none;
     stroke: $color-important;
   }
+
+  .filledIn {
+    stroke-width: 1px;
+    stroke: rgba($color-important, 0.65);
+  }
 }
