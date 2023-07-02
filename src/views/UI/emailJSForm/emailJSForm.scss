@@ -1,9 +1,10 @@
-@import '../../../sass/variables';
+@import '../../../sass/';
 
 .emailjs-form {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2.2rem;
+  position: relative;
   margin: 0 auto;
   width: 100%;
   max-width: 450px;
@@ -11,6 +12,8 @@
   &__title {
     color: $color-primary;
     font-size: clamp(24px, 5vw, 28px);
+    text-align: center;
+    font-weight: 500;
     margin: 0;
   }
 
@@ -33,7 +36,7 @@
         width: calc(448px - 2rem);
         margin: 0;
         padding: 1rem;
-        border: 2px solid $color-dark-slate;
+        border: 2px solid $color-secondary; //$color-dark-slate
         border-radius: 4px;
         outline: none;
         background: none;
@@ -70,7 +73,7 @@
       }
 
       .section-input-area {
-        height: calc(1rem + 110px);
+        height: calc(1rem + 108px);
         resize: none;
         padding-bottom: 0;
       }
@@ -89,7 +92,23 @@
     }
 
     .section-text-area {
-      height: calc(2rem + 110px);
+      height: calc(2rem + 108px);
     }
+
+    &--submit {
+      @include callToActionButton();
+      margin-top: 7px;
+    }
+  }
+
+  &__sewers {
+    position: absolute;
+    height: 145%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background: rgb(10, 25, 47);
+    background: linear-gradient(0deg, rgba(10, 25, 47, 0.75) 20%, rgba(100, 255, 218, 0.25) 100%);
+    transform: translate(-15%, -15%);
+    z-index: -1;
   }
 }

@@ -76,8 +76,9 @@ const EmailJSForm = () => {
           />
           <span className="floating-label">Write your message</span>
         </span>
+        <button type="submit" className="emailjs-form__wrap--submit">Submit</button>
       </div>
-      <input type="submit" value="Submit" className="emailjs-form__submit" />
+      <div className="emailjs-form__sewers"></div>
     </form>
   );
 };

@@ -1,8 +1,11 @@
 import EmailJSForm from "../../../UI/emailJSForm/EmailJSForm";
+import './contactSection.scss'
 
 const ContactSection = () => {
   return (
-    <EmailJSForm />
+    <section className="contact-section">
+      <EmailJSForm />
+    </section>
   );
 };
 
