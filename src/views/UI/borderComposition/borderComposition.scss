@@ -1,0 +1,36 @@
+.border-composition {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 auto;
+  width: 320px;
+}
+
+.shape {
+  stroke-dasharray: 0 760;
+  stroke-dashoffset: -80;
+  stroke-width: 2px;
+  fill: none;
+  stroke: #19f6e8;
+  transition: stroke-dashoffset 0.4s, stroke-dasharray 0.4s;
+}
+
+.input {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  display: flex;
+  color: aliceblue;
+  height: calc(58px - 2rem);
+  width: calc(318px - 2rem);
+  margin: 0;
+  padding: 1rem;
+  border: 2px solid #adff2f75;
+  border-radius: 4px;
+  outline: none;
+  background: none;
+}
+
+.border-composition:hover .shape {
+  stroke-dasharray: 680 70;
+}
