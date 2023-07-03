@@ -9,7 +9,7 @@ import { SiteContext } from '@/context/SiteContext'
 import MobileNavMenu from '../mobile/mobileNavMenu'
 import NavBurger from '@/views/UI/navBurger'
 import Language from '@/views/UI/language'
-import Logo from '@/assets/IMG/logo.jpg'
+import Logo from '@/assets/IMG/logo.png'
 import './navBarComponent.scss'
 
 export default function NavBarComponent() {
@@ -48,11 +48,11 @@ const NavBarDesktop = ({ func }) => {
 
   return (
     <header className={`nav-bar-desktop-component ${func()}`}>
-      <div className="nav-bar-desktop-component__logo">
+      <Link to="heroLink" smooth={true} duration={500} className="nav-bar-desktop-component__logo">
         <img src={Logo} alt={t("header_logo_alt") || "image"} />
-      </div>
+      </Link>
       <nav className="nav-bar-desktop-component__navigation">
-        <Link className="nav-bar-desktop-component__navigation--link">
+        <Link to="aboutLink" smooth={true} offset={-45} duration={500} className="nav-bar-desktop-component__navigation--link">
           <p><span className="highlighted">01. </span>{t("header_nav_link1") || "link"}</p>
         </Link>
         <Link className="nav-bar-desktop-component__navigation--link">
@@ -61,13 +61,13 @@ const NavBarDesktop = ({ func }) => {
         <Link className="nav-bar-desktop-component__navigation--link">
           <p><span className="highlighted">03. </span>{t("header_nav_link3") || "link"}</p>
         </Link>
-        <Link className="nav-bar-desktop-component__navigation--link">
+        <Link to="contactLink" smooth={true} offset={-45} duration={500} className="nav-bar-desktop-component__navigation--link">
           <p><span className="highlighted">04. </span>{t("header_nav_link4") || "link"}</p>
         </Link>
         <Language />
-        <div className="nav-bar-desktop-component__navigation--link">
+        <Link to="contactLink" smooth={true} offset={-45} duration={500} className="nav-bar-desktop-component__navigation--link">
           <button>{t("header_nav_action") || "button"}</button>
-        </div>
+        </Link>
       </nav>
     </header>
   )

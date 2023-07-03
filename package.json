@@ -17,6 +17,7 @@
     "react-dom": "^18.2.0",
     "react-i18next": "^13.0.1",
     "react-icons": "^4.10.1",
+    "react-pdf": "^7.1.2",
     "react-scroll": "^1.8.9",
     "sweetalert2": "^11.7.12"
   },

@@ -8,7 +8,7 @@ const AboutSection = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="about-section">
+    <section id="aboutLink" className="about-section">
       <div className="about-section__content">
         <div className="about-section__content--header">
           <span>01. </span><h2>{t("aboutSection_header")}</h2>
@@ -24,7 +24,7 @@ const AboutSection = () => {
             <Trans i18nKey="aboutSection_body_span3" components={{ bold: <b /> }} />
           </span>
           <span>
-          {t("aboutSection_body_span4")}
+            {t("aboutSection_body_span4")}
           </span>
           <ul className="about-section__content--body__skills-list">
             <li>JavaScript</li>
