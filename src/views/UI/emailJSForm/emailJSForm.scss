@@ -107,8 +107,28 @@
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     background: rgb(10, 25, 47);
-    background: linear-gradient(0deg, rgba(10, 25, 47, 0.75) 20%, rgba(100, 255, 218, 0.25) 100%);
+    background: linear-gradient(0deg, rgba(10, 25, 47, 74) 8%, rgba(100, 255, 218, 0.26) 100%);
     transform: translate(-15%, -15%);
     z-index: -1;
+  }
+}
+
+.swal-custom-background {
+  background-color: $background-color-primary;
+}
+
+.swal-custom-title {
+  color: $color-primary;
+}
+
+.swal-custom-button {
+  @include callToActionButton();
+  font-size: 14px !important;
+  color: $background-color-primary !important;
+  margin-top: 0.8rem !important;
+  background: $color-important !important;
+
+  &:hover {
+    background-image: none !important;
   }
 }
