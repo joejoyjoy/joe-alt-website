@@ -126,7 +126,9 @@ const EmailJSForm = () => {
           </span>
           <button type="submit" className="emailjs-form__wrap--submit">Submit</button>
         </div>
-        <div className="emailjs-form__sewers"></div>
+        <section className="emailjs-form__shape">
+          <div className="emailjs-form__shape--sewers"></div>
+        </section>
       </form>
       {contextHolder}
     </>

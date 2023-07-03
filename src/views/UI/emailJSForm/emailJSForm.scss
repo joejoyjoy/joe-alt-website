@@ -24,7 +24,6 @@
 
     &--section {
       position: relative;
-      width: 450px;
       height: 64px;
 
       .input-text {
@@ -33,7 +32,7 @@
         left: 1px;
         display: flex;
         height: calc(58px - 2rem);
-        width: calc(448px - 2rem);
+        width: clamp(225px, calc(100vw - 5rem), calc(448px - 2rem));
         margin: 0;
         padding: 1rem;
         border: 2px solid $color-secondary; //$color-dark-slate
@@ -101,15 +100,28 @@
     }
   }
 
-  &__sewers {
+  &__shape {
     position: absolute;
-    height: 145%;
-    aspect-ratio: 1 / 1;
-    border-radius: 50%;
-    background: rgb(10, 25, 47);
-    background: linear-gradient(0deg, rgba(10, 25, 47, 74) 8%, rgba(100, 255, 218, 0.26) 100%);
-    transform: translate(-15%, -15%);
+    top: calc(50% + 55px);
+    left: 50%;
+    width: calc(448px*1.5 - 2rem);
+    height: calc(448px*1.5 - 2rem);
+    max-width: calc(100vw - 1rem);
+    overflow: hidden;
+    transform: translate(-50%, -50%);
     z-index: -1;
+
+    &--sewers {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: calc(448px*1.5 - 2rem);
+      aspect-ratio: 1 / 1;
+      border-radius: 50%;
+      background: rgb(10, 25, 47);
+      background: linear-gradient(0deg, rgba(10, 25, 47, 74) 8%, rgba(100, 255, 218, 0.26) 100%);
+      transform: translate(-50%, -50%);
+    }
   }
 }
 
