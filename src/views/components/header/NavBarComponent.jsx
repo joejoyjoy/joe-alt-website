@@ -79,9 +79,9 @@ const NavBarMobile = ({ func, handleToggle }) => {
   return (
     <>
       <header className={`nav-bar-mobile-component ${func()}`}>
-        <div className="nav-bar-mobile-component__logo">
+        <Link to="heroLink" smooth={true} duration={500} className="nav-bar-mobile-component__logo">
           <img src={Logo} alt={t("header_logo_alt") || "image"} />
-        </div>
+        </Link>
       </header>
       <span onClick={() => handleToggle()} className={`nav-bar-mobile-component-btn ${func()}`}>
         <NavBurger />
