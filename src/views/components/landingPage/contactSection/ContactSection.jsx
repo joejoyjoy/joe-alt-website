@@ -1,15 +1,16 @@
+import { useTranslation } from 'react-i18next'
 import EmailJSForm from "@/views/UI/emailJSForm";
 import './contactSection.scss'
 
 const ContactSection = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="contactLink" className="contact-section">
       <div className="contact-section__container">
-        <h3 className="contact-section__container--header">04. What's Next?</h3>
-        <h2 className="contact-section__container--title">Get In Touch</h2>
-        <p className="contact-section__container--text">
-          Want to know more about me? Feel free to leave a message, I'm always open to know new people and opportunities.
-        </p>
+        <h3 className="contact-section__container--header">{t("contactSection_header")}</h3>
+        <h2 className="contact-section__container--title">{t("contactSection_title")}</h2>
+        <p className="contact-section__container--text">{t("contactSection_text")}</p>
       </div>
       <EmailJSForm />
     </section>

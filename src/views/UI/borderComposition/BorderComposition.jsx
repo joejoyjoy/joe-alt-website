@@ -1,7 +1,9 @@
-import React from 'react'
+import { useTranslation } from "react-i18next";
 import './borderComposition.scss'
 
 const BorderComposition = ({ style, type }) => {
+  const { i18n } = useTranslation();
+
   return (
     <svg
       height={type === "textarea" ? "calc(2rem + 114px)" : "64"}
@@ -11,7 +13,7 @@ const BorderComposition = ({ style, type }) => {
     >
       <rect
         className={
-          `border-composition__shape${style ? " filledIn" : ""}${type === "textarea" ? " text-area-type" : ""}`
+          `border-composition__shape${style ? " filledIn" : ""}${type === "textarea" ? " text-area-type" : ""}${i18n.language === "es" ? " spanish-shape" : ""}`
         }
         x="2"
         y="2"

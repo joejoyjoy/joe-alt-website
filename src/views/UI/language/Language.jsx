@@ -1,11 +1,6 @@
 import { useTranslation } from "react-i18next";
 import './language.scss'
 
-const lngs = [
-  { code: "en", native: "EN" },
-  { code: "es", native: "ES" },
-];
-
 const Language = () => {
   const { i18n } = useTranslation();
 

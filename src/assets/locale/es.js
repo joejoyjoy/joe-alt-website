@@ -35,6 +35,31 @@ const spanishTranslation = {
   aboutSection_body_span4: "Tecnologías con las que he trabajando recientemente:",
   aboutSection_image_alt: "Imagen de retrato del desarrollador del sitio web Joe Alt",
   aboutSection_image_location: "Málaga, España",
+
+  // CONTACT SECCIÓN
+  contactSection_header: "04. ¿Que Hago Ahora?",
+  contactSection_title: "Ponerse En Contacto",
+  contactSection_text: "¿Quieres saber más acerca de mí? No dudes en dejar un mensaje abajo, siempre estoy abierto a conocer nuevas personas y oportunidades.",
+
+
+
+  /*** UI Reutilizable ***/
+
+  // EMAIL JS CONTACT FORM
+  emailJSForm_title: "Envíeme un mensaje",
+  emailJSForm_emptyMsg: "aquí",
+  emailJSForm_submitBtn: "Enviar",
+  emailJSForm_name_placeholder: "Escribe su nombre",
+  emailJSForm_email_placeholder: "Introduce tu email",
+  emailJSForm_msg_placeholder: "Escribe su mensaje",
+
+  // MODAL SWEETALERT2
+  sweetAlert_confirmBtn: "Cerrar",
+  sweetAlert_success_title: "¡Enviado exitosamente!",
+  sweetAlert_error_title: "¡Se produjo un error!",
+
+  // ANT DESIGN MENSAJE
+  antDesignMessage_content: "Enviando su mensaje...",
 }
 
 export default spanishTranslation;
