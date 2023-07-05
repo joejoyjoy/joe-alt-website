@@ -18,6 +18,7 @@ const spanishTranslation = {
 
   // HERO SECCIÓN
   heroSection_welcome: "Hola, mi nombre es",
+  heroSection_position: "Desarrollador Web Full Stack.",
   heroSection_description: "Soy un desarrollador de software especializado en desarrollo web programmando experiencias web excepcionales de frontend y backend. Actualmente, estoy enfocado en crear sitios web llamativos y estoy en buscueda activa para un puesto de trabajo.",
   heroSection_btns_action: "Habla conmigo",
   heroSection_btns_download: "Mi currículum",
@@ -60,6 +61,13 @@ const spanishTranslation = {
 
   // ANT DESIGN MENSAJE
   antDesignMessage_content: "Enviando su mensaje...",
+  
+
+
+  /*** Work Experience JSON ***/
+
+  workExperienceJson_position_developer: "Desarollador web Full Stack",
+  workExperienceJson_position_builder: "Autónomo creando sitios web",
 }
 
 export default spanishTranslation;

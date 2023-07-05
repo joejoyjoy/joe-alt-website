@@ -1,0 +1,53 @@
+@import '../../../../sass/';
+
+.experience-section {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 50px;
+  padding: 100px 0px;
+
+  @media (max-width: $media-breakpoint-tablet-mobile) {
+    grid-template-columns: auto;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    &--header {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+
+      span {
+        color: $color-important;
+        font-family: $font-mono;
+        font-size: clamp(16px, 3vw, 20px);
+        font-weight: 300;
+      }
+
+      h2 {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        margin: 0;
+        width: 120%;
+
+        &::after {
+          content: "";
+          width: calc(100% - 1rem);
+          height: 1px;
+          margin-left: 20px;
+          background-color: $background-color-light-blue;
+        }
+      }
+    }
+
+    &--sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+}
