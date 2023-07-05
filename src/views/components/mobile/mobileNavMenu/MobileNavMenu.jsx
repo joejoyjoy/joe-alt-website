@@ -17,7 +17,7 @@ const MobileNavMenu = () => {
         </span>
       </header>
       <section className="mobile-nav-menu__body">
-        <Link to="aboutLink" onClick={handleToggle} smooth={true} offset={-5} duration={500} className="mobile-nav-menu__body--navigation__link">
+        <Link to="aboutLink" onClick={handleToggle} smooth={true} offset={65} duration={500} className="mobile-nav-menu__body--navigation__link">
           <p><span className="highlighted">01. </span>{t("header_nav_link1") || ""}</p>
         </Link>
         <Link className="mobile-nav-menu__body--navigation__link">
@@ -26,12 +26,12 @@ const MobileNavMenu = () => {
         <Link className="mobile-nav-menu__body--navigation__link">
           <p><span className="highlighted">03. </span>{t("header_nav_link3") || ""}</p>
         </Link>
-        <Link to="contactLink" onClick={handleToggle} smooth={true} offset={-5} duration={500} className="mobile-nav-menu__body--navigation__link">
+        <Link to="contactLink" onClick={handleToggle} smooth={true} offset={76} duration={500} className="mobile-nav-menu__body--navigation__link">
           <p><span className="highlighted">04. </span>{t("header_nav_link4") || ""}</p>
         </Link>
-        <div className="mobile-nav-menu__body--navigation__link">
+        <Link to="contactLink" onClick={handleToggle} smooth={true} offset={76} duration={500} className="mobile-nav-menu__body--navigation__link">
           <button>{t("header_nav_action") || ""}</button>
-        </div>
+        </Link>
       </section>
     </div>
   )
