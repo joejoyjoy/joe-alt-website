@@ -26,7 +26,7 @@ const PdfViewer = ({ open, setOpen }) => {
             <h3 className="pdf-viewer-modal__header--title">Joe Alt CV</h3>
             <BsDownload />
           </a>
-          <embed src={`${CVPdf}#toolbar=0&navpanes=0&scrollbar=0`} type="application/pdf" />
+          <object data={`${CVPdf}#toolbar=0&navpanes=0&scrollbar=0`} type="application/pdf" />
         </div>
       </Modal>
     </ConfigProvider>
