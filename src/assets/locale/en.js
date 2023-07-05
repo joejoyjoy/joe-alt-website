@@ -18,7 +18,7 @@ const englishTranslation = {
 
   // HERO SECTION
   heroSection_welcome: "Hi, my name is",
-  heroSection_description: "I'm a software developer specializing in web development building exceptional frontend and backend web experiences. Currently, I'm focused on building eye catching websites and actively searching for a job opportunity.",
+  heroSection_description: "I'm a software developer specialized in web development building exceptional frontend and backend web experiences. Currently, I'm focusing on building eye catching websites and also actively searching for a job opportunity.",
   heroSection_btns_action: "Get In Touch",
   heroSection_btns_download: "My Resume",
 
