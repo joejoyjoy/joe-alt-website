@@ -48,11 +48,11 @@ const NavBarDesktop = ({ func }) => {
 
   return (
     <header className={`nav-bar-desktop-component ${func()}`}>
-      <Link to="heroLink" smooth={true} duration={500} className="nav-bar-desktop-component__logo">
+      <Link rel="noopener" to="heroLink" smooth={true} duration={500} className="nav-bar-desktop-component__logo">
         <img src={Logo} alt={t("header_logo_alt") || "image"} />
       </Link>
       <nav className="nav-bar-desktop-component__navigation">
-        <Link to="aboutLink" smooth={true} offset={-45} duration={500} className="nav-bar-desktop-component__navigation--link">
+        <Link to="aboutLink" rel="noopener" smooth={true} offset={-45} duration={500} className="nav-bar-desktop-component__navigation--link">
           <p><span className="highlighted">01. </span>{t("header_nav_link1") || "link"}</p>
         </Link>
         <Link className="nav-bar-desktop-component__navigation--link">
@@ -61,11 +61,11 @@ const NavBarDesktop = ({ func }) => {
         <Link className="nav-bar-desktop-component__navigation--link">
           <p><span className="highlighted">03. </span>{t("header_nav_link3") || "link"}</p>
         </Link>
-        <Link to="contactLink" smooth={true} offset={-45} duration={500} className="nav-bar-desktop-component__navigation--link">
+        <Link rel="nofollow" to="contactLink" smooth={true} offset={-45} duration={500} className="nav-bar-desktop-component__navigation--link">
           <p><span className="highlighted">04. </span>{t("header_nav_link4") || "link"}</p>
         </Link>
         <Language />
-        <Link to="contactLink" smooth={true} offset={-45} duration={500} className="nav-bar-desktop-component__navigation--link">
+        <Link to="contactLink" rel="nofollow" smooth={true} offset={-45} duration={500} className="nav-bar-desktop-component__navigation--link">
           <button>{t("header_nav_action") || "button"}</button>
         </Link>
       </nav>
