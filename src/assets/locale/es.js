@@ -7,7 +7,7 @@ const spanishTranslation = {
   header_nav_link2: "Experiencia",
   header_nav_link3: "Proyectos",
   header_nav_link4: "Contacta",
-  header_nav_action: "Hablame",
+  header_nav_action: "Háblame",
 
   // FOOTER COMPONENT
   footer_credit: "Diseñado y construido por Joe Alt",
@@ -24,7 +24,7 @@ const spanishTranslation = {
   heroSection_btns_download: "Mi currículum",
 
   // ABOUT SECCIÓN
-  aboutSection_header: "Sobre Mi",
+  aboutSection_header: "Sobre Mí",
   aboutSection_body_span1: `¡Hola! Soy Joe, un amador de la web. Llevo creando <bold>sitios webs para clientes</bold> desde 2019. 
   Estoy agradecido de haber trabajando como <bold>autónomo</bold> durante varios años. Creando sitios webs para diferentes finalidades y funcionalidades involucradas. 
   Por ejemplo, filtrado y ordenación de productos, pagos en línea, conexión con logística mediante API, entre otros.`,
@@ -41,7 +41,7 @@ const spanishTranslation = {
   experienceSection_header: "Donde trabajé",
 
   // CONTACT SECCIÓN
-  contactSection_header: "04. ¿Que Hago Ahora?",
+  contactSection_header: "04. ¿Qué Hago Ahora?",
   contactSection_title: "Ponerse En Contacto",
   contactSection_text: "¿Quieres saber más acerca de mí? No dudes en dejar un mensaje abajo, siempre estoy abierto a conocer nuevas personas y oportunidades.",
 

@@ -43,7 +43,7 @@ const englishTranslation = {
   // CONTACT SECTION
   contactSection_header: "04. What's Next?",
   contactSection_title: "Get In Touch",
-  contactSection_text: "Want to know more about me? Feel free to leave a message, I'm always open to know new people and opportunities.",
+  contactSection_text: "Want to know more about me? Feel free to leave a message, I'm always open to get to know new people and opportunities.",
 
 
 
