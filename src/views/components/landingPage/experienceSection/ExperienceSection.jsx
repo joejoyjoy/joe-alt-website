@@ -10,7 +10,7 @@ const ExperienceSection = () => {
   return (
     <section id="experienceLink" className="experience-section">
       <div className="experience-section__content">
-        {screenWidth < responsiveTabletBreak ? <ExperienceDSection /> : <ExperienceMSection />}
+        {screenWidth > responsiveTabletBreak ? <ExperienceDSection /> : <ExperienceMSection />}
       </div>
     </section>
   )

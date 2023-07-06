@@ -1,14 +1,10 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { WorkExperience } from '@/assets/JSON/experience'
 import './experienceMSection.scss'
 
 const ExperienceMSection = () => {
   const jsonObject = WorkExperience();
   const [active, setActive] = useState(jsonObject[0].id);
-
-  useEffect(() => {
-    document.getElementById("tab-indicator").style.top = `calc(${(active - 1) * 42}px)`
-  }, [active])
 
   return (
     <>
@@ -17,17 +13,22 @@ const ExperienceMSection = () => {
       </div>
       <nav className="experience-section-mobile-tabs">
         {jsonObject?.map((experience) => {
-          const { id, avatar } = experience;
+          const { id, avatar, short, year } = experience;
           return (
-            <button key={id} onClick={() => setActive(id)} className={`experience-section-mobile-tabs__btn${active === id ? " selected" : ""} `}>{avatar}</button>
+            <button key={id} onClick={() => setActive(id)} className={`experience-section-mobile-tabs__btn${active === id ? " selected" : ""}`}>
+              {active === id ? avatar :
+                <>
+                  {short}
+                  <b>{year}</b>
+                </>
+              }
+            </button>
           )
         })}
-        <span id="tab-indicator"></span>
       </nav>
       <div className="experience-section-mobile-body">
         {jsonObject?.map((experience) => {
           const { id, business, position, duration, description, tools } = experience;
-          console.log(tools);
           if (active === id) {
             return (
               <section key={id} className="experience-section-mobile-body__wrap">

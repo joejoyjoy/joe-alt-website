@@ -27,7 +27,6 @@ const ExperienceDSection = () => {
       <div className="experience-section-desktop-body">
         {jsonObject?.map((experience) => {
           const { id, business, position, duration, description, tools } = experience;
-          console.log(tools);
           if (active === id) {
             return (
               <section key={id} className="experience-section-desktop-body__wrap">

@@ -11,6 +11,7 @@ export const WorkExperience = () => {
   const php = "PHP";
   const stripe = "Stripe";
   const ts = "Typescript";
+  const api = "RESTful API";
   const sql = "SQL/NoSQL";
   const node = "Node.js";
   const sass = "SASS";
@@ -22,8 +23,10 @@ export const WorkExperience = () => {
       id: "01",
       business: "Assembler Institute of Technology",
       avatar: "Assembler Institute",
+      short: "AIT",
       position: `${t("workExperienceJson_position_developer")}`,
       duration: "October 2022 - May 2023",
+      year: "2022",
       description: `I joined this Master focused in teaching Full Stack Web Development by building with a team 
       real-case projects from scratch, 1200 hours full-time and remotely. I have done +20 real-world projects with 
       a deep focus in MERN and LAMP stacks. Also using Agile development techniques like Scrum. I learned how to 
@@ -31,31 +34,17 @@ export const WorkExperience = () => {
       using all my knowledge to guide my team. After graduation I was able to create awesome website without any website 
       builder, pure code. Which makes me more able to create more personalized websites from now on`,
       tools: [
-        react, ts, sass, sql, node, php, bs, test
+        react, ts, sass, node, api, sql, php, bs, test
       ]
     },
     {
       id: "02",
-      business: "Andalusian Health Retreats",
-      avatar: "Health Retreats",
-      position: `${t("workExperienceJson_position_builder")}`,
-      duration: "Abril 2017 - October 2022",
-      description: `I learned using a cloud-based website builder and started my journey from there. 
-        I was the UI/UX designer, website builder and maintainer. I learned to take technical decisions on my own, 
-        building a website that's easy to use and understand. Helping the wireframes and sketches I made before.
-        I implemented external secure payment methods and used JavaScript to create advanced sorting and filtering 
-        features from scratch. At the end this was the project that made me realize the passion I have for 
-        web development, and it surely didn't end there.`,
-      tools: [
-        wix, js, stripe
-      ]
-    },
-    {
-      id: "03",
       business: "Massages & Wellness at Home",
       avatar: "Massagist Daniel",
+      short: "M&W",
       position: `${t("workExperienceJson_position_builder")}`,
       duration: "September 2022 - March 2023",
+      year: "2022",
       description: `I was the UI/UX designer, website builder and maintainer of the site. I have learned 
       how to implement an appointment system with calender to book an appointment with the massagist. 
       I made it a mobile friendly, and made it SEO optimized for best ranking results of Google and Bing.`,
@@ -64,11 +53,13 @@ export const WorkExperience = () => {
       ]
     },
     {
-      id: "04",
+      id: "03",
       business: "eCommerce Priccesa",
       avatar: "Priccesa",
+      short: "PRC",
       position: `${t("workExperienceJson_position_backend")}`,
       duration: "February 2021 - June 2022",
+      year: "2021",
       description: `I was the backend web developer at Priccesa eCommerce site. PHP was necessary to 
       communicate with there logistics provider. I learned implementing PHP to ensure a stable connection 
       between the two businesses. I was also responsible for the correct uploading of the products 
@@ -78,11 +69,13 @@ export const WorkExperience = () => {
       ]
     },
     {
-      id: "05",
+      id: "04",
       business: "DTB Take Away Restaurant",
       avatar: "DTB Take Away",
+      short: "DTB",
       position: `${t("workExperienceJson_position_builder")}`,
       duration: "December 2020 - March 2021",
+      year: "2020",
       description: `I learned developing the website for my client with HTML5, CSS3 and JavaScript.
         I was responsible for developing, maintaining and making it SEO optimized. I learned how to 
         use new technologies, create a fast loading site with cross-browser compatibility and mobile 
@@ -91,6 +84,24 @@ export const WorkExperience = () => {
         and high SEO ranking.`,
       tools: [
         html, css, js
+      ]
+    },
+    {
+      id: "05",
+      business: "Andalusian Health Retreats",
+      avatar: "Health Retreats",
+      short: "AHR",
+      position: `${t("workExperienceJson_position_builder")}`,
+      duration: "Abril 2017 - October 2022",
+      year: "2017",
+      description: `I learned using a cloud-based website builder and started my journey from there. 
+        I was the UI/UX designer, website builder and maintainer. I learned to take technical decisions on my own, 
+        building a website that's easy to use and understand. Helping the wireframes and sketches I made before.
+        I implemented external secure payment methods and used JavaScript to create advanced sorting and filtering 
+        features from scratch. At the end this was the project that made me realize the passion I have for 
+        web development, and it surely didn't end there.`,
+      tools: [
+        wix, js, stripe
       ]
     }
   ]
