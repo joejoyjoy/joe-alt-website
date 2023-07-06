@@ -37,6 +37,9 @@ const englishTranslation = {
   aboutSection_image_alt: "Portrait picture of Joe Alt website developer",
   aboutSection_image_location: "Malaga, Spain",
 
+  // EXPERIENCE SECTION
+  experienceSection_header: "Where I've Worked",
+
   // CONTACT SECTION
   contactSection_header: "04. What's Next?",
   contactSection_title: "Get In Touch",
@@ -65,10 +68,21 @@ const englishTranslation = {
 
 
   /*** Work Experience JSON ***/
-
   workExperienceJson_position_developer: "Full Stack Web Developer",
   workExperienceJson_position_builder: "Freelance Web Builder",
   workExperienceJson_position_backend: "Freelance Backend Developer",
+
+
+
+  /*** Reuseable words ***/
+  month_2: "February",
+  month_3: "March",
+  month_4: "April",
+  month_5: "May",
+  month_6: "June",
+  month_9: "September",
+  month_10: "October",
+  month_12: "December",
 }
 
 export default englishTranslation;

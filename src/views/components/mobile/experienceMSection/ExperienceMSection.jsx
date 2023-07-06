@@ -1,15 +1,17 @@
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { WorkExperience } from '@/assets/JSON/experience'
 import './experienceMSection.scss'
 
 const ExperienceMSection = () => {
+  const { t } = useTranslation();
   const jsonObject = WorkExperience();
   const [active, setActive] = useState(jsonObject[0].id);
 
   return (
     <>
       <div className="experience-section-mobile-header">
-        <span>02. </span><h2>Where I've Worked</h2>
+        <span>02. </span><h2>{t("experienceSection_header")}</h2>
       </div>
       <nav className="experience-section-mobile-tabs">
         {jsonObject?.map((experience) => {

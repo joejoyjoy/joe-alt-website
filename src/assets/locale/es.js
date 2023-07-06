@@ -37,6 +37,9 @@ const spanishTranslation = {
   aboutSection_image_alt: "Imagen de retrato del desarrollador del sitio web Joe Alt",
   aboutSection_image_location: "Málaga, España",
 
+  // EXPERIENCE SECCIÓN
+  experienceSection_header: "Donde trabajé",
+
   // CONTACT SECCIÓN
   contactSection_header: "04. ¿Que Hago Ahora?",
   contactSection_title: "Ponerse En Contacto",
@@ -65,10 +68,21 @@ const spanishTranslation = {
 
 
   /*** Work Experience JSON ***/
-
   workExperienceJson_position_developer: "Desarollador web Full Stack",
   workExperienceJson_position_builder: "Autónomo creando sitios web",
   workExperienceJson_position_backend: "Autónomo en desarrollo backend",
+  
+
+
+  /*** Reuseable words ***/
+  month_2: "Febrero",
+  month_3: "Marzo",
+  month_4: "Abril",
+  month_5: "Mayo",
+  month_6: "Junio",
+  month_9: "Septiembre",
+  month_10: "Octubre",
+  month_12: "Diciembre",
 }
 
 export default spanishTranslation;

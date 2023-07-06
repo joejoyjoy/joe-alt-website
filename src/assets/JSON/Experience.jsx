@@ -25,7 +25,7 @@ export const WorkExperience = () => {
       avatar: "Assembler Institute",
       short: "AIT",
       position: `${t("workExperienceJson_position_developer")}`,
-      duration: "October 2022 - May 2023",
+      duration: `${t("month_10")} 2022 - ${t("month_5")} 2023`,
       year: "2023",
       description: `I joined this Master focused in teaching Full Stack Web Development by building with a team 
       real-case projects from scratch, 1200 hours full-time and remotely. I have done +20 real-world projects with 
@@ -43,7 +43,7 @@ export const WorkExperience = () => {
       avatar: "Massagist Daniel",
       short: "M&W",
       position: `${t("workExperienceJson_position_builder")}`,
-      duration: "September 2022 - March 2023",
+      duration: `${t("month_9")} 2022 - ${t("month_3")} 2023`,
       year: "2022",
       description: `I was the UI/UX designer, website builder and maintainer of the site. I have learned 
       how to implement an appointment system with calender to book an appointment with the massagist. 
@@ -58,7 +58,7 @@ export const WorkExperience = () => {
       avatar: "Priccesa",
       short: "PRC",
       position: `${t("workExperienceJson_position_backend")}`,
-      duration: "February 2021 - June 2022",
+      duration: `${t("month_2")} 2021 - ${t("month_6")} 2022`,
       year: "2021",
       description: `I was the backend web developer at Priccesa eCommerce site. PHP was necessary to 
       communicate with there logistics provider. I learned implementing PHP to ensure a stable connection 
@@ -74,7 +74,7 @@ export const WorkExperience = () => {
       avatar: "DTB Take Away",
       short: "DTB",
       position: `${t("workExperienceJson_position_builder")}`,
-      duration: "December 2020 - March 2021",
+      duration: `${t("month_12")} 2020 - ${t("month_3")} 2021`,
       year: "2020",
       description: `I learned developing the website for my client with HTML5, CSS3 and JavaScript.
         I was responsible for developing, maintaining and making it SEO optimized. I learned how to 
@@ -92,7 +92,7 @@ export const WorkExperience = () => {
       avatar: "Health Retreats",
       short: "AHR",
       position: `${t("workExperienceJson_position_builder")}`,
-      duration: "Abril 2017 - October 2022",
+      duration: `${t("month_4")} 2017 - ${t("month_10")} 2022`,
       year: "2017",
       description: `I learned using a cloud-based website builder and started my journey from there. 
         I was the UI/UX designer, website builder and maintainer. I learned to take technical decisions on my own, 
