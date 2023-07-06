@@ -1,0 +1,111 @@
+@import '../../../../sass/';
+
+.experience-section-mobile-header {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  grid-area: header;
+  margin: 10px 0 2rem;
+
+  span {
+    color: $color-important;
+    font-family: $font-mono;
+    font-size: clamp(16px, 3vw, 20px);
+    font-weight: 300;
+  }
+
+  h2 {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    margin: 0;
+    width: 120%;
+
+    &::after {
+      content: "";
+      width: calc(100% - 1rem);
+      height: 1px;
+      margin-left: 20px;
+      background-color: $background-color-light-blue;
+    }
+  }
+}
+
+.experience-section-mobile-tabs {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  grid-area: nav;
+
+  &__btn {
+    margin: 0;
+    padding: 0 20px;
+    height: 42px;
+    color: $color-secondary;
+    font-family: $font-mono;
+    font-size: 14px;
+    text-align: left;
+    border: 0;
+    border-left: 2px solid $background-color-light-blue;
+    background: none;
+    transition: $transition;
+
+    &:hover {
+      color: $color-important;
+      background-color: $background-color-important;
+    }
+  }
+
+  #tab-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 42px;
+    background-color: $color-important;
+    transition: $transition;
+  }
+
+  &__btn.selected {
+    color: $color-important;
+  }
+}
+
+.experience-section-mobile-body {
+  grid-area: body;
+  min-height: 350px;
+
+  &__wrap {
+    &--title {
+      font-size: 22px;
+
+      b {
+        display: inline-block;
+        color: $color-important;
+      }
+    }
+
+    &--date {
+      margin-bottom: 25px;
+      color: $color-light-gray;
+      font-family: $font-mono;
+      font-size: 14px;
+    }
+
+    &--tools {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+
+      &__tool {
+        color: $color-important;
+        line-height: 1.25rem;
+        font-weight: 500;
+        font-size: 14px;
+        padding: 0.25rem 0.75rem;
+        border-radius: 1.5rem;
+        background-color: $background-color-dark-green;
+      }
+    }
+  }
+}

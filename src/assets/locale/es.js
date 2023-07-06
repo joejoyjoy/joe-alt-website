@@ -68,6 +68,7 @@ const spanishTranslation = {
 
   workExperienceJson_position_developer: "Desarollador web Full Stack",
   workExperienceJson_position_builder: "Autónomo creando sitios web",
+  workExperienceJson_position_backend: "Autónomo en desarrollo backend",
 }
 
 export default spanishTranslation;

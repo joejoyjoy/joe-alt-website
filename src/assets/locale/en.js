@@ -68,6 +68,7 @@ const englishTranslation = {
 
   workExperienceJson_position_developer: "Full Stack Web Developer",
   workExperienceJson_position_builder: "Freelance Web Builder",
+  workExperienceJson_position_backend: "Freelance Backend Developer",
 }
 
 export default englishTranslation;
