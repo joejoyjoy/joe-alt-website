@@ -26,7 +26,7 @@ export const WorkExperience = () => {
       short: "AIT",
       position: `${t("workExperienceJson_position_developer")}`,
       duration: "October 2022 - May 2023",
-      year: "2022",
+      year: "2023",
       description: `I joined this Master focused in teaching Full Stack Web Development by building with a team 
       real-case projects from scratch, 1200 hours full-time and remotely. I have done +20 real-world projects with 
       a deep focus in MERN and LAMP stacks. Also using Agile development techniques like Scrum. I learned how to 

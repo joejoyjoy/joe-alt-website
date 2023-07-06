@@ -1,4 +1,4 @@
-import { Suspense, useContext } from 'react'
+import { useState, useEffect, Suspense, useContext } from 'react'
 import { Link } from 'react-scroll'
 import { useTranslation } from 'react-i18next'
 import useScrollDirection from '@/hooks/useScrollDirection'
@@ -13,13 +13,26 @@ import Logo from '@/assets/IMG/logo.png'
 import './navBarComponent.scss'
 
 export default function NavBarComponent() {
-  const { menuToggle, handleToggle } = useContext(SiteContext);
-  const scrollDirection = useScrollDirection();
-  const scrollPosition = useScrollPosition();
   const screenWidth = useWindowSizeReport();
 
+  return (
+    <Suspense fallback={<></>}>
+      {(screenWidth > responsiveDesktopBreak) ? (
+        <NavBarDesktop />
+      ) : (
+        <NavBarMobile />
+      )}
+    </Suspense>
+  )
+}
+
+const NavBarDesktop = () => {
+  const { t } = useTranslation();
+  const scrollDirection = useScrollDirection();
+  const scrollPosition = useScrollPosition();
+
   const headerState = () => {
-    if (scrollPosition < 50 || menuToggle) {
+    if (scrollPosition < 50) {
       return "no-shadow-header";
     }
 
@@ -33,21 +46,7 @@ export default function NavBarComponent() {
   }
 
   return (
-    <Suspense fallback={<></>}>
-      {(screenWidth > responsiveDesktopBreak) ? (
-        <NavBarDesktop func={headerState} />
-      ) : (
-        <NavBarMobile func={headerState} handleToggle={handleToggle} />
-      )}
-    </Suspense>
-  )
-}
-
-const NavBarDesktop = ({ func }) => {
-  const { t } = useTranslation();
-
-  return (
-    <header className={`nav-bar-desktop-component ${func()}`}>
+    <header className={`nav-bar-desktop-component ${headerState()}`}>
       <Link to="heroLink" smooth={true} duration={500} className="nav-bar-desktop-component__logo">
         <img src={Logo} alt={t("header_logo_alt") || "image"} />
       </Link>
@@ -55,7 +54,7 @@ const NavBarDesktop = ({ func }) => {
         <Link to="aboutLink" smooth={true} offset={-45} duration={500} className="nav-bar-desktop-component__navigation--link">
           <p><span className="highlighted">01. </span>{t("header_nav_link1") || "link"}</p>
         </Link>
-        <Link className="nav-bar-desktop-component__navigation--link">
+        <Link to="experienceLink" smooth={true} offset={-45} duration={500} className="nav-bar-desktop-component__navigation--link">
           <p><span className="highlighted">02. </span>{t("header_nav_link2") || "link"}</p>
         </Link>
         <Link className="nav-bar-desktop-component__navigation--link">
@@ -73,20 +72,48 @@ const NavBarDesktop = ({ func }) => {
   )
 }
 
-const NavBarMobile = ({ func, handleToggle }) => {
+const NavBarMobile = () => {
   const { t } = useTranslation();
+  const { menuToggle, handleToggle } = useContext(SiteContext);
+  const scrollDirection = useScrollDirection();
+  const scrollPosition = useScrollPosition();
+  const [handleClick, setHandleClick] = useState(false)
+
+  const headerState = () => {
+    if (scrollPosition < 50 || menuToggle) {
+      return "no-shadow-header";
+    }
+
+    if (scrollDirection === "up" && !handleClick) {
+      return "show-header";
+    }
+
+    if (scrollDirection === "up" && handleClick) {
+      return "hide-header";
+    }
+
+    return "hide-header";
+  }
+
+  useEffect(() => {
+    if (handleClick === true) {
+      setTimeout(() => {
+        setHandleClick(false)
+      }, 350);
+    }
+  }, [scrollPosition])
 
   return (
     <>
-      <header className={`nav-bar-mobile-component ${func()}`}>
+      <header className={`nav-bar-mobile-component ${headerState()}`}>
         <Link to="heroLink" smooth={true} duration={500} className="nav-bar-mobile-component__logo">
           <img src={Logo} alt={t("header_logo_alt") || "image"} />
         </Link>
       </header>
-      <span onClick={() => handleToggle()} className={`nav-bar-mobile-component-btn ${func()}`}>
+      <span onClick={() => handleToggle()} className={`nav-bar-mobile-component-btn ${headerState()}`}>
         <NavBurger />
       </span>
-      <MobileNavMenu />
+      <MobileNavMenu state={setHandleClick} />
     </>
   )
 }
