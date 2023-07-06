@@ -1,0 +1,125 @@
+@import '../../../../sass/';
+
+.experience-section-mobile-header {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  grid-area: header;
+  margin: 10px 0 2rem;
+
+  span {
+    color: $color-important;
+    font-family: $font-mono;
+    font-size: clamp(16px, 3vw, 20px);
+    font-weight: 300;
+  }
+
+  h2 {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    margin: 0;
+    width: 120%;
+
+    &::after {
+      content: "";
+      width: calc(100% - 1rem);
+      height: 1px;
+      margin-left: 20px;
+      background-color: $background-color-light-blue;
+    }
+  }
+}
+
+.experience-section-mobile-tabs {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  grid-area: nav;
+  border-radius: 25px;
+
+  &__btn {
+    padding: 12px;
+    margin: 0;
+    aspect-ratio: 1/1;
+    color: $color-primary;
+    font-size: 12px;
+    text-align: center;
+    border: 0;
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px 5px $shadow-navy;
+    background: none;
+    transition: $transition;
+
+    b {
+      display: block;
+      color: $color-secondary;
+      font-family: $font-mono;
+      font-size: 10px;
+    }
+
+    &:hover {
+      color: $color-important;
+      background-color: $background-color-light-blue;
+    }
+
+    &.selected {
+      padding-top: 24px;
+      padding-bottom: 24px;
+      aspect-ratio: unset;
+      font-size: 14px;
+      line-height: 25px;
+      -webkit-writing-mode: vertical-rl;
+      writing-mode: vertical-rl;
+      border-radius: 25px;
+      background-color: $background-color-important;
+
+      &:hover {
+        background-color: $background-color-light-blue;
+      }
+    }
+  }
+
+  &__btn:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+.experience-section-mobile-body {
+  grid-area: body;
+  min-height: 615px;
+
+  &__wrap {
+    &--title {
+      font-size: 22px;
+
+      b {
+        display: inline-block;
+        color: $color-important;
+      }
+    }
+
+    &--date {
+      margin-bottom: 25px;
+      color: $color-light-gray;
+      font-family: $font-mono;
+      font-size: 14px;
+    }
+
+    &--tools {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+
+      &__tool {
+        color: $color-important;
+        line-height: 1.25rem;
+        font-weight: 500;
+        font-size: 14px;
+        padding: 0.25rem 0.75rem;
+        border-radius: 1.5rem;
+        background-color: $background-color-dark-green;
+      }
+    }
+  }
+}

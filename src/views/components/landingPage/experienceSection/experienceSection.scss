@@ -1,0 +1,26 @@
+@import '../../../../sass/';
+
+.experience-section {
+  padding: 100px 0px;
+
+  @media (min-width: $media-breakpoint-desktop-tablet) {
+    margin-right: calc(25px + 2rem);
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+      "header  header"
+      "nav     body";
+    gap: 2rem;
+
+    @media (max-width: $media-breakpoint-desktop-tablet) {
+      gap: 1rem;
+    }
+
+    @media (max-width: $media-breakpoint-tablet-mobile) {
+      grid-template-columns: 50px 1fr;
+    }
+  }
+}

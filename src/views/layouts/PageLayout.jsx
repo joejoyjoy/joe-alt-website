@@ -6,7 +6,6 @@ import Socials from '@/views/components/socials'
 import FooterComponent from '@/views/components/footer';
 import NavBackdrop from '@/views/components/mobile/backdrop';
 import LandingPage from '@/views/page/LandingPage';
-
 import './pageLayout.scss'
 
 const PageLayout = () => {

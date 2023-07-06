@@ -18,6 +18,7 @@ const spanishTranslation = {
 
   // HERO SECCIÓN
   heroSection_welcome: "Hola, mi nombre es",
+  heroSection_position: "Desarrollador Web Full Stack.",
   heroSection_description: "Soy un desarrollador de software especializado en desarrollo web programmando experiencias web excepcionales de frontend y backend. Actualmente, estoy enfocado en crear sitios web llamativos y estoy en buscueda activa para un puesto de trabajo.",
   heroSection_btns_action: "Habla conmigo",
   heroSection_btns_download: "Mi currículum",
@@ -35,6 +36,9 @@ const spanishTranslation = {
   aboutSection_body_span4: "Tecnologías con las que he trabajando recientemente:",
   aboutSection_image_alt: "Imagen de retrato del desarrollador del sitio web Joe Alt",
   aboutSection_image_location: "Málaga, España",
+
+  // EXPERIENCE SECCIÓN
+  experienceSection_header: "Donde trabajé",
 
   // CONTACT SECCIÓN
   contactSection_header: "04. ¿Que Hago Ahora?",
@@ -60,6 +64,25 @@ const spanishTranslation = {
 
   // ANT DESIGN MENSAJE
   antDesignMessage_content: "Enviando su mensaje...",
+  
+
+
+  /*** Work Experience JSON ***/
+  workExperienceJson_position_developer: "Desarollador web Full Stack",
+  workExperienceJson_position_builder: "Autónomo creando sitios web",
+  workExperienceJson_position_backend: "Autónomo en desarrollo backend",
+  
+
+
+  /*** Reuseable words ***/
+  month_2: "Febrero",
+  month_3: "Marzo",
+  month_4: "Abril",
+  month_5: "Mayo",
+  month_6: "Junio",
+  month_9: "Septiembre",
+  month_10: "Octubre",
+  month_12: "Diciembre",
 }
 
 export default spanishTranslation;
