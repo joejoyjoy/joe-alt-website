@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { WorkExperience } from '@/assets/JSON/experience'
+import { WorkExperience } from '@/assets/JSON/Experience'
 import './experienceMSection.scss'
 
 const ExperienceMSection = () => {
