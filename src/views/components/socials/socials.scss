@@ -19,17 +19,7 @@
   }
 
   &__icon {
-    color: $color-light-gray;
-
-    svg {
-      color: inherit;
-      transition: $transition;
-
-      &:hover {
-        color: $color-important;
-        transform: translateY(-3px);
-      }
-    }
+    @include iconStyle();
   }
 
   &__hr {

@@ -7,7 +7,7 @@
   &__content {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 4rem;
 
     &--header {
       display: flex;
@@ -41,7 +41,7 @@
     &--body {
       display: flex;
       flex-direction: column;
-      gap: 1rem;
+      gap: 6rem;
     }
   }
 }

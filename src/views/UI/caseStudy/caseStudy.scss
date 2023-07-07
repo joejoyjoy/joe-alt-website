@@ -1,0 +1,128 @@
+@import '../../../sass/';
+
+.case-study {
+  position: relative;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(12, 1fr);
+  -webkit-box-align: center;
+  align-items: center;
+  min-height: calc(365px + 2rem);
+
+  &:hover {
+    .case-study__preview--wrapper__image {
+      mix-blend-mode: unset;
+      filter: unset;
+      transform: scale(1.1);
+    }
+  }
+
+  &__preview {
+    display: block;
+    grid-area: 1 / 6 / -1 / -1;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 10px 30px -15px $shadow-navy;
+    z-index: 1;
+
+    &--wrapper {
+      display: block;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      border-radius: 6px;
+      background-color: $color-important;
+
+      &__image {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 4px;
+        mix-blend-mode: multiply;
+        filter: grayscale(75%) contrast(0.75) brightness(85%);
+        transition: $transition;
+        transition-property: transform;
+      }
+    }
+  }
+
+  &:nth-of-type(2n+1) &__preview {
+    grid-column: 1 / 8;
+  }
+
+  &__details {
+    display: block;
+    grid-area: 1 / 1 / -1 / 7;
+    padding: 1.4rem;
+    border-radius: 4px;
+    box-shadow: 0 10px 30px -15px $shadow-navy;
+    background-color: $background-color-important;
+    transition: $transition;
+    z-index: 2;
+
+    &:hover {
+      box-shadow: 0 20px 30px -15px $shadow-navy;
+    }
+
+    &--header {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+
+      &__action {
+        display: flex;
+        gap: 10px;
+
+        a {
+          @include iconStyle();
+        }
+      }
+
+      &__text {
+        margin: 0;
+        margin-bottom: 10px;
+        color: $color-important;
+        font-family: $font-mono;
+        font-size: 14px;
+      }
+
+      &__title {
+        display: inline;
+
+        a {
+          color: $color-primary;
+          transition: $transition;
+
+          &:hover {
+            color: $color-important;
+          }
+        }
+      }
+    }
+
+    &--tools {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+
+      &__tool {
+        color: $color-important;
+        line-height: 1.25rem;
+        font-weight: 500;
+        font-size: 14px;
+        padding: 0.25rem 0.75rem;
+        border-radius: 1.5rem;
+        background-color: $background-color-dark-green;
+      }
+    }
+  }
+
+  &:nth-of-type(2n+1) &__details {
+    grid-column: 7 / -1;
+    text-align: right;
+
+    &--header {
+      flex-direction: row;
+    }
+  }
+}

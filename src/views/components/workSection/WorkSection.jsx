@@ -1,6 +1,7 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import './workSection.scss'
+import CaseStudy from '../../UI/caseStudy/CaseStudy';
 
 const WorkSection = () => {
   const { t } = useTranslation();
@@ -12,9 +13,9 @@ const WorkSection = () => {
           <span>03. </span><h2>{t("workSection_header")}</h2>
         </div>
         <div className="work-section__content--body">
-          Nice To Know<br />
-          Nice To Know<br />
-          Nice To Know<br />
+          <CaseStudy />
+          <CaseStudy />
+          <CaseStudy />
         </div>
       </div>
     </section>
