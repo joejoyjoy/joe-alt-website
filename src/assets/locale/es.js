@@ -64,14 +64,36 @@ const spanishTranslation = {
 
   // ANT DESIGN MENSAJE
   antDesignMessage_content: "Enviando su mensaje...",
-  
+
 
 
   /*** Work Experience JSON ***/
   workExperienceJson_position_developer: "Desarollador web Full Stack",
   workExperienceJson_position_builder: "Autónomo creando sitios web",
   workExperienceJson_position_backend: "Autónomo en desarrollo backend",
-  
+  workExperienceJson_description_01: `Durante el Máster enseñaron Desarrollo Web Full Stack en un entorno real de trabajo 
+  programando en equipo, 1200 horas, jornada completa y de forma remota. He realizado +20 proyectos con un enfoque profundo en las 
+  pilas MERN y LAMP. También utilizando técnicas de desarrollo Ágiles como Scrum. Aprendí aplicar buenas prácticas en el código 
+  y los patrones de escalabilidad. Aprendí a trabajar en equipo y fui Team Leader dos veces usando todo mi conocimiento para guiar 
+  a mi equipo. Después de graduarme, pude crear sitios web increíbles sin ninguna plataforma de creación de sitios web. Lo que me 
+  hace más capaz de crear sitios web más personalizados a partir de ahora.`,
+  workExperienceJson_description_02: `He sido el diseñador UI/UX, creador web y mantenedor del sitio web. He aprendido cómo implementar un 
+  sistema de citas con calendario para reservar una cita con el masajista. Lo hice compatible para dispositivos móviles y optimicé SEO 
+  para obtener los mejores resultados de posicionamiento en Google y Bing.`,
+  workExperienceJson_description_03: `Fui el desarrollador backend en la tienda online de Priccesa. PHP era necesario para comunicarte con 
+  el proveedor de logística. Aprendí a implementar PHP para asegurar una conexión estable entre las dos empresas. También fui responsable 
+  de la correcta subida de los productos en la base de datos y métodos de pago seguros con política de cancelación.`,
+  workExperienceJson_description_04: `Aprendí a desarrollar el sitio web para mi cliente con HTML5, CSS3 y JavaScript.
+  Fui responsable de desarrollarlo, mantenerlo y optimizarlo para SEO. Aprendí cómo utiliza nuevas tecnologías, crea un sitio de 
+  carga rápida con compatibilidad entre navegadores y dispositivos móviles. Se trataba de un restaurante, así que usé Google Maps, 
+  Apple Maps, Google Analytics, Google Ads, Semrush, Google Search Console y Bing Webmaster para garantizar una experiencia optimizada 
+  para el usuario y alto ranking SEO.`,
+  workExperienceJson_description_05: `Aprendí a usar una plataforma de creación de sitios web basado en la nube y comencé mi viaje
+  desde allí. He sido el diseñador UI/UX, creador web y mantenedor del sitio web. Aprendí a tomar decisiones técnicas por mi cuenta,
+  construyendo un sitio web que sea fácil de usar y entender. Ayudando a los wireframes y bocetos que hice en el proceso. Implementé
+  métodos de pago seguros externos y usé JavaScript para hacer funciones de ordenar y filtrar avanzados. Al final este fue el
+  proyecto que me hizo darme cuenta de la pasión que tengo por el desarrollo de sitios web, y obviamente no terminó ahí.`,
+
 
 
   /*** Reuseable words ***/
