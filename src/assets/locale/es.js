@@ -37,6 +37,9 @@ const spanishTranslation = {
   aboutSection_image_alt: "Imagen de retrato del desarrollador del sitio web Joe Alt",
   aboutSection_image_location: "Málaga, España",
 
+  // WORK SECCIÓN
+  workSection_header: "Algunas cosas que hecho",
+
   // EXPERIENCE SECCIÓN
   experienceSection_header: "Donde trabajé",
 
