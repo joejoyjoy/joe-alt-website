@@ -81,6 +81,7 @@ const EmailJSForm = () => {
             <BorderComposition style={!nameInput} />
             <input
               type="text"
+              id="inputName"
               value={nameValue}
               onChange={(e) => setNameValue(e.target.value)}
               onFocus={() => setNameInput(true)}
@@ -91,12 +92,13 @@ const EmailJSForm = () => {
               className="input-text"
               required
             />
-            <span className="floating-label">{t("emailJSForm_name_placeholder")}</span>
+            <label for="inputName" className="floating-label">{t("emailJSForm_name_placeholder")}</label>
           </span>
           <span className="emailjs-form__wrap--section">
             <BorderComposition style={!emailInput} />
             <input
               type="text"
+              id="inputEmail"
               value={emailValue}
               onChange={(e) => setEmailValue(e.target.value)}
               onFocus={() => setEmailInput(true)}
@@ -107,12 +109,13 @@ const EmailJSForm = () => {
               className="input-text"
               required
             />
-            <span className="floating-label">{t("emailJSForm_email_placeholder")}</span>
+            <label for="inputEmail" className="floating-label">{t("emailJSForm_email_placeholder")}</label>
           </span>
           <span className="emailjs-form__wrap--section section-text-area">
             <BorderComposition style={!msgInput} type={"textarea"} />
             <textarea
               type="text"
+              id="inputMsg"
               value={msgValue}
               onChange={(e) => setMsgValue(e.target.value)}
               onFocus={() => setMsgInput(true)}
@@ -124,7 +127,7 @@ const EmailJSForm = () => {
               rows="5"
               required
             />
-            <span className="floating-label">{t("emailJSForm_msg_placeholder")}</span>
+            <label for="inputMsg" className="floating-label">{t("emailJSForm_msg_placeholder")}</label>
           </span>
           <button type="submit" className="emailjs-form__wrap--submit">{t("emailJSForm_submitBtn")}</button>
         </div>

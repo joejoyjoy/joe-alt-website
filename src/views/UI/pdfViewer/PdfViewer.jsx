@@ -26,7 +26,7 @@ const PdfViewer = ({ open, setOpen }) => {
             <h3 className="pdf-viewer-modal__header--title">Joe Alt CV</h3>
             <BsDownload />
           </a>
-          <object data={`${CVPdf}#toolbar=0&navpanes=0&scrollbar=0`} type="application/pdf" />
+          <iframe src="https://drive.google.com/file/d/1k_DyUV56jL6nRABYHO5pNwmw-WssprZV/preview" frameBorder="0"></iframe>
         </div>
       </Modal>
     </ConfigProvider>
