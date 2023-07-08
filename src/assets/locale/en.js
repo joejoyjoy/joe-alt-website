@@ -39,6 +39,7 @@ const englishTranslation = {
 
   // WORK SECTION
   workSection_header: "Some Things I've Built",
+  workSection_caseStudy_text: "Featured Project",
 
   // EXPERIENCE SECTION
   experienceSection_header: "Where I've Worked",
@@ -99,6 +100,21 @@ const englishTranslation = {
   I implemented external secure payment methods and used JavaScript to create advanced sorting and filtering 
   features from scratch. In the end this was the project that made me realize the passion I have for 
   web development, and it surely didn't end there.`,
+
+
+
+  /*** Work Cases JSON ***/
+  workCases_description_01: `As a team of 5 developer we pulled of a Spotify clone with all the key functions. I was 
+  responsible for the frontend design and the logic for most of the functions together with consuming the backend server 
+  as intended. The application is mobile friendly and is installable trough the browser.`,
+  workCases_description_02: `This was a coding challenge of 6 days max. It's about consuming the v4 API of GitHub with GraphQL. 
+  You can login with your GitHub account and then you will see your followers and some statistics about yourself and as well 
+  all the repositories public available on your account. You can search and sort by A-Z, date and last modified.`,
+  workCases_description_03: `This was a coding challenge of 3 days max. It's about consuming the GIPHY API and be able to 
+  upload your own GIFs into de database. You can upload GIFs trough local disk or external URL. I have added a 3D spline 
+  asset giving a immersive experience`,
+  workCases_description_04: `This was one of my first projects with 3 other developers. We created a game with vanilla 
+  JavaScript. It's hangman, check it out because it has some funny graphics.`,
 
 
 

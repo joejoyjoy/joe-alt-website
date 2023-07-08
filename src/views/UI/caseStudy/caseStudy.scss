@@ -60,6 +60,10 @@
     transition: $transition;
     z-index: 2;
 
+    @media (max-width: 1080px) {
+      grid-column: 1 / 9;
+    }
+
     &:hover {
       box-shadow: 0 20px 30px -15px $shadow-navy;
     }
@@ -120,6 +124,10 @@
   &:nth-of-type(2n+1) &__details {
     grid-column: 7 / -1;
     text-align: right;
+
+    @media (max-width: 1080px) {
+      grid-column: 5 / -1;
+    }
 
     &--header {
       flex-direction: row;

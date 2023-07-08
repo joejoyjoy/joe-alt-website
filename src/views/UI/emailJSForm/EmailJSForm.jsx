@@ -92,7 +92,7 @@ const EmailJSForm = () => {
               className="input-text"
               required
             />
-            <label for="inputName" className="floating-label">{t("emailJSForm_name_placeholder")}</label>
+            <label htmlFor="inputName" className="floating-label">{t("emailJSForm_name_placeholder")}</label>
           </span>
           <span className="emailjs-form__wrap--section">
             <BorderComposition style={!emailInput} />
@@ -109,7 +109,7 @@ const EmailJSForm = () => {
               className="input-text"
               required
             />
-            <label for="inputEmail" className="floating-label">{t("emailJSForm_email_placeholder")}</label>
+            <label htmlFor="inputEmail" className="floating-label">{t("emailJSForm_email_placeholder")}</label>
           </span>
           <span className="emailjs-form__wrap--section section-text-area">
             <BorderComposition style={!msgInput} type={"textarea"} />
@@ -127,7 +127,7 @@ const EmailJSForm = () => {
               rows="5"
               required
             />
-            <label for="inputMsg" className="floating-label">{t("emailJSForm_msg_placeholder")}</label>
+            <label htmlFor="inputMsg" className="floating-label">{t("emailJSForm_msg_placeholder")}</label>
           </span>
           <button type="submit" className="emailjs-form__wrap--submit">{t("emailJSForm_submitBtn")}</button>
         </div>

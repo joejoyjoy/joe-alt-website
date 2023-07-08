@@ -1,10 +1,12 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-import './workSection.scss'
+import { WorkCases } from '@/assets/JSON/Work'
 import CaseStudy from '../../UI/caseStudy/CaseStudy';
+import './workSection.scss'
 
 const WorkSection = () => {
   const { t } = useTranslation();
+  const jsonObject = WorkCases();
 
   return (
     <section id="workLink" className="work-section">
@@ -13,9 +15,11 @@ const WorkSection = () => {
           <span>03. </span><h2>{t("workSection_header")}</h2>
         </div>
         <div className="work-section__content--body">
-          <CaseStudy />
-          <CaseStudy />
-          <CaseStudy />
+          {jsonObject?.map((work, index) => {
+            return (
+              <CaseStudy key={index} array={work} />
+            )
+          })}
         </div>
       </div>
     </section>

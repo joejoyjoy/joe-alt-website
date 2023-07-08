@@ -39,6 +39,7 @@ const spanishTranslation = {
 
   // WORK SECCIÓN
   workSection_header: "Algunas cosas que hecho",
+  workSection_caseStudy_text: "Proyecto destacado",
 
   // EXPERIENCE SECCIÓN
   experienceSection_header: "Donde trabajé",
@@ -96,6 +97,21 @@ const spanishTranslation = {
   construyendo un sitio web que sea fácil de usar y entender. Ayudando a los wireframes y bocetos que hice en el proceso. Implementé
   métodos de pago seguros externos y usé JavaScript para hacer funciones de ordenar y filtrar avanzados. Al final este fue el
   proyecto que me hizo darme cuenta de la pasión que tengo por el desarrollo de sitios web, y obviamente no terminó ahí.`,
+
+
+
+  /*** Work Cases JSON ***/
+  workCases_description_01: `En un equipo de 5 desarrolladores, sacamos un clon de Spotify con todas las funciones clave. Era
+  responsable del diseño frontend y la lógica de la mayoría de las funciones junto con el consumo del servidor backend. La 
+  aplicación es compatible con dispositivos móviles y se puede instalar a través del navegador.`,
+  workCases_description_02: `Este fue un desafío con fecha limite de 6 días. Se trata de consumir la API v4 de GitHub con GraphQL.
+  Puedes iniciar sesión con su cuenta de GitHub y luego verá a sus seguidores y algunas estadísticas sobre ti y también
+  todos los repositorios públicos disponibles en su cuenta. Puedes buscar y ordenar por A-Z, fecha y por última modificación.`,
+  workCases_description_03: `Este fue un desafío con fecha limite de 3 días. Se trata de consumir la API GIPHY y poder subir sus 
+  propios GIFs en la base de datos. Puedes subir archivos GIF a través de un disco local o mediante un enlace externa. He añadido 
+  una spline 3D que da una experiencia inmersa`,
+  workCases_description_04: `Este fue uno de mis primeros proyectos con otros 3 desarrolladores. Creamos un juego con JavaScript
+  vainilla. Se trata del juego del ahorcado, échale un vistazo porque tiene unos gráficos divertidos.`,
 
 
 
