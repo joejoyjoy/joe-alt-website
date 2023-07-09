@@ -101,6 +101,10 @@ const spanishTranslation = {
 
 
   /*** Work Cases JSON ***/
+  workCases_name_01: "Audity Music - Clon De Spotify",
+  workCases_name_02: "Github Ultimate - Buscador De Repos",
+  workCases_name_03: "M&G - Clon De GIPHY",
+  workCases_name_04: "Juego Del Ahorcado - Toca Divertirse",
   workCases_description_01: `En un equipo de 5 desarrolladores, sacamos un clon de Spotify con todas las funciones clave. Era
   responsable del diseño frontend y la lógica de la mayoría de las funciones junto con el consumo del servidor backend. La 
   aplicación es compatible con dispositivos móviles y se puede instalar a través del navegador.`,

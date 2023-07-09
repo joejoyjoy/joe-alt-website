@@ -1,12 +1,15 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { WorkCases } from '@/assets/JSON/Work'
-import CaseStudy from '../../UI/caseStudy/CaseStudy';
+import useWindowSizeReport from '@/hooks/useWindowSizeReport'
+import CaseStudyD from '@/views/components/desktop/caseStudyD'
+import CaseStudyM from '@/views/components/mobile/caseStudyM'
 import './workSection.scss'
 
 const WorkSection = () => {
   const { t } = useTranslation();
   const jsonObject = WorkCases();
+  const screenWidth = useWindowSizeReport();
 
   return (
     <section id="workLink" className="work-section">
@@ -16,8 +19,13 @@ const WorkSection = () => {
         </div>
         <div className="work-section__content--body">
           {jsonObject?.map((work, index) => {
+            if (screenWidth > 700) {
+              return (
+                <CaseStudyD key={index} array={work} />
+              )
+            }
             return (
-              <CaseStudy key={index} array={work} />
+              <CaseStudyM key={index} array={work} />
             )
           })}
         </div>

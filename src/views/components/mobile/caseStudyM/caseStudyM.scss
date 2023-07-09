@@ -1,6 +1,6 @@
-@import '../../../sass/';
+@import '../../../../sass/';
 
-.case-study {
+.case-study-mobile {
   position: relative;
   display: grid;
   gap: 10px;
@@ -10,7 +10,7 @@
   min-height: calc(365px + 2rem);
 
   &:hover {
-    .case-study__preview--wrapper__image {
+    .case-study-mobile__preview--wrapper__image {
       mix-blend-mode: unset;
       filter: unset;
       transform: scale(1.1);
@@ -92,6 +92,7 @@
 
       &__title {
         display: inline;
+        font-size: clamp(18px, 1.8vw, 1.17em);
 
         a {
           color: $color-primary;

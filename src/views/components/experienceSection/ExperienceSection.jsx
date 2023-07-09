@@ -1,6 +1,6 @@
 import useWindowSizeReport from '@/hooks/useWindowSizeReport'
 import { responsiveTabletBreak } from '@/utils/componentsConstants'
-import ExperienceDSection from '@/views/components/desktop'
+import ExperienceDSection from '@/views/components/desktop/experienceDSection'
 import ExperienceMSection from '@/views/components/mobile/experienceMSection'
 import './experienceSection.scss'
 

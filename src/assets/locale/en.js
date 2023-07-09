@@ -104,6 +104,10 @@ const englishTranslation = {
 
 
   /*** Work Cases JSON ***/
+  workCases_name_01: "Audity Music - Spotify Clone",
+  workCases_name_02: "Github Ultimate - Repo Searcher",
+  workCases_name_03: "M&G - GIPHY Clone",
+  workCases_name_04: "Hangman Game - Time For Fun",
   workCases_description_01: `As a team of 5 developer we pulled of a Spotify clone with all the key functions. I was 
   responsible for the frontend design and the logic for most of the functions together with consuming the backend server 
   as intended. The application is mobile friendly and is installable trough the browser.`,

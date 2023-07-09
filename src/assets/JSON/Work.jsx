@@ -14,7 +14,7 @@ export const WorkCases = () => {
   const ts = "Typescript";
   const api = "RESTful API";
   const graph = "GraphQL";
-  const noSql = "MongoDB";
+  const mongo = "MongoDB";
   const node = "Node.js";
   const sass = "SASS";
   const oauth = "OAuth";
@@ -23,18 +23,18 @@ export const WorkCases = () => {
   const workCases = [
     {
       id: "01",
-      name: "Audity Music - Spotify Clone",
+      name: `${t("workCases_name_01")}`,
       github: "https://github.com/Lucydct22/audity_react_app",
       link: "https://audity.dtpf.es",
       description: `${t("workCases_description_01")}`,
       image: case01img,
       tools: [
-        react, ts, sass, node, api, noSql
+        react, ts, sass, node, api, mongo
       ]
     },
     {
       id: "02",
-      name: "Github Ultimate - Repo Searcher",
+      name: `${t("workCases_name_02")}`,
       github: "https://github.com/joejoyjoy/react-github-repositories-with-search-graphql",
       link: "https://github-ultimate.netlify.app",
       description: `${t("workCases_description_02")}`,
@@ -45,18 +45,18 @@ export const WorkCases = () => {
     },
     {
       id: "03",
-      name: "M&G - GIPHY Clone",
+      name: `${t("workCases_name_03")}`,
       github: "https://github.com/joejoyjoy/meme-webpage-frontend",
       link: "https://meme-gifs-page.netlify.app",
       description: `${t("workCases_description_03")}`,
       image: case03img,
       tools: [
-        react, sass, node, api, noSql
+        react, sass, node, api, mongo
       ]
     },
     {
       id: "04",
-      name: "Hangman Game - Time For Fun",
+      name: `${t("workCases_name_04")}`,
       github: "https://github.com/joejoyjoy/assembler-projects/tree/main/Play_With_Assembler",
       link: "https://hangman-play-the-game.netlify.app",
       description: `${t("workCases_description_04")}`,
