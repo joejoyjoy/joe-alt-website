@@ -108,7 +108,8 @@ const englishTranslation = {
   workCases_name_02: "Github Ultimate - Repo Searcher",
   workCases_name_03: "M&G - GIPHY Clone",
   workCases_name_04: "Hangman Game - Time For Fun",
-  workCases_description_01: `As a team of 5 developer we pulled of a Spotify clone with all the key functions. I was 
+  workCases_name_05: "Hopper VPN - OOP PHP CRUD",
+  workCases_description_01: `As a team of 5 developers we pulled of a Spotify clone with all the key functions. I was 
   responsible for the frontend design and the logic for most of the functions together with consuming the backend server 
   as intended. The application is mobile friendly and is installable trough the browser.`,
   workCases_description_02: `This was a coding challenge of 6 days max. It's about consuming the v4 API of GitHub with GraphQL. 
@@ -119,6 +120,9 @@ const englishTranslation = {
   asset giving a immersive experience`,
   workCases_description_04: `This was one of my first projects with 3 other developers. We created a game with vanilla 
   JavaScript. It's hangman, check it out because it has some funny graphics.`,
+  workCases_description_05: `As a team of 4 developers we pulled of a Object Oriented Program with PHP. It's about a 
+  program were you can connect to VPNs from the client side or create, edit or delete them as a administrator. I was the team 
+  leader and it was all build within a week. Note that it doesn't connect you to any VPNs, only visual graphics used.`,
 
 
 

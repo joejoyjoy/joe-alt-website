@@ -103,6 +103,9 @@
         gap: 4px;
         text-decoration: none;
         @include callToActionButton();
+        width: 100%;
+        max-width: 150px;
+        min-width: unset;
 
         @media (max-width: $media-breakpoint-md) {
           padding: 1.2rem 1rem !important;

@@ -4,6 +4,7 @@ export const WorkExperience = () => {
   const { t } = useTranslation();
 
   const wix = "WIX";
+  const ionos = "IONOS";
   const js = "JavaScript";
   const react = "React.js";
   const css = "CSS3";
@@ -55,7 +56,7 @@ export const WorkExperience = () => {
       year: "2021",
       description: `${t("workExperienceJson_description_03")}`,
       tools: [
-        wix, stripe, js, php
+        ionos, wix, stripe, js, php
       ]
     },
     {

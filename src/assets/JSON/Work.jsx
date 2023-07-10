@@ -3,6 +3,7 @@ import case01img from '@/assets/IMG/webp/audityPrv.webp'
 import case02img from '@/assets/IMG/webp/gUltimatePrv.webp'
 import case03img from '@/assets/IMG/webp/m&gPrv.webp'
 import case04img from '@/assets/IMG/webp/hangmanPrv.webp'
+import case05img from '@/assets/IMG/webp/hVPNPrv.webp'
 
 export const WorkCases = () => {
   const { t } = useTranslation();
@@ -10,14 +11,17 @@ export const WorkCases = () => {
   const html = "HTML5";
   const css = "CSS3";
   const js = "JavaScript";
+  const php = "PHP";
   const react = "React.js";
   const ts = "Typescript";
   const api = "RESTful API";
   const graph = "GraphQL";
   const mongo = "MongoDB";
+  const my = "MySQL";
   const node = "Node.js";
   const sass = "SASS";
   const oauth = "OAuth";
+  const bt = "Bootstrap";
   const test = "Jest/Cypress";
 
   const workCases = [
@@ -63,6 +67,17 @@ export const WorkCases = () => {
       image: case04img,
       tools: [
         html, css, js
+      ]
+    },
+    {
+      id: "05",
+      name: `${t("workCases_name_05")}`,
+      github: "https://github.com/joejoyjoy/develop-your-project-in-php",
+      link: "https://php-vpn-project.000webhostapp.com",
+      description: `${t("workCases_description_05")}`,
+      image: case05img,
+      tools: [
+        php, html, css, js, bt, my
       ]
     }
   ]

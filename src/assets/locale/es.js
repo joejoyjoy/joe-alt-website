@@ -105,6 +105,7 @@ const spanishTranslation = {
   workCases_name_02: "Github Ultimate - Buscador De Repos",
   workCases_name_03: "M&G - Clon De GIPHY",
   workCases_name_04: "Juego Del Ahorcado - Toca Divertirse",
+  workCases_name_05: "Hopper VPN - OOP PHP CRUD",
   workCases_description_01: `En un equipo de 5 desarrolladores, sacamos un clon de Spotify con todas las funciones clave. Era
   responsable del diseño frontend y la lógica de la mayoría de las funciones junto con el consumo del servidor backend. La 
   aplicación es compatible con dispositivos móviles y se puede instalar a través del navegador.`,
@@ -116,6 +117,9 @@ const spanishTranslation = {
   una spline 3D que da una experiencia inmersa`,
   workCases_description_04: `Este fue uno de mis primeros proyectos con otros 3 desarrolladores. Creamos un juego con JavaScript
   vainilla. Se trata del juego del ahorcado, échale un vistazo porque tiene unos gráficos divertidos.`,
+  workCases_description_05: `En un equipo de 5 desarrolladores, sacamos un Programa Orientado a Objetos con PHP. Se trata de un
+  programa donde puede conectarse a las VPNs desde como cliente o crearlas, editarlas o eliminarlas como administrador. Yo era el líder 
+  del equipo y todo se programó en una semana. Ten en cuenta que no se conecta a ninguna VPN, solo se representan gráficos visuales.`,
 
 
 
