@@ -131,6 +131,8 @@ const englishTranslation = {
   month_9: "September",
   month_10: "October",
   month_12: "December",
+  code: "Code",
+  website: "Website",
 }
 
 export default englishTranslation;

@@ -28,7 +28,8 @@
   font-weight: 800;
   color: $background-color-primary;
   padding: $padding;
-  min-width: 150px;
+  width: 100%;
+  max-width: 150px;
   border: 1px solid $color-important;
   border-radius: 4px;
   background-color: $color-important;

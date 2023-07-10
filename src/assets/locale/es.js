@@ -128,6 +128,8 @@ const spanishTranslation = {
   month_9: "Septiembre",
   month_10: "Octubre",
   month_12: "Diciembre",
+  code: "Código",
+  website: "Sitio web",
 }
 
 export default spanishTranslation;
