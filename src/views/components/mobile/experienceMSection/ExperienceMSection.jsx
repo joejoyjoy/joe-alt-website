@@ -15,24 +15,11 @@ const ExperienceMSection = () => {
       <div className="experience-section-mobile-header">
         <span>02. </span><h2>{t("experienceSection_header")}</h2>
       </div>
-      <button onClick={() => setHandleClick(!handleClick)} className="experience-section-mobile-btn">
-        <MobileTabMenu status={handleClick} />
-      </button>
-      <nav className="experience-section-mobile-tabs">
-        {jsonObject?.map((experience) => {
-          const { id, avatar, short, year } = experience;
-          return (
-            <button key={id} onClick={() => setActive(id)} className={`experience-section-mobile-tabs__btn${active === id ? " selected" : ""}`}>
-              {active === id ? avatar :
-                <>
-                  {short}
-                  <b>{year}</b>
-                </>
-              }
-            </button>
-          )
-        })}
-      </nav>
+      <div className="experience-section-mobile-nav">
+        <button onClick={() => setHandleClick(!handleClick)} className="experience-section-mobile-nav__burger">
+          <MobileTabMenu status={handleClick} />
+        </button>
+      </div>
       <div className="experience-section-mobile-body">
         {jsonObject?.map((experience) => {
           const { id, business, position, duration, description, tools } = experience;
@@ -59,3 +46,18 @@ const ExperienceMSection = () => {
 }
 
 export default ExperienceMSection
+
+/* {jsonObject?.map((experience) => {
+  const { id, avatar, short, year } = experience;
+  return (
+    <button key={id} onClick={() => setActive(id)} className={`experience-section-mobile-tabs__btn${active === id ? " selected" : ""}`}>
+      {active === id ? avatar :
+        <>
+          {short}
+          <b>{year}</b>
+        </>
+      }
+    </button>
+  )
+})} */
+

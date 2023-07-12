@@ -3,6 +3,8 @@
 .experience-section-mobile-btn {
   display: block;
   color: $color-important;
+  padding: 0;
+  margin-top: 5px;
   border: 0;
   background: none;
 }
@@ -38,63 +40,22 @@
   }
 }
 
-.experience-section-mobile-tabs {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  grid-area: nav;
-  border-radius: 25px;
+.experience-section-mobile-nav {
+  background-color: $color-dark-navy;
+  border-radius: 4px;
 
-  &__btn {
-    padding: 12px;
-    margin: 0;
-    aspect-ratio: 1/1;
-    color: $color-primary;
-    font-size: 12px;
-    text-align: center;
+  &__burger {
+    display: block;
+    color: $color-important;
+    padding: 0;
+    margin-top: 5px;
     border: 0;
-    border-radius: 25px;
-    box-shadow: 0px 0px 15px 5px $shadow-navy;
     background: none;
-    transition: $transition;
-
-    b {
-      display: block;
-      color: $color-secondary;
-      font-family: $font-mono;
-      font-size: 10px;
-    }
-
-    &:hover {
-      color: $color-important;
-      background-color: $background-color-light-blue;
-    }
-
-    &.selected {
-      padding-top: 24px;
-      padding-bottom: 24px;
-      aspect-ratio: unset;
-      font-size: 14px;
-      line-height: 25px;
-      -webkit-writing-mode: vertical-rl;
-      writing-mode: vertical-rl;
-      border-radius: 25px;
-      background-color: $background-color-important;
-
-      &:hover {
-        background-color: $background-color-light-blue;
-      }
-    }
-  }
-
-  &__btn:not(:last-child) {
-    margin-bottom: 15px;
   }
 }
 
 .experience-section-mobile-body {
   grid-area: body;
-  min-height: 615px;
 
   &__wrap {
     &--title {
