@@ -1,5 +1,12 @@
 @import '../../../../sass/';
 
+.experience-section-mobile-btn {
+  display: block;
+  color: $color-important;
+  border: 0;
+  background: none;
+}
+
 .experience-section-mobile-header {
   display: flex;
   align-items: center;

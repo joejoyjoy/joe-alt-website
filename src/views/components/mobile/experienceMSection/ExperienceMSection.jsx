@@ -1,18 +1,23 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { WorkExperience } from '@/assets/JSON/Experience'
+import MobileTabMenu from '@/assets/SVG/MobileTabMenu'
 import './experienceMSection.scss'
 
 const ExperienceMSection = () => {
   const { t } = useTranslation();
   const jsonObject = WorkExperience();
   const [active, setActive] = useState(jsonObject[0].id);
+  const [handleClick, setHandleClick] = useState(false)
 
   return (
     <>
       <div className="experience-section-mobile-header">
         <span>02. </span><h2>{t("experienceSection_header")}</h2>
       </div>
+      <button onClick={() => setHandleClick(!handleClick)} className="experience-section-mobile-btn">
+        <MobileTabMenu status={handleClick} />
+      </button>
       <nav className="experience-section-mobile-tabs">
         {jsonObject?.map((experience) => {
           const { id, avatar, short, year } = experience;
