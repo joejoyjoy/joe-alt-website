@@ -33,6 +33,7 @@
         align-items: center;
         margin: 0;
         width: 120%;
+        font-size: clamp(26px, 5vw, 32px);
 
         &::after {
           content: "";
