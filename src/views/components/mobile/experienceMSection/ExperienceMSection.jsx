@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { WorkExperience } from '@/assets/JSON/Experience'
 import './experienceMSection.scss'
@@ -12,11 +12,7 @@ const ExperienceMSection = () => {
   const { t } = useTranslation();
   const jsonObject = WorkExperience();
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
-  const progressCircle = useRef(null);
   const [activeSlider, setActiveSlider] = useState(0)
-  const onAutoplayTimeLeft = (s, time, progress) => {
-    progressCircle.current.style.setProperty('--progress', 1 - progress);
-  };
 
   useEffect(() => {
     const callback = (mutationsList) => {
@@ -65,10 +61,13 @@ const ExperienceMSection = () => {
           className="thumbsSwiper"
         >
           {jsonObject?.map((experience, index) => {
-            const { short } = experience;
+            const { short, year } = experience;
             return (
               <SwiperSlide key={index} >
-                <p>{short}</p>
+                <span className="experience-section-mobile-body__tabs">
+                  <p>{short}</p>
+                  <span>{year}</span>
+                </span>
               </SwiperSlide>
             )
           })}
@@ -83,7 +82,6 @@ const ExperienceMSection = () => {
           }}
           thumbs={{ swiper: thumbsSwiper }}
           modules={[Autoplay, Pagination, Navigation, Thumbs]}
-          onAutoplayTimeLeft={onAutoplayTimeLeft}
           className="mySwiper"
         >
           {jsonObject?.map((experience) => {
@@ -91,12 +89,10 @@ const ExperienceMSection = () => {
             return (
               <SwiperSlide key={id}>
                 <section className="experience-section-mobile-body__wrap">
-                  <h4 className="experience-section-mobile-body__wrap--title">
-                    {position}
-                    <b>{business}</b>
-                  </h4>
+                  <h4 className="experience-section-mobile-body__wrap--title">{position}</h4>
                   <p className="experience-section-mobile-body__wrap--date">{duration}</p>
-                  <p>{description}</p>
+                  <h4 className="experience-section-mobile-body__wrap--local">{business}</h4>
+                  <p className="experience-section-mobile-body__wrap--desc">{description}</p>
                   <div className="experience-section-mobile-body__wrap--tools">
                     {tools?.map((tool, index) => {
                       return (
@@ -110,13 +106,7 @@ const ExperienceMSection = () => {
               </SwiperSlide>
             )
           })}
-          <div className="autoplay-progress" slot="container-end">
-            <svg ref={progressCircle}>
-              <line x1="0" x2="100%" y1="0" y2="100%" />
-            </svg>
-          </div>
         </Swiper>
-
       </div>
     </>
   )

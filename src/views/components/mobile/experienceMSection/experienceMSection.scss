@@ -38,15 +38,60 @@
 
   #tab-indicator {
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     width: calc(100% / 5);
     height: 2px;
     background-color: $color-important;
     transition: $transition;
+    z-index: 1;
+  }
+
+  &__tabs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 8px 20px;
+    color: inherit;
+    font-family: $font-mono;
+    font-size: 14px;
+    text-align: left;
+    border: 0;
+    background: none;
+    transition: $transition;
+    cursor: pointer;
+
+    &:hover {
+      color: $color-important;
+      background-color: rgba($background-color-light-blue, 0.25);
+    }
+
+    p {
+      margin: 0;
+    }
+
+    span {
+      opacity: 0.75;
+      font-family: $font-sans;
+    }
+  }
+
+  .thumbsSwiper {
+    border-bottom: 2px solid $background-color-light-blue;
+    margin-bottom: 1rem;
   }
 
   &__wrap {
+    cursor: move;
+    cursor: grab;
+
+    &:active {
+      cursor: grabbing;
+    }
+
     &--title {
       font-size: 22px;
 
@@ -57,10 +102,22 @@
     }
 
     &--date {
+      margin-top: 5px;
       margin-bottom: 25px;
       color: $color-light-gray;
       font-family: $font-mono;
       font-size: 14px;
+    }
+
+    &--local {
+      font-size: 22px;
+      display: inline-block;
+      color: $color-important;
+    }
+
+    &--desc {
+      margin-top: 5px;
+      margin-bottom: 25px;
     }
 
     &--tools {
@@ -133,17 +190,17 @@
   }
 
   .autoplay-progress .swiper-thumbs {
-    height: 20%;
     box-sizing: border-box;
     padding: 10px 0;
   }
 
   .swiper-thumbs .swiper-slide {
     height: 100%;
-    opacity: 0.4;
+    color: $color-secondary;
   }
 
   .swiper-thumbs .swiper-slide-thumb-active {
-    opacity: 1;
+    color: $color-important;
+    background-color: $background-color-important;
   }
 }
