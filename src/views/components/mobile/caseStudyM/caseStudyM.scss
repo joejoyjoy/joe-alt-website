@@ -54,22 +54,6 @@
     border-bottom-right-radius: 4px;
     background-color: $background-color-important;
 
-    &--tools {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-
-      &__tool {
-        position: relative;
-        padding: 3px 9px;
-        font-family: $font-mono;
-        font-size: 15px;
-        color: $color-primary;
-        border-radius: 4px;
-        background-color: $background-color-dark-green;
-      }
-    }
-
     &--action {
       display: flex;
       align-items: center;

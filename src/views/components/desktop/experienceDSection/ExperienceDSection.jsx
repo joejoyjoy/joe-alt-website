@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { WorkExperience } from '@/assets/JSON/Experience'
 import './experienceDSection.scss'
+import ToolsLayout from '@/views/UI/toolsLayout'
+import ShareEmbed from '@/views/UI/shareEmbed';
 
 const ExperienceDSection = () => {
   const { t } = useTranslation();
@@ -28,20 +30,17 @@ const ExperienceDSection = () => {
       </nav>
       <div className="experience-section-desktop-body">
         {jsonObject?.map((experience) => {
-          const { id, business, position, duration, description, tools } = experience;
+          const { id, business, position, duration, description, website, tools } = experience;
           if (active === id) {
             return (
               <section key={id} className="experience-section-desktop-body__wrap">
                 <h4 className="experience-section-desktop-body__wrap--title">{position} <b>@ {business}</b></h4>
                 <p className="experience-section-desktop-body__wrap--date">{duration}</p>
                 <p>{description}</p>
-                <div className="experience-section-desktop-body__wrap--tools">
-                  {tools?.map((tool, index) => {
-                    return (
-                      <span key={index} className="experience-section-desktop-body__wrap--tools__tool">{tool}</span>
-                    )
-                  })}
-                </div>
+                {website.length > 0 &&
+                  <ShareEmbed website={website} />
+                }
+                <ToolsLayout tools={tools} />
               </section>
             )
           }

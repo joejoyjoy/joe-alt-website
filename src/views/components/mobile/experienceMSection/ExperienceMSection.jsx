@@ -7,6 +7,8 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation, Thumbs } from 'swiper';
+import ToolsLayout from '@/views/UI/toolsLayout';
+import ShareEmbed from '@/views/UI/shareEmbed';
 
 const ExperienceMSection = () => {
   const { t } = useTranslation();
@@ -56,7 +58,6 @@ const ExperienceMSection = () => {
           onSwiper={setThumbsSwiper}
           slidesPerView={5}
           loop={true}
-          watchSlidesProgress={true}
           modules={[Thumbs]}
           className="thumbsSwiper"
         >
@@ -75,6 +76,7 @@ const ExperienceMSection = () => {
         </Swiper>
         <Swiper
           centeredSlides={true}
+          spaceBetween={25}
           loop={true}
           autoplay={{
             delay: 8500,
@@ -85,7 +87,7 @@ const ExperienceMSection = () => {
           className="mySwiper"
         >
           {jsonObject?.map((experience) => {
-            const { id, business, position, duration, description, tools } = experience;
+            const { id, business, position, duration, description, website, tools } = experience;
             return (
               <SwiperSlide key={id}>
                 <section className="experience-section-mobile-body__wrap">
@@ -93,15 +95,10 @@ const ExperienceMSection = () => {
                   <p className="experience-section-mobile-body__wrap--date">{duration}</p>
                   <h4 className="experience-section-mobile-body__wrap--local">{business}</h4>
                   <p className="experience-section-mobile-body__wrap--desc">{description}</p>
-                  <div className="experience-section-mobile-body__wrap--tools">
-                    {tools?.map((tool, index) => {
-                      return (
-                        <span key={index} className="experience-section-mobile-body__wrap--tools__tool">
-                          {tool}
-                        </span>
-                      )
-                    })}
-                  </div>
+                  {website.length > 0 &&
+                    <ShareEmbed website={website} />
+                  }
+                  <ToolsLayout tools={tools} />
                 </section>
               </SwiperSlide>
             )

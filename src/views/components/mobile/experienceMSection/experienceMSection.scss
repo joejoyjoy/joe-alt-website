@@ -119,22 +119,6 @@
       margin-top: 5px;
       margin-bottom: 25px;
     }
-
-    &--tools {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-
-      &__tool {
-        color: $color-important;
-        line-height: 1.25rem;
-        font-weight: 500;
-        font-size: 14px;
-        padding: 0.25rem 0.75rem;
-        border-radius: 1.5rem;
-        background-color: $background-color-dark-green;
-      }
-    }
   }
 
   .swiper {
@@ -150,9 +134,20 @@
 
   .swiper-slide img {
     display: block;
-    width: 100%;
-    height: 100%;
     object-fit: cover;
+    height: 150px;
+    aspect-ratio: 3 / 2;
+    border-radius: 4px;
+
+    @media (max-width: $media-breakpoint-tablet-mobile) {
+      height: 88px;
+    }
+
+    @media (max-width: 500px) {
+      width: 100%;
+      height: auto;
+      aspect-ratio: unset;
+    }
   }
 
   .autoplay-progress {

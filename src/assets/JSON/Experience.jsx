@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next'
+import Preview from '@/assets/IMG/preview.jpg'
 
 export const WorkExperience = () => {
   const { t } = useTranslation();
@@ -29,6 +30,7 @@ export const WorkExperience = () => {
       duration: `${t("month_10")} 2022 - ${t("month_5")} 2023`,
       year: "2023",
       description: `${t("workExperienceJson_description_01")}`,
+      website: [],
       tools: [
         react, ts, sass, node, api, sql, php, bs, test
       ]
@@ -42,6 +44,14 @@ export const WorkExperience = () => {
       duration: `${t("month_9")} 2022 - ${t("month_3")} 2023`,
       year: "2022",
       description: `${t("workExperienceJson_description_02")}`,
+      website: [
+        {
+          title: "the title of the website",
+          desc: "the description of the website",
+          image: Preview,
+          url: "massageswellnessathome.com",
+        }
+      ],
       tools: [
         wix, stripe
       ]
@@ -55,6 +65,7 @@ export const WorkExperience = () => {
       duration: `${t("month_2")} 2021 - ${t("month_6")} 2022`,
       year: "2021",
       description: `${t("workExperienceJson_description_03")}`,
+      website: [],
       tools: [
         ionos, wix, stripe, js, php
       ]
@@ -68,6 +79,7 @@ export const WorkExperience = () => {
       duration: `${t("month_12")} 2020 - ${t("month_3")} 2021`,
       year: "2020",
       description: `${t("workExperienceJson_description_04")}`,
+      website: [],
       tools: [
         html, css, js
       ]
@@ -81,6 +93,14 @@ export const WorkExperience = () => {
       duration: `${t("month_4")} 2017 - ${t("month_10")} 2022`,
       year: "2017",
       description: `${t("workExperienceJson_description_05")}`,
+      website: [
+        {
+          title: "the title of the website",
+          desc: "the description of the website",
+          image: Preview,
+          url: "andalusianhealthretreats.com",
+        }
+      ],
       tools: [
         wix, js, stripe
       ]

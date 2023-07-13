@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next'
 import { FiGithub, FiExternalLink } from 'react-icons/fi'
 import { PiStarFourBold } from 'react-icons/pi'
 import './caseStudyM.scss'
+import ToolsLayout from '@/views/UI/toolsLayout'
 
 const CaseStudyM = ({ array }) => {
   const { t } = useTranslation();
@@ -17,13 +18,7 @@ const CaseStudyM = ({ array }) => {
         <h3 className="case-study-mobile__bottom--title">
           <a href={link} className="marked">{name}</a>
         </h3>
-        <div className="case-study-mobile__bottom--tools">
-          {tools?.map((tool, index) => {
-            return (
-              <span key={index} className="case-study-mobile__bottom--tools__tool">{tool}</span>
-            )
-          })}
-        </div>
+        <ToolsLayout tools={tools} />
         <p className="case-study-mobile__bottom--desc">{description}</p>
         <span className="case-study-mobile__bottom--action">
           {github &&

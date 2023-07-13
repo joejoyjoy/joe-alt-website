@@ -73,7 +73,7 @@ const spanishTranslation = {
 
   /*** Work Experience JSON ***/
   workExperienceJson_position_developer: "Desarollador web Full Stack",
-  workExperienceJson_position_builder: "Autónomo creando sitios web",
+  workExperienceJson_position_builder: "Autónomo creador web",
   workExperienceJson_position_backend: "Autónomo en desarrollo backend",
   workExperienceJson_description_01: `Durante el Máster enseñaron Desarrollo Web Full Stack en un entorno real de trabajo 
   programando en equipo, 1200 horas, jornada completa y de forma remota. He realizado +20 proyectos con un enfoque profundo en las 

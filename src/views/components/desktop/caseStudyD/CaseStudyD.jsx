@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import { FiGithub, FiExternalLink } from 'react-icons/fi'
 import './caseStudyD.scss'
+import ToolsLayout from '@/views/UI/toolsLayout';
 
 const CaseStudyD = ({ array }) => {
   const { t } = useTranslation();
@@ -35,13 +36,7 @@ const CaseStudyD = ({ array }) => {
           </span>
         </div>
         <p className="case-study-desktop__details--desc">{description}</p>
-        <div className="case-study-desktop__details--tools">
-          {tools?.map((tool, index) => {
-            return (
-              <span key={index} className="case-study-desktop__details--tools__tool">{tool}</span>
-            )
-          })}
-        </div>
+        <ToolsLayout tools={tools} />
       </section>
     </article>
   )

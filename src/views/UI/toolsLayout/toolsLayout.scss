@@ -1,0 +1,17 @@
+@import '../../../sass/variables';
+
+.tools-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+
+  &__tool {
+    color: $color-important;
+    line-height: 1.25rem;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1.5rem;
+    background-color: $background-color-dark-green;
+  }
+}
