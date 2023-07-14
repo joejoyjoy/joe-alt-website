@@ -1,6 +1,6 @@
 import React from 'react'
 import { useTranslation, Trans } from 'react-i18next'
-import Portrait from '@/assets/IMG/PortraitJoe.jpg'
+import Portrait from '@/assets/IMG/webp/portraitJoe.webp'
 import { SlLocationPin } from 'react-icons/sl'
 import './aboutSection.scss'
 

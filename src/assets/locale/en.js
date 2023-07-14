@@ -100,6 +100,12 @@ const englishTranslation = {
   I implemented external secure payment methods and used JavaScript to create advanced sorting and filtering 
   features from scratch. In the end this was the project that made me realize the passion I have for 
   web development, and it surely didn't end there.`,
+  workExperienceJson_website_02_title: `Massage and Spa at Home | Massages & Wellness at Home`,
+  workExperienceJson_website_05_title: `Health Retreats | Andalusian Health Retreats | Malaga`,
+  workExperienceJson_website_02_desc: `Natural therapies at home. We offer relaxing, anti-stress massages, 
+  hot stones, cupping therapy, thailand. Book online at Massages and Wellness at home.`,
+  workExperienceJson_website_05_desc: `Team up with Andalusian Health Retreats so that you can create a health retreat you're 
+  proud of! You can focus on facilitating your teachings, whilst we take care of the organizational part.`,
 
 
 

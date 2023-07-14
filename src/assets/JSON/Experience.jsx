@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next'
-import Preview from '@/assets/IMG/preview.jpg'
+import MWPreview from '@/assets/IMG/webp/m&wPrv.webp'
+import AHRPreview from '@/assets/IMG/webp/ahrPrv.webp'
 
 export const WorkExperience = () => {
   const { t } = useTranslation();
@@ -46,9 +47,9 @@ export const WorkExperience = () => {
       description: `${t("workExperienceJson_description_02")}`,
       website: [
         {
-          title: "the title of the website",
-          desc: "the description of the website",
-          image: Preview,
+          title: `${t("workExperienceJson_website_02_title")}`,
+          desc: `${t("workExperienceJson_website_02_desc")}`,
+          image: MWPreview,
           url: "massageswellnessathome.com",
         }
       ],
@@ -95,9 +96,9 @@ export const WorkExperience = () => {
       description: `${t("workExperienceJson_description_05")}`,
       website: [
         {
-          title: "the title of the website",
-          desc: "the description of the website",
-          image: Preview,
+          title: `${t("workExperienceJson_website_05_title")}`,
+          desc: `${t("workExperienceJson_website_05_desc")}`,
+          image: AHRPreview,
           url: "andalusianhealthretreats.com",
         }
       ],

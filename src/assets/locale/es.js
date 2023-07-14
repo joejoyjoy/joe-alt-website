@@ -97,6 +97,12 @@ const spanishTranslation = {
   construyendo un sitio web que sea fácil de usar y entender. Ayudando a los wireframes y bocetos que hice en el proceso. Implementé
   métodos de pago seguros externos y usé JavaScript para hacer funciones de ordenar y filtrar avanzados. Al final este fue el
   proyecto que me hizo darme cuenta de la pasión que tengo por el desarrollo de sitios web, y obviamente no terminó ahí.`,
+  workExperienceJson_website_02_title: `Masaje y Spa a Domicilio | Massages & Wellness at Home`,
+  workExperienceJson_website_05_title: `Retiros de Salud | Andalusian Health Retreats | Málaga`,
+  workExperienceJson_website_02_desc: `Terapias naturales a tu domicilio. Ofrecemos masajes Relajantes, Antiestrés, 
+  Hot Stones, Ventosaterapia, Tailandez. Reserva online Massages and Wellness At home.`,
+  workExperienceJson_website_05_desc: `Forma equipo con Andalusian Health Retreats para que puedas crear un retiro de salud que estés
+  ¡orgulloso de! Puedes centrarte en facilitar tus enseñanzas, mientras nosotros nos encargamos de la parte organizativa.`,
 
 
 
