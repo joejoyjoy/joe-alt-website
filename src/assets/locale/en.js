@@ -37,12 +37,16 @@ const englishTranslation = {
   aboutSection_image_alt: "Portrait picture of Joe Alt website developer",
   aboutSection_image_location: "Malaga, Spain",
 
+  // EXPERIENCE SECTION
+  experienceSection_header: "Where I've Worked",
+
   // WORK SECTION
   workSection_header: "Some Things I've Built",
   workSection_caseStudy_text: "Featured Project",
 
-  // EXPERIENCE SECTION
-  experienceSection_header: "Where I've Worked",
+  // RECOMMENDS SECTION
+  recommendsSection_header: "What Co-Workers Say",
+  recommendsSection_credit: "Source LinkedIn <space/>Recommendations",
 
   // CONTACT SECTION
   contactSection_header: "04. What's Next?",
@@ -129,6 +133,12 @@ const englishTranslation = {
   workCases_description_05: `As a team of 4 developers we pulled of a Object Oriented Program with PHP. It's about a 
   program were you can connect to VPNs from the client side or create, edit or delete them as a administrator. I was the team 
   leader and it was all build within a week. Note that it doesn't connect you to any VPNs, only visual graphics used.`,
+
+
+
+  /*** Recommends JSON ***/
+  recommendsJson_position_coWorkerM: "Co-Worker",
+  recommendsJson_position_coWorkerF: "Co-Worker",
 
 
 

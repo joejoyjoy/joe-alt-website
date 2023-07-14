@@ -37,12 +37,16 @@ const spanishTranslation = {
   aboutSection_image_alt: "Imagen de retrato del desarrollador del sitio web Joe Alt",
   aboutSection_image_location: "Málaga, España",
 
+  // EXPERIENCE SECCIÓN
+  experienceSection_header: "Donde trabajé",
+
   // WORK SECCIÓN
   workSection_header: "Algunas cosas que hecho",
   workSection_caseStudy_text: "Proyecto destacado",
 
-  // EXPERIENCE SECCIÓN
-  experienceSection_header: "Donde trabajé",
+  // RECOMMENDS SECCIÓN
+  recommendsSection_header: "Lo que dicen los compañeros de trabajo",
+  recommendsSection_credit: "Proviene de LinkedIn <space/>Recomendaciones",
 
   // CONTACT SECCIÓN
   contactSection_header: "04. ¿Qué Hago Ahora?",
@@ -126,6 +130,12 @@ const spanishTranslation = {
   workCases_description_05: `En un equipo de 5 desarrolladores, sacamos un Programa Orientado a Objetos con PHP. Se trata de un
   programa donde puede conectarse a las VPNs desde como cliente o crearlas, editarlas o eliminarlas como administrador. Yo era el líder 
   del equipo y todo se programó en una semana. Ten en cuenta que no se conecta a ninguna VPN, solo se representan gráficos visuales.`,
+
+
+
+  /*** Recommends JSON ***/
+  recommendsJson_position_coWorkerM: "Compañero de trabajo",
+  recommendsJson_position_coWorkerF: "Compañera de trabajo",
 
 
 

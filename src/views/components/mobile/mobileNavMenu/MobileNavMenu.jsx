@@ -30,7 +30,7 @@ const MobileNavMenu = ({ state }) => {
         <Link to="experienceLink" onClick={handleClick} smooth={true} offset={95} duration={500} className="mobile-nav-menu__body--navigation__link">
           <p><span className="highlighted">02. </span>{t("header_nav_link2") || ""}</p>
         </Link>
-        <Link className="mobile-nav-menu__body--navigation__link">
+        <Link to="workLink" onClick={handleClick} smooth={true} offset={95} duration={500} className="mobile-nav-menu__body--navigation__link">
           <p><span className="highlighted">03. </span>{t("header_nav_link3") || ""}</p>
         </Link>
         <Link to="contactLink" onClick={handleClick} smooth={true} offset={76} duration={500} className="mobile-nav-menu__body--navigation__link">
