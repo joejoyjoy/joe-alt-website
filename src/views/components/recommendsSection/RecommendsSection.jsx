@@ -1,15 +1,19 @@
 import { useRef } from 'react'
 import { Recommends } from '@/assets/JSON/Recommends'
 import { useTranslation } from 'react-i18next'
+import useWindowSizeReport from '@/hooks/useWindowSizeReport'
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import 'swiper/css/effect-fade';
 import "swiper/css/navigation";
-import { Navigation } from "swiper";
+import { Navigation, EffectFade } from "swiper";
 import { BsArrowLeftCircle, BsArrowRightCircle } from 'react-icons/bs'
 import RecommendsDSection from '../desktop/recommendsDSection';
+import RecommendsMSection from '../mobile/recommendsMSection';
 import './recommendsSection.scss'
 
 const RecommendsSection = () => {
+  const screenWidth = useWindowSizeReport();
   const { t } = useTranslation();
   const jsonObject = Recommends();
   const prevRef = useRef(null);
@@ -29,13 +33,17 @@ const RecommendsSection = () => {
             swiper.navigation.init();
             swiper.navigation.update();
           }}
-          modules={[Navigation]}
+          effect={'fade'}
+          fadeEffect={{
+            crossFade: true,
+          }}
+          modules={[Navigation, EffectFade]}
           className="recommends-section__content--swiper"
         >
           {jsonObject?.map((coWorker) => {
             return (
               <SwiperSlide>
-                <RecommendsDSection coWorker={coWorker} />
+                {screenWidth > 550 ? <RecommendsDSection coWorker={coWorker} /> : <RecommendsMSection coWorker={coWorker} />}
               </SwiperSlide>
             )
           })}
