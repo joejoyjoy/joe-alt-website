@@ -23,6 +23,7 @@ export const WorkCases = () => {
   const oauth = "OAuth";
   const bt = "Bootstrap";
   const test = "Jest/Cypress";
+  const spline = "Spline3D";
 
   const workCases = [
     {
@@ -55,7 +56,7 @@ export const WorkCases = () => {
       description: `${t("workCases_description_03")}`,
       image: case03img,
       tools: [
-        react, sass, node, api, mongo
+        react, sass, node, api, mongo, spline
       ]
     },
     {

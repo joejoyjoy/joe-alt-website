@@ -16,7 +16,7 @@ const CaseStudyM = ({ array }) => {
       </section>
       <section className="case-study-mobile__bottom">
         <h3 className="case-study-mobile__bottom--title">
-          <a href={link} className="marked">{name}</a>
+          <a href={link}>{name}</a>
         </h3>
         <ToolsLayout tools={tools} />
         <p className="case-study-mobile__bottom--desc">{description}</p>

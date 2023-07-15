@@ -20,7 +20,7 @@ const RecommendsSection = () => {
   const nextRef = useRef(null);
 
   return (
-    <section id="recommendsLink" className="recommends-section">
+    <section id="reviewsLink" className="recommends-section">
       <div className="recommends-section__header">
         <span>04. </span><h2>{t("recommendsSection_header")}</h2>
       </div>

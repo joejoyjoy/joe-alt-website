@@ -46,7 +46,7 @@
     flex-direction: column;
     position: relative;
     margin: 0 auto;
-    width: 80dvw;
+    width: 78dvw;
     max-width: 560px;
     padding: 20px;
     border-radius: 4px;
@@ -123,6 +123,11 @@
       z-index: -1;
 
       @media (max-width: $media-breakpoint-tablet-mobile) {
+        top: 8px;
+        left: 8px;
+      }
+
+      @media (max-width: $media-breakpoint-md) {
         top: 5px;
         left: 5px;
       }
@@ -137,6 +142,11 @@
         left: 20px;
 
         @media (max-width: $media-breakpoint-tablet-mobile) {
+          top: 12px;
+          left: 12px;
+        }
+
+        @media (max-width: $media-breakpoint-md) {
           top: 5px;
           left: 5px;
         }

@@ -60,8 +60,11 @@ const NavBarDesktop = () => {
         <Link to="workLink" smooth={true} offset={-45} duration={500} className="nav-bar-desktop-component__navigation--link">
           <p><span className="highlighted">03. </span>{t("header_nav_link3") || "link"}</p>
         </Link>
-        <Link to="contactLink" smooth={true} offset={-45} duration={500} className="nav-bar-desktop-component__navigation--link">
+        <Link to="reviewsLink" smooth={true} offset={-45} duration={500} className="nav-bar-desktop-component__navigation--link">
           <p><span className="highlighted">04. </span>{t("header_nav_link4") || "link"}</p>
+        </Link>
+        <Link to="contactLink" smooth={true} offset={-45} duration={500} className="nav-bar-desktop-component__navigation--link">
+          <p><span className="highlighted">05. </span>{t("header_nav_link5") || "link"}</p>
         </Link>
         <Language />
         <Link to="contactLink" smooth={true} offset={-45} duration={500} className="nav-bar-desktop-component__navigation--link">

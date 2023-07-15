@@ -54,6 +54,13 @@
     border-bottom-right-radius: 4px;
     background-color: $background-color-important;
 
+    &--title {
+      a {
+        color: $color-primary;
+        text-decoration: none;
+      }
+    }
+
     &--action {
       display: flex;
       align-items: center;
