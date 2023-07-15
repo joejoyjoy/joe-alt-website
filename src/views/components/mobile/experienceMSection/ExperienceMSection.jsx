@@ -91,7 +91,7 @@ const ExperienceMSection = () => {
             return (
               <SwiperSlide key={id}>
                 <section className="experience-section-mobile-body__wrap">
-                  <h4 className="experience-section-mobile-body__wrap--title">{position}</h4>
+                  <h3 className="experience-section-mobile-body__wrap--title">{position}</h3>
                   <p className="experience-section-mobile-body__wrap--date">{duration}</p>
                   <h4 className="experience-section-mobile-body__wrap--local">{business}</h4>
                   <p className="experience-section-mobile-body__wrap--desc">{description}</p>

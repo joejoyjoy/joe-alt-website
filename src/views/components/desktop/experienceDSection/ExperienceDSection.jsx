@@ -34,7 +34,7 @@ const ExperienceDSection = () => {
           if (active === id) {
             return (
               <section key={id} className="experience-section-desktop-body__wrap">
-                <h4 className="experience-section-desktop-body__wrap--title">{position} <b>@ {business}</b></h4>
+                <h3 className="experience-section-desktop-body__wrap--title">{position} <b>@ {business}</b></h3>
                 <p className="experience-section-desktop-body__wrap--date">{duration}</p>
                 <p>{description}</p>
                 {website.length > 0 &&

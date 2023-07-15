@@ -42,7 +42,7 @@ const RecommendsSection = () => {
         >
           {jsonObject?.map((coWorker) => {
             return (
-              <SwiperSlide>
+              <SwiperSlide key={coWorker.id}>
                 {screenWidth > 550 ? <RecommendsDSection coWorker={coWorker} /> : <RecommendsMSection coWorker={coWorker} />}
               </SwiperSlide>
             )
