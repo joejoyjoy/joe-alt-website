@@ -24,22 +24,22 @@ const MobileNavMenu = ({ state }) => {
         </span>
       </header>
       <section className="mobile-nav-menu__body">
-        <Link to="aboutLink" onClick={handleClick} smooth={true} offset={65} duration={500} className="mobile-nav-menu__body--navigation__link">
+        <Link to="aboutLink" onClick={handleClick} smooth={true} offset={65} duration={500} href="\" className="mobile-nav-menu__body--navigation__link">
           <p><span className="highlighted">01. </span>{t("header_nav_link1") || ""}</p>
         </Link>
-        <Link to="experienceLink" onClick={handleClick} smooth={true} offset={95} duration={500} className="mobile-nav-menu__body--navigation__link">
+        <Link to="experienceLink" onClick={handleClick} smooth={true} offset={95} duration={500} href="\" className="mobile-nav-menu__body--navigation__link">
           <p><span className="highlighted">02. </span>{t("header_nav_link2") || ""}</p>
         </Link>
-        <Link to="workLink" onClick={handleClick} smooth={true} offset={95} duration={500} className="mobile-nav-menu__body--navigation__link">
+        <Link to="workLink" onClick={handleClick} smooth={true} offset={95} duration={500} href="\" className="mobile-nav-menu__body--navigation__link">
           <p><span className="highlighted">03. </span>{t("header_nav_link3") || ""}</p>
         </Link>
-        <Link to="reviewsLink" onClick={handleClick} smooth={true} offset={95} duration={500} className="mobile-nav-menu__body--navigation__link">
+        <Link to="reviewsLink" onClick={handleClick} smooth={true} offset={95} duration={500} href="\" className="mobile-nav-menu__body--navigation__link">
           <p><span className="highlighted">04. </span>{t("header_nav_link4") || ""}</p>
         </Link>
-        <Link to="contactLink" onClick={handleClick} smooth={true} offset={76} duration={500} className="mobile-nav-menu__body--navigation__link">
+        <Link to="contactLink" onClick={handleClick} smooth={true} offset={76} duration={500} href="\" className="mobile-nav-menu__body--navigation__link">
           <p><span className="highlighted">05. </span>{t("header_nav_link5") || ""}</p>
         </Link>
-        <Link to="contactLink" onClick={handleClick} smooth={true} offset={76} duration={500} className="mobile-nav-menu__body--navigation__link">
+        <Link to="contactLink" onClick={handleClick} smooth={true} offset={76} duration={500} href="\" className="mobile-nav-menu__body--navigation__link">
           <button>{t("header_nav_action") || ""}</button>
         </Link>
       </section>

@@ -16,7 +16,7 @@ const HeroSection = () => {
         <h2 className="hero-section__position">{t("heroSection_position")}</h2>
         <p className="hero-section__description">{t("heroSection_description")}</p>
         <span className="hero-section__btns">
-          <Link to="contactLink" smooth={true} duration={1200} className="hero-section__btns--action">{t("heroSection_btns_action")}</Link>
+          <Link to="contactLink" smooth={true} duration={1200} href="\" className="hero-section__btns--action">{t("heroSection_btns_action")}</Link>
           <button onClick={() => setOpen(true)} className="hero-section__btns--download">{t("heroSection_btns_download")}</button>
         </span>
       </section>

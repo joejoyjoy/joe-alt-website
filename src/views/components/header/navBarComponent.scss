@@ -35,6 +35,8 @@
     gap: 2rem;
 
     &--link {
+      text-decoration: none;
+
       p {
         font-size: 14px;
         font-family: $font-mono;
