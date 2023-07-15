@@ -44,135 +44,94 @@
   &__content {
     display: flex;
     flex-direction: column;
+    position: relative;
     margin: 0 auto;
+    width: 80dvw;
     max-width: 560px;
     padding: 20px;
     border-radius: 4px;
     background-color: $background-color-important;
+    box-shadow: 0 10px 30px -15px $shadow-navy;
+    transition: $transition;
 
-    &--head {
+    &--swiper {
       display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
+      flex-direction: column;
+      max-width: 560px;
 
-      &__profile {
+      &__footer {
         display: flex;
-        gap: 10px;
-        text-decoration: none;
+        justify-content: flex-end;
 
-        &:hover {
-          .recommends-section__content--head__profile--details {
-
-            h4,
-            p {
-              &::after {
-                width: 100%;
-              }
-            }
-          }
-        }
-
-        &--image {
+        &--arrows {
           display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 48px;
-          width: 48px;
-          border-radius: 24px;
-          overflow: hidden;
+          gap: 10px;
 
-          img {
-            object-fit: cover;
-            height: 56px;
-            aspect-ratio: 1 / 1;
-          }
-        }
-
-        &--details {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          gap: 2px;
-
-          h4,
-          p {
-            display: inline-block;
-            text-decoration: none;
-            width: fit-content;
-            margin: 0;
-            border: 0;
-
-            &::after {
-              content: "";
-              display: block;
-              width: 0;
-              height: 1px;
-              background-color: $color-important;
-              opacity: 0.5;
-              transition: $transition;
-            }
-          }
-
-          h4 {
-            font-weight: 400;
-          }
-
-          p {
+          button {
             color: $color-important;
+            border: 0;
+            background: none;
+            transition: $transition;
+
+            &:disabled {
+              color: $color-dark-slate;
+            }
+
+            &:hover {
+              opacity: 0.65;
+            }
+
+            svg {
+              height: 34px;
+              width: 34px;
+            }
           }
-        }
-      }
-
-      &__credit {
-        display: flex;
-        gap: 6px;
-        color: inherit;
-        text-decoration: none;
-
-        &:hover {
-          span {
-            text-decoration: underline;
-          }
-        }
-
-        svg {
-          width: 24px;
-          height: 24px;
-        }
-
-        span {
-          font-size: 12px;
-          line-height: 1;
         }
       }
     }
 
-    &--foot {
-      display: flex;
-      justify-content: flex-end;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-radius: 4px;
+      transition: $transition;
+    }
 
-      &__arrows {
-        display: flex;
-        gap: 10px;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: 2px solid $color-important;
+      border-radius: 4px;
+      transition: $transition;
+      z-index: -1;
 
-        button {
-          color: $color-important;
-          border: 0;
-          background: none;
-          transition: $transition;
+      @media (max-width: $media-breakpoint-tablet-mobile) {
+        top: 8px;
+        left: 8px;
+      }
+    }
 
-          &:disabled {
-            color: $color-dark-slate;
-          }
+    &:hover {
+      outline: 0px;
+      box-shadow: 0 20px 30px -15px $shadow-navy;
 
-          &:hover {
-            opacity: 0.65;
-          }
+      &::after {
+        top: 20px;
+        left: 20px;
 
-          svg {
-            height: 34px;
-            width: 34px;
-          }
+        @media (max-width: $media-breakpoint-tablet-mobile) {
+          top: 12px;
+          left: 12px;
         }
       }
     }

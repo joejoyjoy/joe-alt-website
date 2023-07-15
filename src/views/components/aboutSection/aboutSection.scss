@@ -93,14 +93,13 @@
     }
 
     &--wrapper {
-      box-shadow: 0 10px 30px -15px $shadow-navy;
-      transition: $transition;
       display: block;
       position: relative;
       width: 100%;
       border-radius: 4px;
       background-color: $color-important;
-
+      box-shadow: 0 10px 30px -15px $shadow-navy;
+      transition: $transition;
 
       &::before {
         content: "";

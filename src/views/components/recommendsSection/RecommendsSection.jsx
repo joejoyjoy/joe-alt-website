@@ -1,18 +1,19 @@
 import { useRef } from 'react'
-import { useTranslation, Trans } from 'react-i18next'
 import { Recommends } from '@/assets/JSON/Recommends'
+import { useTranslation } from 'react-i18next'
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper";
-import { BsArrowLeftCircle, BsArrowRightCircle, BsLinkedin } from 'react-icons/bs'
+import { BsArrowLeftCircle, BsArrowRightCircle } from 'react-icons/bs'
+import RecommendsDSection from '../desktop/recommendsDSection';
 import './recommendsSection.scss'
 
 const RecommendsSection = () => {
   const { t } = useTranslation();
+  const jsonObject = Recommends();
   const prevRef = useRef(null);
   const nextRef = useRef(null);
-  const jsonObject = Recommends();
 
   return (
     <section id="recommendsLink" className="recommends-section">
@@ -29,37 +30,17 @@ const RecommendsSection = () => {
             swiper.navigation.update();
           }}
           modules={[Navigation]}
-          className="recommends-swiper"
+          className="recommends-section__content--swiper"
         >
           {jsonObject?.map((coWorker) => {
-            const { id, name, position, profile, url, recommendation } = coWorker;
             return (
-              <SwiperSlide key={id}>
-                <div className="recommends-section__content--head">
-                  <a href={url} className="recommends-section__content--head__profile">
-                    <span className="recommends-section__content--head__profile--image">
-                      <img src={profile} alt={name + " portrait picture"} />
-                    </span>
-                    <span className="recommends-section__content--head__profile--details">
-                      <h4>{name}</h4>
-                      <p>{position}</p>
-                    </span>
-                  </a>
-                  <a href='https://linkedin.com/in/joe-alt' className="recommends-section__content--head__credit" target="_blank">
-                    <BsLinkedin />
-                    <span>
-                      <Trans i18nKey="recommendsSection_credit" components={{ space: <br /> }} />
-                    </span>
-                  </a>
-                </div>
-                <div className="recommends-section__content--body">
-                  <p>{recommendation}</p>
-                </div>
+              <SwiperSlide>
+                <RecommendsDSection coWorker={coWorker} />
               </SwiperSlide>
             )
           })}
-          <div className="recommends-section__content--foot">
-            <span className="recommends-section__content--foot__arrows">
+          <div className="recommends-section__content--swiper__footer">
+            <span className="recommends-section__content--swiper__footer--arrows">
               <button ref={prevRef}>
                 <BsArrowLeftCircle />
               </button>

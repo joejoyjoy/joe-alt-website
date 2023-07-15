@@ -45,7 +45,7 @@ const spanishTranslation = {
   workSection_caseStudy_text: "Proyecto destacado",
 
   // RECOMMENDS SECCIÓN
-  recommendsSection_header: "Lo que dicen los compañeros de trabajo",
+  recommendsSection_header: "Lo que dicen los compis",
   recommendsSection_credit: "Proviene de LinkedIn <space/>Recomendaciones",
 
   // CONTACT SECCIÓN
@@ -136,6 +136,20 @@ const spanishTranslation = {
   /*** Recommends JSON ***/
   recommendsJson_position_coWorkerM: "Compañero de trabajo",
   recommendsJson_position_coWorkerF: "Compañera de trabajo",
+  recommendsJson_recommendation_01: `Joe es un gran compañero de trabajo, independiente, y sin miedo de aprender nuevas tecnologías 
+  para mejorar los proyectos en los que está trabajando. Entiende las tareas por realizar y sus aptitudes sociales aportan al equipo. 
+  Siempre me ha resultado fácil y satisfactorio trabajar en programación de pareja con él.<space/>
+  Hablando sobre en qué destaca, puntería a su creatividad estilando los sitios web con tanta pasión.<space/>
+  Ha sido un placer trabajar juntos en proyectos contigo Joe!`,
+  recommendsJson_recommendation_02: `Quería tomar un momento para expresar mi agradecimiento por tu arduo trabajo y dedicación a 
+  nuestro equipo. Sus contribuciones han sido invaluables y estoy constantemente impresionada por cada detalle y su capacidad para abordar 
+  desafíos complejos. <space/>
+  Tu actitud positiva y tu voluntad de colaborar también han sido un gran impacto positivo para nuestro equipo. Yo siempre sé que puedo 
+  contar contigo para obtener información valiosa y que estarás encontrando soluciones que beneficien al proyecto entero constantemente.`,
+  recommendsJson_recommendation_03: `Tuve el placer de trabajar con Joe en una aplicación web de música, donde brilló sus excepcionales 
+  habilidades de desarrollo frontend. Joe es muy talentoso, creativo, orientado al detalle, y tiene una gran capacidad para comprender 
+  rápidamente nuevas tecnologías. Siempre estás abierto a compartir tus conocimientos y puedes trabajar de forma independiente con gran eficiencia. 
+  ¡Recomiendo encarecidamente a Joe para cualquier desafío de desarrollo frontend!`,
 
 
 

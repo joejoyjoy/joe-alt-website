@@ -139,6 +139,21 @@ const englishTranslation = {
   /*** Recommends JSON ***/
   recommendsJson_position_coWorkerM: "Co-Worker",
   recommendsJson_position_coWorkerF: "Co-Worker",
+  recommendsJson_recommendation_01: `Joe is a great co-worker, independent, capable and unafraid to learn new technologies 
+  to improve the project he's working on. He understands the tasks at hand and his team social skills 
+  are excellent. I've always found it easy and satisfying to work in pair-programming with him.<space/>
+  If there is one thing that stands out in his skills, it's his stylistic creativity in creating websites.<space/>
+  It has been a pleasure to share projects with you Joe!`,
+  recommendsJson_recommendation_02: `I wanted to take a moment to express my appreciation for your hard work and dedication to 
+  our team. Your contributions have been invaluable, and I am consistently impressed by your attention to 
+  detail and ability to tackle complex challenges.<space/>
+  Your positive attitude and willingness to collaborate have also been a significant asset to our team. I always 
+  know that I can count on you to provide valuable insights and to work with me to find solutions that 
+  benefit our entire team.`,
+  recommendsJson_recommendation_03: `I had the pleasure of working with Joe together on a music app project, where he 
+  showcased his exceptional frontend development skills. Joe is highly talented, creative, detail-oriented, 
+  and has a remarkable ability to quickly grasp new technologies. He is always open to sharing his knowledge and works 
+  independently with great efficiency. I highly recommend Joe for any frontend development role!`,
 
 
 
