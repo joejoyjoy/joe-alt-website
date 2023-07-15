@@ -49,10 +49,10 @@ const RecommendsSection = () => {
           })}
           <div className="recommends-section__content--swiper__footer">
             <span className="recommends-section__content--swiper__footer--arrows">
-              <button ref={prevRef}>
+              <button ref={prevRef} aria-label="Swiper Button Left">
                 <BsArrowLeftCircle />
               </button>
-              <button ref={nextRef}>
+              <button ref={nextRef} aria-label="Swiper Button Right">
                 <BsArrowRightCircle />
               </button>
             </span>

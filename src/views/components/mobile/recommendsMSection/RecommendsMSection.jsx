@@ -15,7 +15,7 @@ const RecommendsMSection = ({ coWorker }) => {
             <img src={profile} alt={name + " portrait picture"} />
           </span>
           <span className="recommends-mobile-swiper__header--profile__details">
-            <h4>{name}</h4>
+            <h3>{name}</h3>
             <p>{position}</p>
           </span>
         </a>
