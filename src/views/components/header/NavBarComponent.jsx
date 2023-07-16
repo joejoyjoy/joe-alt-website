@@ -9,7 +9,7 @@ import { SiteContext } from '@/context/SiteContext'
 import MobileNavMenu from '../mobile/mobileNavMenu'
 import NavBurger from '@/views/UI/navBurger'
 import Language from '@/views/UI/language'
-import Logo from '@/assets/IMG/logo.png'
+import WebsiteLogo from '@/assets/SVG/websiteLogo'
 import './navBarComponent.scss'
 
 export default function NavBarComponent() {
@@ -48,7 +48,7 @@ const NavBarDesktop = () => {
   return (
     <header className={`nav-bar-desktop-component ${headerState()}`}>
       <Link to="heroLink" smooth={true} duration={500} href="\" className="nav-bar-desktop-component__logo">
-        <img src={Logo} alt={t("header_logo_alt") || "image"} />
+        <WebsiteLogo />
       </Link>
       <nav className="nav-bar-desktop-component__navigation">
         <Link to="aboutLink" smooth={true} offset={-45} duration={500} href="\" className="nav-bar-desktop-component__navigation--link">
@@ -110,7 +110,7 @@ const NavBarMobile = () => {
     <>
       <header className={`nav-bar-mobile-component ${headerState()}`}>
         <Link to="heroLink" smooth={true} duration={500} href="\" className="nav-bar-mobile-component__logo">
-          <img src={Logo} alt={t("header_logo_alt") || "image"} />
+          <WebsiteLogo />
         </Link>
       </header>
       <span onClick={() => handleToggle()} className={`nav-bar-mobile-component-btn ${headerState()}`}>
