@@ -109,7 +109,7 @@ const NavBarMobile = () => {
   return (
     <>
       <header className={`nav-bar-mobile-component ${headerState()}`}>
-        <Link to="heroLink" smooth={true} duration={500} className="nav-bar-mobile-component__logo">
+        <Link to="heroLink" smooth={true} duration={500} href="\" className="nav-bar-mobile-component__logo">
           <img src={Logo} alt={t("header_logo_alt") || "image"} />
         </Link>
       </header>

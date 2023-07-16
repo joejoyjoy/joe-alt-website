@@ -16,16 +16,22 @@
     font-weight: 400;
   }
 
-  &__name {
+  &__title {
     margin: 0;
-    font-size: clamp(40px, 8vw, 80px);
-  }
 
-  &__position {
-    margin-top: 5px;
-    font-size: clamp(20px, 7vw, 60px);
-    color: $color-secondary;
-    line-height: 0.9;
+    &--name {
+      display: block;
+      margin: 0;
+      font-size: clamp(40px, 8vw, 80px);
+    }
+
+    &--position {
+      display: block;
+      margin-top: 5px;
+      font-size: clamp(20px, 7vw, 60px);
+      color: $color-secondary;
+      line-height: 0.9;
+    }
   }
 
   &__description {

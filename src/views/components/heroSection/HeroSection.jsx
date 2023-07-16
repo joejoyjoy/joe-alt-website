@@ -12,8 +12,10 @@ const HeroSection = () => {
     <>
       <section id="heroLink" className="hero-section">
         <p className="hero-section__welcome">{t("heroSection_welcome")}</p>
-        <h1 className="hero-section__name">Joe Alt.</h1>
-        <h2 className="hero-section__position">{t("heroSection_position")}</h2>
+        <h1 className="hero-section__title">
+          <span className="hero-section__title--name">Joe Alt.</span>
+          <span className="hero-section__title--position">{t("heroSection_position")}</span>
+        </h1>
         <p className="hero-section__description">{t("heroSection_description")}</p>
         <span className="hero-section__btns">
           <Link to="contactLink" smooth={true} duration={1200} href="\" className="hero-section__btns--action">{t("heroSection_btns_action")}</Link>
