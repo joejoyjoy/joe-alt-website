@@ -25,8 +25,8 @@ const spanishTranslation = {
   heroSection_btns_download: "Mi currículum",
 
   // ABOUT SECCIÓN
-  aboutSection_header: "Sobre Mí",
-  aboutSection_body_span1: `¡Hola! Soy Joe, un amador de la web. Llevo creando <bold>sitios webs para clientes</bold> desde 2019. 
+  aboutSection_header: "Sobre Mí | always deeply passionate about web-driven technologies to create a positive impact on clients' daily lives",
+  aboutSection_body_span1: `¡Hola! Soy Joe, apasionado de las tecnologías orientadas a la web con la finalidad de impactar de manera positiva el día a día de los clientes. Llevo creando <bold>sitios webs para clientes</bold> desde 2019. 
   Estoy agradecido de haber trabajando como <bold>autónomo</bold> durante varios años. Creando sitios webs para diferentes finalidades y funcionalidades involucradas. 
   Por ejemplo, filtrado y ordenación de productos, pagos en línea, conexión con logística mediante API, entre otros.`,
   aboutSection_body_span2: `Después de crear varios sitios web exitosos para diferentes empresas,
