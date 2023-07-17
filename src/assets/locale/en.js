@@ -26,7 +26,7 @@ const englishTranslation = {
 
   // ABOUT SECTION
   aboutSection_header: "About Me",
-  aboutSection_body_span1: `Hey! I'm Joe, always deeply passionate about web-driven technologies to create a positive impact on clients' daily lives. I have been building <bold>real-case websites</bold> since 2019. 
+  aboutSection_body_span1: `Hey! I'm Joe, always deeply passionate about web-driven technologies to create a positive impact on customers' daily lives. I have been building <bold>real-case websites</bold> since 2019. 
   I'm thankful to have been working as a <bold>freelancer</bold> for several years creating websites of all kinds, each with different functionalities involved. 
   For example, product filtering and sorting, online payments, and connecting with logistics trough API, among others.`,
   aboutSection_body_span2: `After creating several successful websites for different businesses, 
