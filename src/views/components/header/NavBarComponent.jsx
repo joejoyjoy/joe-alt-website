@@ -9,7 +9,7 @@ import { SiteContext } from '@/context/SiteContext'
 import MobileNavMenu from '../mobile/mobileNavMenu'
 import NavBurger from '@/views/UI/navBurger'
 import Language from '@/views/UI/language'
-import WebsiteLogo from '@/assets/SVG/websiteLogo'
+import WebsiteLogo from '@/assets/SVG/WebsiteLogo'
 import './navBarComponent.scss'
 
 export default function NavBarComponent() {
