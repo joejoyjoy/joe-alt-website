@@ -1,20 +1,20 @@
 /*** Website variables ***/
 
 // PRINCIPAL COLOR
-$color-primary: #ccd6f6;
-$color-secondary: #8892b0;
-$color-important: #64ffda;
+$color-primary: #32454c;
+$color-secondary: #6f7c81;
+$color-important: #ff5c62;
 
-$color-light-gray: #a8b2d1;
+$color-light-gray: #6f7c81;
 $color-dark-navy: #020c1b;
 $color-dark-slate: #495670;
 
 
 // BACKGROUND COLOR
-$background-color-primary: #0a192f;
-$background-color-important: #112240;
+$background-color-primary: #f8f8f8;
+$background-color-important: #fee27f;
 
-$background-color-dark-green: rgba(45, 212, 191, 0.1);
+$background-color-dark-green: rgba($color-important, 0.12);
 $background-color-light-blue: #233554;
 
 
