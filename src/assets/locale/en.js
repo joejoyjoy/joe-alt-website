@@ -20,7 +20,7 @@ const englishTranslation = {
   // HERO SECTION
   heroSection_welcome: "Hi, my name is",
   heroSection_position: "Full Stack Web Developer.",
-  heroSection_description: "I'm a software developer specialized in web development building exceptional frontend and backend web experiences. Currently, I'm focusing on building eye catching websites and also actively searching for a job opportunity.",
+  heroSection_description: "I'm a software developer specialized in web development building exceptional frontend and backend web experiences. Currently, I'm focusing on learning more JavaScript libraries and frameworks to help me on my next projects and also actively searching for a job opportunity.",
   heroSection_btns_action: "Get In Touch",
   heroSection_btns_download: "My Resume",
 

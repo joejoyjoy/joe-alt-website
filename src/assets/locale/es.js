@@ -20,7 +20,7 @@ const spanishTranslation = {
   // HERO SECCIÓN
   heroSection_welcome: "Hola, mi nombre es",
   heroSection_position: "Desarrollador Web Full Stack.",
-  heroSection_description: "Soy un desarrollador de software especializado en desarrollo web programmando experiencias web excepcionales de frontend y backend. Actualmente, estoy enfocado en crear sitios web llamativos y estoy en buscueda activa para un puesto de trabajo.",
+  heroSection_description: "Soy un desarrollador de software especializado en desarrollo web programmando experiencias web excepcionales de frontend y backend. Actualmente, me estoy enfocando en aprender más librerías y frameworks de JavaScript para enriquecer mis próximos proyectos, y estoy en buscueda activa para un puesto de trabajo.",
   heroSection_btns_action: "Habla conmigo",
   heroSection_btns_download: "Mi currículum",
 
