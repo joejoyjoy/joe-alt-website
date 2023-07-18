@@ -6,12 +6,13 @@ $color-secondary: #6f7c81;
 $color-important: #ff5c62;
 
 $color-light-gray: #6f7c81;
-$color-dark-navy: #020c1b;
+$color-dark-navy: #0D121D;
 $color-dark-slate: #495670;
 
 
 // BACKGROUND COLOR
 $background-color-primary: #f8f8f8;
+$background-color-secondary: #FFF;
 $background-color-important: #fee27f;
 
 $background-color-dark-green: rgba($color-important, 0.12);
@@ -19,7 +20,10 @@ $background-color-light-blue: #233554;
 
 
 // SHADOW COLOR
-$shadow-navy: rgba($color-dark-navy, 0.7);
+$shadow-navy: rgba($color-dark-navy, 0.8);
+$shadow-lg: 0 2px 15px 0 rgba(0,0,0,.15);
+$shadow-md: 0 2px 20px 1px rgba(0,0,0,.11);
+$shadow-sm: 0 1px 12px 1px rgba(50,69,76,.1);
 
 
 // FONTS COLOR

@@ -1,7 +1,7 @@
 @import './variables';
 
 @mixin primaryButton($padding: 0.75rem 1rem) {
-  font-size: 14px;
+  font-size: 13px;
   font-family: $font-mono;
   font-weight: 600;
   color: $color-important;
@@ -24,7 +24,7 @@
 
 @mixin callToActionButton($padding: 0.75rem 1rem) {
   position: relative;
-  font-size: 14px;
+  font-size: 13px;
   font-family: $font-mono;
   font-weight: 800;
   color: $background-color-primary;
