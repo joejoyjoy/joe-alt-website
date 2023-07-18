@@ -4,6 +4,10 @@
   display: flex;
   padding: 100px 0px;
 
+  @media (min-width: $media-breakpoint-desktop-tablet) {
+    margin-right: calc(25px + 2rem);
+  }
+
   &__content {
     display: flex;
     flex-direction: column;
@@ -39,7 +43,7 @@
           width: calc(100% - 1rem);
           height: 1px;
           margin-left: 20px;
-          background-color: $background-color-light-blue;
+          background-color: $color-accent;
         }
       }
     }

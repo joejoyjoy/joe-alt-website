@@ -4,17 +4,6 @@
   position: relative;
 
   &__landing-page {
-    max-width: 1024px;
     margin: 0 auto;
-    margin-top: calc(-2rem - 45px);
-    padding: 0 2rem 2rem;
-    
-    @media (max-width: $media-breakpoint-desktop-tablet) {
-      margin-top: calc(-2rem - 35px);
-    }
-
-    @media (max-width: $media-breakpoint-tablet-mobile) {
-      padding: 0 1rem 1rem;
-    }
   }
 }

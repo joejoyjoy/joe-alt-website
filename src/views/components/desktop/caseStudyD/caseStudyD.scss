@@ -38,8 +38,6 @@
         width: 100%;
         height: 100%;
         border-radius: 4px;
-        mix-blend-mode: multiply;
-        filter: grayscale(75%) contrast(0.75) brightness(85%);
         transition: $transition;
         transition-property: transform;
       }
@@ -56,7 +54,7 @@
     padding: 1.4rem;
     border-radius: 4px;
     box-shadow: 0 10px 30px -15px rgba(0, 0, 0, .11);
-    background-color: $background-color-important;
+    background: linear-gradient(270deg, #f06449, #ef3636);
     transition: $transition;
     z-index: 2;
 
@@ -79,13 +77,20 @@
 
         a {
           @include iconStyle();
+          color: $background-color-secondary;
+
+          svg {
+            &:hover {
+              color: $color-accent;
+            }
+          }
         }
       }
 
       &__text {
         margin: 0;
         margin-bottom: 10px;
-        color: $color-important;
+        color: $color-accent;
         font-family: $font-mono;
         font-size: 13px;
       }
@@ -93,22 +98,24 @@
       &__title {
         display: inline;
         font-size: clamp(18px, 1.8vw, 1.17em);
-
-        a {
-          color: $color-primary;
-          transition: $transition;
-
-          &:hover {
-            color: $color-important;
-          }
-        }
+        color: $background-color-secondary;
       }
+    }
+
+    &--desc {
+      color: $background-color-secondary;
+    }
+
+    .tools-layout__tool {
+      background-color: $color-accent;
+      color: $color-dark-navy;
     }
   }
 
   &:nth-of-type(2n+1) &__details {
     grid-column: 7 / -1;
     text-align: right;
+    background: linear-gradient(90deg, #f06449, #ef3636);
 
     @media (max-width: 1080px) {
       grid-column: 5 / -1;
