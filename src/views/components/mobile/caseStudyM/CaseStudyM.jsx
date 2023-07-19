@@ -10,10 +10,10 @@ const CaseStudyM = ({ array }) => {
 
   return (
     <article className="case-study-mobile">
-      <section className="case-study-mobile__top">
+      <a href={link} className="case-study-mobile__top">
         <img src={image} alt={name} className="case-study-mobile__top--image" />
         <p className="case-study-mobile__top--text"><PiStarFourBold />{t("workSection_caseStudy_text")}</p>
-      </section>
+      </a>
       <section className="case-study-mobile__bottom">
         <h3 className="case-study-mobile__bottom--title">
           <a href={link}>{name}</a>

@@ -31,7 +31,7 @@ const CaseStudyD = ({ array }) => {
           <span>
             <p className="case-study-desktop__details--header__text">{t("workSection_caseStudy_text")}</p>
             <h3 className="case-study-desktop__details--header__title">
-              <a href="#" className="marked">{name}</a>
+              <a href={link} className="marked">{name}</a>
             </h3>
           </span>
         </div>
