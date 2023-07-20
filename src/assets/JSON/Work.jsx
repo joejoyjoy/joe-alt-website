@@ -1,4 +1,6 @@
 import { useTranslation } from 'react-i18next'
+import PreviewLeft from '@/assets/IMG/PNG/mochupLayoutLeft.png'
+import PreviewRight from '@/assets/IMG/PNG/mochupLayoutRight.png'
 import case01img from '@/assets/IMG/webp/audityPrv.webp'
 import case02img from '@/assets/IMG/webp/gUltimatePrv.webp'
 import case03img from '@/assets/IMG/webp/m&gPrv.webp'
@@ -32,7 +34,7 @@ export const WorkCases = () => {
       github: "https://github.com/Lucydct22/audity_react_app",
       link: "https://audity.dtpf.es",
       description: `${t("workCases_description_01")}`,
-      image: case01img,
+      image: PreviewLeft,
       tools: [
         react, ts, sass, node, api, mongo
       ]
@@ -43,7 +45,7 @@ export const WorkCases = () => {
       github: "https://github.com/joejoyjoy/react-github-repositories-with-search-graphql",
       link: "https://github-ultimate.netlify.app",
       description: `${t("workCases_description_02")}`,
-      image: case02img,
+      image: PreviewRight,
       tools: [
         react, ts, sass, node, oauth, api, graph, test
       ]
@@ -54,7 +56,7 @@ export const WorkCases = () => {
       github: "https://github.com/joejoyjoy/meme-webpage-frontend",
       link: "https://meme-gifs-page.netlify.app",
       description: `${t("workCases_description_03")}`,
-      image: case03img,
+      image: PreviewLeft,
       tools: [
         react, sass, node, api, mongo, spline
       ]
@@ -65,7 +67,7 @@ export const WorkCases = () => {
       github: "https://github.com/joejoyjoy/assembler-projects/tree/main/Play_With_Assembler",
       link: "https://hangman-play-the-game.netlify.app",
       description: `${t("workCases_description_04")}`,
-      image: case04img,
+      image: PreviewRight,
       tools: [
         html, css, js
       ]

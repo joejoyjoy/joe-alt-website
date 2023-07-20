@@ -9,11 +9,6 @@ const CaseStudyD = ({ array }) => {
 
   return (
     <article className="case-study-desktop">
-      <section className="case-study-desktop__preview">
-        <a href={link} target="_blank" className="case-study-desktop__preview--wrapper">
-          <img src={image} alt={name} className="case-study-desktop__preview--wrapper__image" />
-        </a>
-      </section>
       <section className="case-study-desktop__details">
         <div className="case-study-desktop__details--header">
           <span className="case-study-desktop__details--header__action">
@@ -38,6 +33,12 @@ const CaseStudyD = ({ array }) => {
         <p className="case-study-desktop__details--desc">{description}</p>
         <ToolsLayout tools={tools} />
       </section>
+      <section className="case-study-desktop__preview">
+        <a href={link} target="_blank" className="case-study-desktop__preview--wrapper">
+          <img src={image} alt={name} className="case-study-desktop__preview--wrapper__image" />
+        </a>
+      </section>
+
     </article>
   )
 }

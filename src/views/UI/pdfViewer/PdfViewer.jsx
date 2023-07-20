@@ -7,8 +7,7 @@ const PdfViewer = ({ open, setOpen }) => {
   return (
     <ConfigProvider
       theme={{
-        algorithm: theme.darkAlgorithm,
-        token: { colorPrimary: "#64ffda" }
+        token: { colorPrimary: "#ff5c62" }
       }}
     >
       <Modal
