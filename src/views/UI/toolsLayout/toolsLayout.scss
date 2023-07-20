@@ -6,12 +6,12 @@
   gap: 0.5rem;
 
   &__tool {
-    color: $color-important;
+    color: $color-darkest-slate;
     line-height: 1.25rem;
     font-weight: 500;
     font-size: 13px;
     padding: 0.25rem 0.75rem;
-    border-radius: 1.5rem;
-    background-color: $background-color-alfa-red;
+    border-radius: 7px;
+    background-color: $color-lightest-navy;
   }
 }

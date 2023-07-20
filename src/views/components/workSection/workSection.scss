@@ -11,17 +11,21 @@
   &__content {
     display: flex;
     flex-direction: column;
+    width: 100%;
     gap: 4rem;
 
     @media (max-width: $media-breakpoint-lg) {
       gap: 28px;
-      width: 100%;
     }
 
     &--header {
       display: flex;
       align-items: center;
       gap: 0.7rem;
+
+      @media (max-width: $media-breakpoint-desktop-tablet) {
+        margin-bottom: 2rem;
+      }
 
       span {
         color: $color-important;
@@ -41,7 +45,11 @@
       flex-direction: column;
       gap: 6rem;
 
-      @media (max-width: $media-breakpoint-lg) {
+      @media (max-width: $media-breakpoint-desktop-tablet) {
+        gap: 10rem;
+      }
+
+      @media (max-width: 550px) {
         gap: 42px;
       }
     }

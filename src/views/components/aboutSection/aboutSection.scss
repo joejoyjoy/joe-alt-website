@@ -2,7 +2,7 @@
 
 .about-section {
   display: grid;
-  grid-template-columns: 3fr minmax(356px, 2fr);
+  grid-template-columns: 3fr minmax(265px, 2fr);
   gap: 50px;
   padding: 100px 0px;
 
@@ -71,6 +71,7 @@
   &__image {
     position: relative;
     max-width: 300px;
+    margin-right: 30px;
 
     @media (max-width: $media-breakpoint-tablet-mobile) {
       margin: 0 auto;

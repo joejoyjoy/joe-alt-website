@@ -2,7 +2,7 @@ import React from 'react'
 
 const WebsiteLogo = () => {
   return (
-    <svg width="45" height="45" viewBox="0 0 512 512" version="1.1" id="SVGRoot" xml: space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns: svg="http://www.w3.org/2000/svg">
+    <svg width="45" height="45" viewBox="0 0 512 512" version="1.1" id="SVGRoot" xmlSpace="preserve" xmlns="http://www.w3.org/2000/svg" xmlns: svg="http://www.w3.org/2000/svg">
       <defs id="defs256" />
       <g id="layer1">
         <path
