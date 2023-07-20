@@ -16,7 +16,7 @@
 
       &:hover {
         .recommends-desktop-swiper__header--profile__details {
-          h4 {
+          h3 {
             &::after {
               width: 100%;
             }
@@ -46,7 +46,7 @@
         justify-content: center;
         gap: 2px;
 
-        h4 {
+        h3 {
           display: inline-block;
           width: fit-content;
           margin: 0;
