@@ -34,7 +34,7 @@ export const WorkCases = () => {
       github: "https://github.com/Lucydct22/audity_react_app",
       link: "https://audity.dtpf.es",
       description: `${t("workCases_description_01")}`,
-      image: PreviewLeft,
+      image: case01img,
       tools: [
         react, ts, sass, node, api, mongo
       ]
@@ -45,7 +45,7 @@ export const WorkCases = () => {
       github: "https://github.com/joejoyjoy/react-github-repositories-with-search-graphql",
       link: "https://github-ultimate.netlify.app",
       description: `${t("workCases_description_02")}`,
-      image: PreviewRight,
+      image: case02img,
       tools: [
         react, ts, sass, node, oauth, api, graph, test
       ]
@@ -56,7 +56,7 @@ export const WorkCases = () => {
       github: "https://github.com/joejoyjoy/meme-webpage-frontend",
       link: "https://meme-gifs-page.netlify.app",
       description: `${t("workCases_description_03")}`,
-      image: PreviewLeft,
+      image: case03img,
       tools: [
         react, sass, node, api, mongo, spline
       ]
@@ -67,7 +67,7 @@ export const WorkCases = () => {
       github: "https://github.com/joejoyjoy/assembler-projects/tree/main/Play_With_Assembler",
       link: "https://hangman-play-the-game.netlify.app",
       description: `${t("workCases_description_04")}`,
-      image: PreviewRight,
+      image: case04img,
       tools: [
         html, css, js
       ]

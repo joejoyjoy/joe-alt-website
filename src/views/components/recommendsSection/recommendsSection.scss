@@ -25,19 +25,8 @@
     }
 
     h2 {
-      display: grid;
-      grid-template-columns: auto 1fr;
-      align-items: center;
       margin: 0;
-      width: 120%;
       font-size: clamp(26px, 5vw, 32px);
-
-      &::after {
-        content: "";
-        height: 1px;
-        margin-left: 20px;
-        background-color: $background-color-light-blue;
-      }
     }
   }
 

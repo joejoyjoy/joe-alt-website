@@ -33,10 +33,6 @@ const RecommendsSection = () => {
             swiper.navigation.init();
             swiper.navigation.update();
           }}
-          effect={'fade'}
-          fadeEffect={{
-            crossFade: true,
-          }}
           modules={[Navigation, EffectFade]}
           className="recommends-section__content--swiper"
         >

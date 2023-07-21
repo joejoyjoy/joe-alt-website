@@ -59,7 +59,6 @@ const spanishTranslation = {
   /*** UI Reutilizable ***/
 
   // EMAIL JS CONTACT FORM
-  emailJSForm_title: "Envíeme un mensaje",
   emailJSForm_emptyMsg: "aquí",
   emailJSForm_submitBtn: "Enviar",
   emailJSForm_name_placeholder: "Escribe su nombre",

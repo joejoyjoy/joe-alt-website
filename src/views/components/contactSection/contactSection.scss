@@ -5,9 +5,9 @@
 
   &__container {
     width: 100%;
-    max-width: 600px;
+    max-width: 450px;
     margin: 0 auto;
-    margin-bottom: 75px;
+    margin-bottom: 2rem;
     text-align: center;
 
     &--header {
@@ -16,7 +16,7 @@
       font-weight: 400;
       color: $color-important;
     }
-    
+
     &--title {
       font-size: clamp(40px, 5vw, 60px);
     }

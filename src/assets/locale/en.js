@@ -59,7 +59,6 @@ const englishTranslation = {
   /*** Reuseable UI ***/
 
   // EMAIL JS CONTACT FORM
-  emailJSForm_title: "Send me a message",
   emailJSForm_emptyMsg: "here",
   emailJSForm_submitBtn: "Submit",
   emailJSForm_name_placeholder: "Enter your name",

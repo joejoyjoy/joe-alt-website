@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
 import { message } from 'antd';
@@ -60,22 +60,9 @@ const EmailJSForm = () => {
       });
   };
 
-  useEffect(() => {
-    (function handleFullWidthSizing() {
-      let scrollbarWidth = window.innerWidth - document.body.clientWidth
-
-      if (scrollbarWidth > 25) {
-        scrollbarWidth = 0;
-      }
-
-      document.querySelector('.emailjs-form__shape').style.maxWidth = `calc(100vw - ${scrollbarWidth}px)`
-    })()
-  }, [])
-
   return (
     <>
       <form ref={form} onSubmit={sendEmail} className="emailjs-form">
-        <h3 className="emailjs-form__title">{t("emailJSForm_title")}</h3>
         <div className="emailjs-form__wrap">
           <span className="emailjs-form__wrap--section">
             <BorderComposition style={!nameInput} />
@@ -131,9 +118,6 @@ const EmailJSForm = () => {
           </span>
           <button type="submit" className="emailjs-form__wrap--submit">{t("emailJSForm_submitBtn")}</button>
         </div>
-        <section className="emailjs-form__shape">
-          <div className="emailjs-form__shape--sewers"></div>
-        </section>
       </form>
       {contextHolder}
     </>
