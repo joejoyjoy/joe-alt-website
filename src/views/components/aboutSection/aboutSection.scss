@@ -8,6 +8,7 @@
 
   @media (max-width: $media-breakpoint-tablet-mobile) {
     grid-template-columns: auto;
+    padding: 60px 0px;
   }
 
   &__content {

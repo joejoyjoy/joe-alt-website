@@ -7,6 +7,10 @@
     margin-right: calc(25px + 2rem);
   }
 
+  @media (max-width: $media-breakpoint-tablet-mobile) {
+    padding: 60px 0px;
+  }
+
   @media (max-width: 500px) {
     padding-bottom: 0;
   }

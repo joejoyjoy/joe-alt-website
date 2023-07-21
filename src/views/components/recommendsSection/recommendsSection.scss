@@ -12,6 +12,10 @@
     gap: 40px;
   }
 
+  @media (max-width: $media-breakpoint-tablet-mobile) {
+    padding: 60px 0px;
+  }
+
   &__header {
     display: flex;
     align-items: center;
@@ -51,20 +55,25 @@
       &__footer {
         display: flex;
         justify-content: flex-end;
+        background-color: $background-color-secondary;
 
         @media (max-width: 550px) {
           position: absolute;
-          top: 6px;
+          top: 0;
           right: 0;
+          height: 48px;
           z-index: 1;
         }
 
         &--arrows {
           display: flex;
-          gap: 10px;
+          gap: 16px;
 
           button {
+            display: flex;
+            align-items: center;
             color: $color-important;
+            padding: 0;
             border: 0;
             background: none;
             transition: $transition;

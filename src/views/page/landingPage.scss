@@ -11,7 +11,7 @@
     z-index: 1;
 
     @media (max-width: $media-breakpoint-tablet-mobile) {
-      padding-left: unset;
+      padding-left: 2rem;
     }
 
     &--wrapper {

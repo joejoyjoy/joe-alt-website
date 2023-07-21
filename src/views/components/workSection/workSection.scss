@@ -8,6 +8,10 @@
     margin-right: calc(25px + 2rem);
   }
 
+  @media (max-width: $media-breakpoint-tablet-mobile) {
+    padding: 60px 0px;
+  }
+
   &__content {
     display: flex;
     flex-direction: column;
@@ -50,7 +54,7 @@
       }
 
       @media (max-width: 550px) {
-        gap: 42px;
+        gap: 75px;
       }
     }
   }

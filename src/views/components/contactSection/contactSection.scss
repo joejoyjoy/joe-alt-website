@@ -3,6 +3,10 @@
 .contact-section {
   padding: 100px 0px;
 
+  @media (max-width: $media-breakpoint-tablet-mobile) {
+    padding: 60px 0px;
+  }
+
   &__container {
     width: 100%;
     max-width: 450px;
