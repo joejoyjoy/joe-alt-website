@@ -33,9 +33,9 @@ const CaseStudyD = ({ array }) => {
         </span>
       </section>
       <section className="case-study-desktop__preview">
-        <a href={link} target="_blank" className="case-study-desktop__preview--wrapper">
+        <div className="case-study-desktop__preview--wrapper">
           <img src={image} alt={name} className="case-study-desktop__preview--wrapper__image" />
-        </a>
+        </div>
       </section>
     </article>
   )
