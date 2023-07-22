@@ -1,25 +1,35 @@
 /*** Website variables ***/
 
 // PRINCIPAL COLOR
-$color-primary: #ccd6f6;
-$color-secondary: #8892b0;
-$color-important: #64ffda;
+$color-primary: #32454c;
+$color-secondary: #6f7c81;
+$color-important: #ff5c62;
+$color-accent: #fee27f;
 
-$color-light-gray: #a8b2d1;
-$color-dark-navy: #020c1b;
+$color-light-important: #ffeff0;
+$color-light-gray: #6f7c81;
+$color-lightest-gray: #f5f7f6;
+$color-lightest-navy: #E6ECF5;
+$color-dark-navy: #0D121D;
 $color-dark-slate: #495670;
+$color-darkest-slate: #2B385A;
+$color-lightest-slate: #949695;
 
 
 // BACKGROUND COLOR
-$background-color-primary: #0a192f;
-$background-color-important: #112240;
+$background-color-primary: #f8f8f8;
+$background-color-secondary: #FFF;
+$background-color-important: #fee27f;
 
-$background-color-dark-green: rgba(45, 212, 191, 0.1);
+$background-color-alfa-red: rgba($color-important, 0.045);
 $background-color-light-blue: #233554;
 
 
 // SHADOW COLOR
-$shadow-navy: rgba($color-dark-navy, 0.7);
+$shadow-navy: rgba($color-dark-navy, 0.8);
+$shadow-lg: 0 2px 15px 0 rgba(0, 0, 0, .15);
+$shadow-md: 0 2px 20px 1px rgba(0, 0, 0, .11);
+$shadow-sm: 0 1px 12px 1px rgba(50, 69, 76, .1);
 
 
 // FONTS COLOR
@@ -32,8 +42,9 @@ $transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 
 
 // MEDIA QUERY
-$media-breakpoint-desktop-tablet: 900px;
+$media-breakpoint-desktop-tablet: 1015px;
 $media-breakpoint-tablet-mobile: 775px;
 
 $media-breakpoint-lg: 700px;
-$media-breakpoint-md: 450px;
+$media-breakpoint-md: 550px;
+$media-breakpoint-sm: 450px;

@@ -12,6 +12,10 @@
     gap: 40px;
   }
 
+  @media (max-width: $media-breakpoint-tablet-mobile) {
+    padding: 60px 0px;
+  }
+
   &__header {
     display: flex;
     align-items: center;
@@ -25,19 +29,8 @@
     }
 
     h2 {
-      display: grid;
-      grid-template-columns: auto 1fr;
-      align-items: center;
       margin: 0;
-      width: 120%;
       font-size: clamp(26px, 5vw, 32px);
-
-      &::after {
-        content: "";
-        height: 1px;
-        margin-left: 20px;
-        background-color: $background-color-light-blue;
-      }
     }
   }
 
@@ -50,8 +43,8 @@
     max-width: 560px;
     padding: 20px;
     border-radius: 4px;
-    background-color: $background-color-important;
-    box-shadow: 0 10px 30px -15px $shadow-navy;
+    background-color: $background-color-secondary;
+    box-shadow: 0 0 0 2px #fee27f;
     transition: $transition;
 
     &--swiper {
@@ -62,26 +55,31 @@
       &__footer {
         display: flex;
         justify-content: flex-end;
+        background-color: $background-color-secondary;
 
-        @media (max-width: 550px) {
+        @media (max-width: $media-breakpoint-md) {
           position: absolute;
-          top: 6px;
+          top: 0;
           right: 0;
+          height: 48px;
           z-index: 1;
         }
 
         &--arrows {
           display: flex;
-          gap: 10px;
+          gap: 16px;
 
           button {
+            display: flex;
+            align-items: center;
             color: $color-important;
+            padding: 0;
             border: 0;
             background: none;
             transition: $transition;
 
             &:disabled {
-              color: $color-dark-slate;
+              color: $color-light-important;
             }
 
             &:hover {
@@ -127,7 +125,7 @@
         left: 8px;
       }
 
-      @media (max-width: $media-breakpoint-md) {
+      @media (max-width: $media-breakpoint-sm) {
         top: 5px;
         left: 5px;
       }
@@ -135,7 +133,7 @@
 
     &:hover {
       outline: 0px;
-      box-shadow: 0 20px 30px -15px $shadow-navy;
+      box-shadow: 0 1px 12px 1px rgba(50, 69, 76, 0.1);
 
       &::after {
         top: 20px;
@@ -146,7 +144,7 @@
           left: 12px;
         }
 
-        @media (max-width: $media-breakpoint-md) {
+        @media (max-width: $media-breakpoint-sm) {
           top: 5px;
           left: 5px;
         }

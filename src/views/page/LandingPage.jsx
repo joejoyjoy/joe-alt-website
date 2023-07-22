@@ -12,12 +12,36 @@ const LandingPage = () => {
   return (
     <>
       <div className="landing-page">
-        <HeroSection />
-        <AboutSection />
-        <ExperienceSection />
-        <WorkSection />
-        <RecommendsSection />
-        <ContactSection />
+        <div className="landing-page__section">
+          <div className="landing-page__section--wrapper">
+            <HeroSection />
+          </div>
+        </div>
+        <div className="landing-page__section white-section">
+          <div className="landing-page__section--wrapper">
+            <AboutSection />
+          </div>
+        </div>
+        <div className="landing-page__section white-section">
+          <div className="landing-page__section--wrapper">
+            <ExperienceSection />
+          </div>
+        </div>
+        <div className="landing-page__section white-section">
+          <div className="landing-page__section--wrapper">
+            <WorkSection />
+          </div>
+        </div>
+        <div className="landing-page__section white-section">
+          <div className="landing-page__section--wrapper">
+            <RecommendsSection />
+          </div>
+        </div>
+        <div className="landing-page__section">
+          <div className="landing-page__section--wrapper">
+            <ContactSection />
+          </div>
+        </div>
       </div>
       <PdfViewer />
     </>

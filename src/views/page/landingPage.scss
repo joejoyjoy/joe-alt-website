@@ -1,9 +1,39 @@
 @import '../../sass/variables';
 
 .landing-page {
-  padding-left: calc(25px + 2rem);
+  display: block;
+  width: 100%;
 
-  @media (max-width: $media-breakpoint-tablet-mobile) {
-    padding-left: unset;
+  &__section {
+    position: relative;
+    padding-left: calc(25px + 4rem);
+    padding-right: 2rem;
+    z-index: 1;
+
+    @media (max-width: $media-breakpoint-tablet-mobile) {
+      padding-left: 2rem;
+    }
+
+    @media (max-width: $media-breakpoint-md) {
+      padding: 0 1rem;
+    }
+
+    &--wrapper {
+      width: 100%;
+      max-width: 1140px;
+      margin: 0 auto;
+    }
+
+    &.white-section {
+      background-color: $background-color-secondary;
+    }
+
+    &.tomato-section {
+      background-color: $color-light-important;
+    }
+
+    &.red-section {
+      background-color: $color-important;
+    }
   }
 }

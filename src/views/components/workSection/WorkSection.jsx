@@ -19,7 +19,7 @@ const WorkSection = () => {
         </div>
         <div className="work-section__content--body">
           {jsonObject?.map((work, index) => {
-            if (screenWidth > 700) {
+            if (screenWidth > 500) {
               return (
                 <CaseStudyD key={index} array={work} />
               )

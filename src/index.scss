@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap');
 @import './sass/';
 
 body {
@@ -6,7 +7,7 @@ body {
   min-height: 100%;
   -webkit-font-smoothing: antialiased;
   background-color: $background-color-primary;
-  color: $color-secondary;
+  color: $color-primary;
   font-family: $font-sans;
   font-size: 18px;
   line-height: 1.3;
@@ -20,7 +21,7 @@ h5,
 h6 {
   margin: 0px 0px 10px;
   font-weight: 700;
-  color: $color-primary;
+  color: $color-dark-navy;
   line-height: 1.1;
 }
 
@@ -30,8 +31,8 @@ button {
 }
 
 b {
-  color: $color-primary;
-  font-weight: inherit;
+  color: $color-dark-navy;
+  font-weight: 600;
 }
 
 .highlighted {
@@ -45,6 +46,7 @@ b {
 .marked {
   display: inline-block;
   color: $color-important;
+  font-weight: 600;
   text-decoration: none;
   border: 0;
 
@@ -79,6 +81,6 @@ b {
 }
 
 ::selection {
-  color: $color-primary;
-  background-color: $background-color-light-blue;
+  color: $color-dark-slate;
+  background-color: rgba($background-color-important, 0.65);
 }

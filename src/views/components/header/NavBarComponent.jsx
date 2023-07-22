@@ -51,23 +51,23 @@ const NavBarDesktop = () => {
         <WebsiteLogo />
       </Link>
       <nav className="nav-bar-desktop-component__navigation">
-        <Link to="aboutLink" smooth={true} offset={-45} duration={500} href="\" className="nav-bar-desktop-component__navigation--link">
+        <Link to="aboutLink" smooth={true} offset={-5} duration={500} href="\" className="nav-bar-desktop-component__navigation--link">
           <p><span className="highlighted">01. </span>{t("header_nav_link1") || "link"}</p>
         </Link>
-        <Link to="experienceLink" smooth={true} offset={-45} duration={500} href="\" className="nav-bar-desktop-component__navigation--link">
+        <Link to="experienceLink" smooth={true} offset={-5} duration={500} href="\" className="nav-bar-desktop-component__navigation--link">
           <p><span className="highlighted">02. </span>{t("header_nav_link2") || "link"}</p>
         </Link>
-        <Link to="workLink" smooth={true} offset={-45} duration={500} href="\" className="nav-bar-desktop-component__navigation--link">
+        <Link to="workLink" smooth={true} offset={-5} duration={500} href="\" className="nav-bar-desktop-component__navigation--link">
           <p><span className="highlighted">03. </span>{t("header_nav_link3") || "link"}</p>
         </Link>
-        <Link to="reviewsLink" smooth={true} offset={-45} duration={500} href="\" className="nav-bar-desktop-component__navigation--link">
+        <Link to="reviewsLink" smooth={true} offset={-5} duration={500} href="\" className="nav-bar-desktop-component__navigation--link">
           <p><span className="highlighted">04. </span>{t("header_nav_link4") || "link"}</p>
         </Link>
-        <Link to="contactLink" smooth={true} offset={-45} duration={500} href="\" className="nav-bar-desktop-component__navigation--link">
+        <Link to="contactLink" smooth={true} offset={-5} duration={500} href="\" className="nav-bar-desktop-component__navigation--link">
           <p><span className="highlighted">05. </span>{t("header_nav_link5") || "link"}</p>
         </Link>
         <Language />
-        <Link to="contactLink" smooth={true} offset={-45} duration={500} href="\" className="nav-bar-desktop-component__navigation--link">
+        <Link to="contactLink" smooth={true} offset={-5} duration={500} href="\" className="nav-bar-desktop-component__navigation--link">
           <button>{t("header_nav_action") || "button"}</button>
         </Link>
       </nav>
@@ -77,7 +77,7 @@ const NavBarDesktop = () => {
 
 const NavBarMobile = () => {
   const { t } = useTranslation();
-  const { menuToggle, handleToggle } = useContext(SiteContext);
+  const { menuToggle, setMenuToggle, handleToggle } = useContext(SiteContext);
   const scrollDirection = useScrollDirection();
   const scrollPosition = useScrollPosition();
   const [handleClick, setHandleClick] = useState(false)
@@ -109,7 +109,7 @@ const NavBarMobile = () => {
   return (
     <>
       <header className={`nav-bar-mobile-component ${headerState()}`}>
-        <Link to="heroLink" smooth={true} duration={500} href="\" className="nav-bar-mobile-component__logo">
+        <Link to="heroLink" onClick={() => setMenuToggle(false)} smooth={true} duration={500} offset={-172} href="\" className="nav-bar-mobile-component__logo">
           <WebsiteLogo />
         </Link>
       </header>

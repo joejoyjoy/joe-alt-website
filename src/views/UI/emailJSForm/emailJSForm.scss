@@ -1,21 +1,9 @@
 @import '../../../sass/';
 
 .emailjs-form {
-  display: flex;
-  flex-direction: column;
-  gap: 2.2rem;
-  position: relative;
   margin: 0 auto;
   width: 100%;
   max-width: 450px;
-
-  &__title {
-    color: $color-primary;
-    font-size: clamp(24px, 5vw, 28px);
-    text-align: center;
-    font-weight: 500;
-    margin: 0;
-  }
 
   &__wrap {
     display: flex;
@@ -31,11 +19,10 @@
         top: 1px;
         left: 1px;
         display: flex;
-        height: calc(58px - 2rem);
-        width: clamp(225px, calc(100dvw - 5rem + 12px), calc(448px - 2rem));
+        width: -webkit-fill-available;
         margin: 0;
         padding: 1rem;
-        border: 2px solid $color-secondary; //$color-dark-slate
+        border: 2px solid $color-primary;
         border-radius: 4px;
         outline: none;
         background: none;
@@ -47,7 +34,7 @@
         &:focus,
         &:not(:focus):valid {
           outline: none;
-          border: 2px solid transparent;
+          border: 2px solid $color-important;
         }
 
         &:focus~.floating-label {
@@ -64,10 +51,10 @@
       .floating-label {
         position: absolute;
         pointer-events: none;
-        left: calc(1rem + 2px);
-        top: calc(1rem + 2px);
-        padding: 0;
-        background: none;
+        left: 0.5rem;
+        top: 1rem;
+        padding: 0 0.5rem;
+        background: $background-color-primary;
         transition: 0.2s ease all;
       }
 
@@ -99,29 +86,6 @@
       margin-top: 7px;
     }
   }
-
-  &__shape {
-    position: absolute;
-    top: calc(50% + 55px);
-    left: 50%;
-    width: calc(448px*1.5 - 2rem);
-    height: calc(448px*1.5 - 2rem);
-    overflow: hidden;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-
-    &--sewers {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: calc(448px*1.5 - 2rem);
-      aspect-ratio: 1 / 1;
-      border-radius: 50%;
-      background: rgb(10, 25, 47);
-      background: linear-gradient(0deg, rgba(10, 25, 47, 74) 8%, rgba(100, 255, 218, 0.26) 100%);
-      transform: translate(-50%, -50%);
-    }
-  }
 }
 
 .swal-custom-background {
@@ -134,7 +98,7 @@
 
 .swal-custom-button {
   @include callToActionButton();
-  font-size: 14px !important;
+  font-size: 13px !important;
   color: $background-color-primary !important;
   margin-top: 0.8rem !important;
   background: $color-important !important;

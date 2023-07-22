@@ -10,10 +10,10 @@
   width: 400px;
   max-width: calc(100% - 35px - 4rem);
   padding: 1rem;
-  background-color: $background-color-important;
-  box-shadow: -10px 0px 30px -15px $shadow-navy;
-  transform: translateX(+100%);
-  transition: all 0.4s;
+  background-color: $color-light-important;
+  box-shadow: $shadow-md;
+  transform: translateX(+110%);
+  transition: all 0.45s;
   z-index: 30;
 
   &__header {

@@ -17,7 +17,7 @@
     svg {
       width: 1.2rem;
       height: 1.2rem;
-      color: #FFF;
+      color: $color-secondary;
       transition: $transition;
 
       &:hover {
@@ -43,7 +43,7 @@
 }
 
 .ant-modal-content {
-  background-color: $background-color-important !important;
+  background-color: $background-color-primary !important;
 }
 
 .ant-btn-default {
@@ -54,5 +54,5 @@
   font-family: $font-mono;
   font-size: 16px;
   font-weight: 400;
-  color: $background-color-important !important;
+  color: $background-color-secondary !important;
 }

@@ -19,14 +19,14 @@ const spanishTranslation = {
 
   // HERO SECCIÓN
   heroSection_welcome: "Hola, mi nombre es",
-  heroSection_position: "Desarrollador Web Full Stack.",
+  heroSection_position: "Desarrollador Full Stack.",
   heroSection_description: "Soy un desarrollador de software especializado en desarrollo web programmando experiencias web excepcionales de frontend y backend. Actualmente, me estoy enfocando en aprender más librerías y frameworks de JavaScript para enriquecer mis próximos proyectos, y estoy en buscueda activa para un puesto de trabajo.",
   heroSection_btns_action: "Habla conmigo",
   heroSection_btns_download: "Mi currículum",
 
   // ABOUT SECCIÓN
   aboutSection_header: "Sobre Mí",
-  aboutSection_body_span1: `¡Hola! Soy Joe, apasionado de las tecnologías orientadas a la web con la finalidad de impactar de manera positiva el día a día de los consumidores. Llevo creando <bold>sitios webs para clientes</bold> desde 2019. 
+  aboutSection_body_span1: `¡Hola! Soy Joe, apasionado de las tecnologías orientadas a la web con la finalidad de impactar de manera positiva el día a día de los clientes. Llevo creando <bold>sitios webs para clientes</bold> desde 2019. 
   Estoy agradecido de haber trabajando como <bold>autónomo</bold> durante varios años. Creando sitios webs para diferentes finalidades y funcionalidades involucradas. 
   Por ejemplo, filtrado y ordenación de productos, pagos en línea, conexión con logística mediante API, entre otros.`,
   aboutSection_body_span2: `Después de crear varios sitios web exitosos para diferentes empresas,
@@ -59,7 +59,6 @@ const spanishTranslation = {
   /*** UI Reutilizable ***/
 
   // EMAIL JS CONTACT FORM
-  emailJSForm_title: "Envíeme un mensaje",
   emailJSForm_emptyMsg: "aquí",
   emailJSForm_submitBtn: "Enviar",
   emailJSForm_name_placeholder: "Escribe su nombre",
