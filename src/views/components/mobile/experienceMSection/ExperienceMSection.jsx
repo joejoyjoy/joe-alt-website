@@ -54,6 +54,7 @@ const ExperienceMSection = () => {
         <span>02. </span><h2>{t("experienceSection_header")}</h2>
       </div>
       <div className="experience-section-mobile-body">
+        <span id="tab-indicator"></span>
         <Swiper
           onSwiper={setThumbsSwiper}
           slidesPerView={5}
@@ -72,7 +73,7 @@ const ExperienceMSection = () => {
               </SwiperSlide>
             )
           })}
-          <span id="tab-indicator"></span>
+
         </Swiper>
         <Swiper
           centeredSlides={true}

@@ -53,7 +53,7 @@
         gap: 10rem;
       }
 
-      @media (max-width: 550px) {
+      @media (max-width: $media-breakpoint-md) {
         gap: 75px;
       }
     }

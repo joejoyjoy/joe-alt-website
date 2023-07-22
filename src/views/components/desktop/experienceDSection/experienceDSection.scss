@@ -41,7 +41,7 @@
 
     &:hover {
       color: $color-important;
-      background-color: rgba($color-secondary, 0.08);
+      background-color: $color-light-important !important;
     }
   }
 

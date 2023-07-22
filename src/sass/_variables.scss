@@ -21,7 +21,7 @@ $background-color-primary: #f8f8f8;
 $background-color-secondary: #FFF;
 $background-color-important: #fee27f;
 
-$background-color-alfa-red: rgba($color-important, 0.12);
+$background-color-alfa-red: rgba($color-important, 0.045);
 $background-color-light-blue: #233554;
 
 
@@ -46,4 +46,5 @@ $media-breakpoint-desktop-tablet: 900px;
 $media-breakpoint-tablet-mobile: 775px;
 
 $media-breakpoint-lg: 700px;
-$media-breakpoint-md: 450px;
+$media-breakpoint-md: 550px;
+$media-breakpoint-sm: 450px;
