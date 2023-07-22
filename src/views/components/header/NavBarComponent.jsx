@@ -77,7 +77,7 @@ const NavBarDesktop = () => {
 
 const NavBarMobile = () => {
   const { t } = useTranslation();
-  const { menuToggle, handleToggle } = useContext(SiteContext);
+  const { menuToggle, setMenuToggle, handleToggle } = useContext(SiteContext);
   const scrollDirection = useScrollDirection();
   const scrollPosition = useScrollPosition();
   const [handleClick, setHandleClick] = useState(false)
@@ -109,7 +109,7 @@ const NavBarMobile = () => {
   return (
     <>
       <header className={`nav-bar-mobile-component ${headerState()}`}>
-        <Link to="heroLink" smooth={true} duration={500} offset={-172} href="\" className="nav-bar-mobile-component__logo">
+        <Link to="heroLink" onClick={() => setMenuToggle(false)} smooth={true} duration={500} offset={-172} href="\" className="nav-bar-mobile-component__logo">
           <WebsiteLogo />
         </Link>
       </header>

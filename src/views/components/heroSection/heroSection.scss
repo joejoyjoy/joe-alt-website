@@ -1,71 +1,155 @@
 @import '../../../sass/';
 
 .hero-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 5fr 4fr;
+  gap: 10px;
   padding: 0px;
   margin-top: 100px;
   margin-bottom: calc(100px + (2rem + 45px));
 
-  &__welcome {
-    margin: 0px 0px 20px 4px;
-    color: $color-important;
-    font-family: $font-mono;
-    font-size: clamp(14px, 5vw, 16px);
-    font-weight: 400;
+  @media (max-width: $media-breakpoint-desktop-tablet) {
+    grid-template-columns: repeat(12, 1fr);
   }
 
-  &__title {
-    margin: 0;
-
-    &--name {
-      display: block;
-      margin: 0;
-      font-size: clamp(40px, 8vw, 80px);
-    }
-
-    &--position {
-      display: block;
-      margin-top: 5px;
-      font-size: clamp(20px, 6.2vw, 60px);
-      color: $color-secondary;
-      line-height: 0.9;
-    }
+  @media (max-width: $media-breakpoint-tablet-mobile) {
+    grid-template-columns: auto;
+    gap: 50px;
+    margin-top: 10px;
+    margin-bottom: 60px;
   }
 
-  &__description {
-    margin: 20px 0px 0px;
-    max-width: 540px;
-  }
-
-  &__btns {
+  &__content {
     display: flex;
-    gap: 1rem;
-    width: 100%;
-    margin-top: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 
-    &--action {
-      text-align: center;
-      @include primaryButton(1.25rem 1.75rem);
-      text-decoration: none;
-      
-      @media (max-width: 450px) {
-        width: 100%;
-        max-width: calc(150px - 2rem - 2px);
-        padding: 1.2rem 1rem !important;
+    @media (max-width: $media-breakpoint-desktop-tablet) {
+      grid-area: 1/1/-1/8;
+      z-index: 4;
+    }
+
+    @media (max-width: $media-breakpoint-tablet-mobile) {
+      grid-area: unset;
+      align-items: center;
+    }
+
+    &--welcome {
+      margin: 0px 0px 20px 4px;
+      color: $color-important;
+      font-family: $font-mono;
+      font-size: clamp(14px, 5vw, 16px);
+      font-weight: 400;
+
+      @media (max-width: $media-breakpoint-tablet-mobile) {
+        display: none;
       }
     }
 
-    &--download {
-      @include callToActionButton(1.25rem 1.75rem);
+    &--title {
+      margin: 0;
 
-      @media (max-width: 450px) {
+      &__name {
+        display: block;
+        margin: 0;
+        font-size: clamp(40px, 8vw, 80px);
+
+        @media (max-width: $media-breakpoint-tablet-mobile) {
+          text-align: center;
+        }
+      }
+
+      &__position {
+        display: block;
+        margin-top: 5px;
+        font-size: clamp(20px, 3.8vw, 50px);
+        color: $color-secondary;
+        line-height: 0.9;
+
+        @media (max-width: $media-breakpoint-tablet-mobile) {
+          text-align: center;
+        }
+      }
+    }
+
+    &--description {
+      margin: 20px 0px 0px;
+      max-width: 540px;
+
+      @media (max-width: $media-breakpoint-desktop-tablet) {
+        width: 90%;
+      }
+
+      @media (max-width: $media-breakpoint-tablet-mobile) {
+        text-align: center;
+      }
+    }
+
+    &--btns {
+      display: flex;
+      gap: 1rem;
+      width: 100%;
+      margin-top: 50px;
+
+      @media (max-width: $media-breakpoint-tablet-mobile) {
+        justify-content: center;
+      }
+
+      &__action {
+        text-align: center;
+        @include primaryButton(1.25rem 1.75rem);
+        text-decoration: none;
+
+        @media (max-width: 450px) {
+          width: 100%;
+          max-width: calc(150px - 2rem - 2px);
+          padding: 1.2rem 1rem !important;
+        }
+      }
+
+      &__download {
+        @include callToActionButton(1.25rem 1.75rem);
+
+        @media (max-width: 450px) {
+          width: 100%;
+          max-width: 150px;
+          min-width: unset;
+          padding: 1.2rem 1rem !important;
+        }
+      }
+    }
+  }
+
+  &__picture {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    @media (max-width: $media-breakpoint-desktop-tablet) {
+      grid-area: 1/7/-1/-1;
+      z-index: 3;
+    }
+
+    @media (max-width: $media-breakpoint-tablet-mobile) {
+      justify-content: center;
+      grid-area: unset;
+    }
+
+    &--image {
+      object-fit: cover;
+      width: 90%;
+
+      @media (max-width: $media-breakpoint-desktop-tablet) {
         width: 100%;
-        max-width: 150px;
-        min-width: unset;
-        padding: 1.2rem 1rem !important;
+      }
+
+      @media (max-width: $media-breakpoint-tablet-mobile) {
+        width: 80%;
+      }
+
+      @media (max-width: $media-breakpoint-md) {
+        width: 100%;
       }
     }
   }
