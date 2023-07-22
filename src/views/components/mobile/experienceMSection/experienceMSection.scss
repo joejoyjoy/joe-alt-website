@@ -53,11 +53,6 @@
     transition: $transition;
     cursor: pointer;
 
-    &:hover {
-      color: $color-important;
-      background-color: $color-light-important !important;
-    }
-
     p {
       margin: 0;
     }
