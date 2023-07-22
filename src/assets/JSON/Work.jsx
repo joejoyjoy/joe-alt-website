@@ -1,6 +1,4 @@
 import { useTranslation } from 'react-i18next'
-import PreviewLeft from '@/assets/IMG/PNG/mochupLayoutLeft.png'
-import PreviewRight from '@/assets/IMG/PNG/mochupLayoutRight.png'
 import case01img from '@/assets/IMG/webp/audityPrv.webp'
 import case02img from '@/assets/IMG/webp/gUltimatePrv.webp'
 import case03img from '@/assets/IMG/webp/m&gPrv.webp'
