@@ -43,15 +43,30 @@
   &__btns {
     display: flex;
     gap: 1rem;
+    width: 100%;
     margin-top: 50px;
 
     &--action {
+      text-align: center;
       @include primaryButton(1.25rem 1.75rem);
-      text-decoration: none
+      text-decoration: none;
+      
+      @media (max-width: 450px) {
+        width: 100%;
+        max-width: calc(150px - 2rem - 2px);
+        padding: 1.2rem 1rem !important;
+      }
     }
 
     &--download {
       @include callToActionButton(1.25rem 1.75rem);
+
+      @media (max-width: 450px) {
+        width: 100%;
+        max-width: 150px;
+        min-width: unset;
+        padding: 1.2rem 1rem !important;
+      }
     }
   }
 }
