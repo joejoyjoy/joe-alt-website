@@ -22,7 +22,7 @@
         width: -webkit-fill-available;
         margin: 0;
         padding: 1rem;
-        border: 2px solid $color-primary;
+        border: 2px solid $color-darkest-slate;
         border-radius: 4px;
         outline: none;
         background: none;
@@ -34,17 +34,17 @@
         &:focus,
         &:not(:focus):valid {
           outline: none;
-          border: 2px solid $color-important;
+          border: 2px solid $color-darkest-slate;
         }
 
         &:focus~.floating-label {
           top: calc(-1rem + 4px);
-          color: $color-important;
+          color: $color-darkest-slate;
         }
 
         &:not(:focus):valid~.floating-label {
           top: calc(-1rem + 4px);
-          color: rgba($color-important, 0.65);
+          color: rgba($color-darkest-slate, 0.65);
         }
       }
 
@@ -70,7 +70,7 @@
       textarea:-webkit-autofill,
       textarea:-webkit-autofill:hover,
       textarea:-webkit-autofill:focus {
-        border: 2px solid transparent;
+        border: 2px solid $color-darkest-slate;
         -webkit-text-fill-color: $color-primary;
         -webkit-box-shadow: 0 0 0px 1000px $background-color-important inset;
         transition: background-color 5000s ease-in-out 0s;

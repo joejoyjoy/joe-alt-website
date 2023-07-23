@@ -7,6 +7,11 @@
   grid-area: header;
   margin: 10px 0 2rem;
 
+  @media (max-width: $media-breakpoint-sm) {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
   span {
     color: $color-important;
     font-family: $font-mono;
@@ -66,6 +71,10 @@
   .thumbsSwiper {
     border-bottom: 2px solid $color-accent;
     margin-bottom: 1rem;
+
+    @media (max-width: $media-breakpoint-sm) {
+      margin-bottom: 20px;
+    }
   }
 
   &__wrap {
@@ -77,12 +86,10 @@
     }
 
     &--title {
+      display: inline-block;
       font-size: 22px;
-
-      b {
-        display: inline-block;
-        color: $color-important;
-      }
+      color: $color-important;
+      margin: 0;
     }
 
     &--date {
@@ -94,9 +101,10 @@
     }
 
     &--local {
-      font-size: 22px;
       display: inline-block;
-      color: $color-important;
+      font-size: 22px;
+      color: $color-primary;
+      margin: 0;
     }
 
     &--desc {
@@ -113,7 +121,8 @@
   .swiper-slide {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
+    height: initial;
   }
 
   .swiper-slide img {

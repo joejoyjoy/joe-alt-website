@@ -9,7 +9,7 @@ export const Recommends = () => {
   const recommends = [
     {
       id: "01",
-      name: "Antonio Rufino Casasus",
+      name: "Antonio Rufino",
       position: `${t("recommendsJson_position_coWorkerM")}`,
       profile: AntonioPic,
       url: "https://linkedin.com/in/devs-toni",

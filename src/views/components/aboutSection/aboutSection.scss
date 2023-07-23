@@ -16,6 +16,10 @@
     flex-direction: column;
     gap: 2rem;
 
+    @media (max-width: $media-breakpoint-sm) {
+      gap: 1rem;
+    }
+
     &--header {
       display: flex;
       align-items: center;

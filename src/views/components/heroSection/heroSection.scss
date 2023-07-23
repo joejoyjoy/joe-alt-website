@@ -5,7 +5,7 @@
   grid-template-columns: 5fr 4fr;
   gap: 10px;
   padding: 0px;
-  margin-top: 100px;
+  margin-top: 90px;
   margin-bottom: calc(100px + (2rem + 45px));
 
   @media (max-width: $media-breakpoint-desktop-tablet) {
@@ -83,6 +83,10 @@
 
       @media (max-width: $media-breakpoint-tablet-mobile) {
         text-align: center;
+      }
+
+      @media (max-width: $media-breakpoint-sm) {
+        width: 100%;
       }
     }
 

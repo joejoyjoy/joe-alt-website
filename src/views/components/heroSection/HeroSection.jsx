@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Link } from 'react-scroll'
 import { useTranslation } from 'react-i18next'
 import PdfViewer from '@/views/UI/pdfViewer/PdfViewer'
-import heroSection from '@/assets/IMG/webp/heroSection.webp'
+import heroSection from '@/assets/IMG/png/heroSection.png'
 import './heroSection.scss'
 
 const HeroSection = () => {

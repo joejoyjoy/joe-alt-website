@@ -1,9 +1,9 @@
 import { useTranslation } from 'react-i18next'
-import case01img from '@/assets/IMG/webp/audityPrv.webp'
-import case02img from '@/assets/IMG/webp/gUltimatePrv.webp'
-import case03img from '@/assets/IMG/webp/m&gPrv.webp'
-import case04img from '@/assets/IMG/webp/hangmanPrv.webp'
-import case05img from '@/assets/IMG/webp/hVPNPrv.webp'
+import case01img from '@/assets/IMG/png/audityPrv.png'
+import case02img from '@/assets/IMG/png/gUltimatePrv.png'
+import case03img from '@/assets/IMG/png/m&gPrv.png'
+import case04img from '@/assets/IMG/png/hangmanPrv.png'
+import case05img from '@/assets/IMG/png/hVPNPrv.png'
 
 export const WorkCases = () => {
   const { t } = useTranslation();

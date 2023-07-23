@@ -16,6 +16,10 @@
     padding: 60px 0px;
   }
 
+  @media (max-width: $media-breakpoint-sm) {
+    gap: 1.5rem;
+  }
+
   &__header {
     display: flex;
     align-items: center;
