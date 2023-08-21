@@ -47,7 +47,7 @@ const NavBarDesktop = () => {
 
   return (
     <header className={`nav-bar-desktop-component ${headerState()}`}>
-      <Link to="heroLink" smooth={true} duration={500} href="\" className="nav-bar-desktop-component__logo">
+      <Link to="heroLink" smooth={true} offset={-180} duration={500} href="\" className="nav-bar-desktop-component__logo">
         <WebsiteLogo />
       </Link>
       <nav className="nav-bar-desktop-component__navigation">
