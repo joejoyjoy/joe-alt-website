@@ -28,7 +28,7 @@ const englishTranslation = {
   aboutSection_body_span1: `Hey! I'm Joe, always deeply passionate about web-driven technologies that create a positive impact on customers' daily lives. I have been building 
   <bold>real-case websites</bold> since 2019. I'm thankful to have been working as a <bold>freelancer</bold> for several years, creating websites of all kinds, each with 
   different functionalities involved. For example, product filtering and sorting, online payments, and connecting with logistics through an API, among others.`,
-  aboutSection_body_span2: `After creating several successful websites for different businesses, I started a Master's program in <aTag>Master's program</aTag> in 
+  aboutSection_body_span2: `After creating several successful websites for different businesses, I started a <aTag>Master's program</aTag> in 
   <bold>Full Stack Web Development</bold> in 2022 to improve and learn more advanced technologies, along with implementing <bold>Agile methodologies</bold> like <bold>Scrum</bold>.`,
   aboutSection_body_span3: `Fast-forward to today, I work as a <bold>Web Engineer</bold> at Vinted, maintaining and developing new features for their second-hand fashion platform. This role allows me to apply my passion for 
   web technologies and customer-centric design while continuing to grow my skills and contribute to meaningful projects.`,
