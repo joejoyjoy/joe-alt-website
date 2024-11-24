@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import 'swiper/css/effect-fade';
 import "swiper/css/navigation";
-import { Navigation, EffectFade } from "swiper";
+import { Navigation, EffectFade } from "swiper/modules";
 import { BsArrowLeftCircle, BsArrowRightCircle } from 'react-icons/bs'
 import RecommendsDSection from '../desktop/recommendsDSection';
 import RecommendsMSection from '../mobile/recommendsMSection';

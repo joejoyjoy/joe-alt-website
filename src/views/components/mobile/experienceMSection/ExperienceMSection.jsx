@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { Autoplay, Pagination, Navigation, Thumbs } from 'swiper';
+import { Autoplay, Pagination, Navigation, Thumbs } from 'swiper/modules';
 import ToolsLayout from '@/views/UI/toolsLayout';
 import ShareEmbed from '@/views/UI/shareEmbed';
 

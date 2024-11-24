@@ -1,7 +1,7 @@
 {
   "name": "joe-alt-website",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,27 +9,27 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@emailjs/browser": "^3.11.0",
+    "@emailjs/browser": "^4.4.1",
     "antd": "^5.6.4",
-    "i18next": "^23.2.3",
-    "i18next-browser-languagedetector": "^7.0.2",
+    "i18next": "^24.0.0",
+    "i18next-browser-languagedetector": "^8.0.0",
     "json-loader": "^0.5.7",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-i18next": "^13.0.1",
-    "react-icons": "^4.10.1",
-    "react-pdf": "^7.1.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-i18next": "^15.1.1",
+    "react-icons": "^5.3.0",
+    "react-pdf": "^9.1.1",
     "react-scroll": "^1.8.9",
-    "sweetalert2": "^11.7.12",
-    "swiper": "^9.4.1"
+    "sweetalert2": "^11.14.5",
+    "swiper": "^11.1.15"
   },
   "devDependencies": {
-    "@types/node": "^20.3.1",
+    "@types/node": "^22.9.3",
     "@types/react": "^18.0.37",
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react": "^4.0.0",
     "sass": "^1.63.6",
-    "vite": "^4.3.9"
+    "vite": "^5.4.11"
   },
   "browserslist": [
     ">0.2%",
