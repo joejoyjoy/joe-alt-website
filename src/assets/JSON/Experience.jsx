@@ -1,6 +1,6 @@
-import { useTranslation } from 'react-i18next'
-import MWPreview from '@/assets/IMG/webp/m&wPrv.webp'
-import AHRPreview from '@/assets/IMG/webp/ahrPrv.webp'
+import { useTranslation } from "react-i18next";
+import MWPreview from "@/assets/IMG/webp/m&wPrv.webp";
+import AHRPreview from "@/assets/IMG/webp/ahrPrv.webp";
 
 export const WorkExperience = () => {
   const { t } = useTranslation();
@@ -9,6 +9,7 @@ export const WorkExperience = () => {
   const ionos = "IONOS";
   const js = "JavaScript";
   const react = "React.js";
+  const next = "Next.js";
   const css = "CSS3";
   const html = "HTML5";
   const php = "PHP";
@@ -24,6 +25,18 @@ export const WorkExperience = () => {
   const workExperience = [
     {
       id: "01",
+      business: "Vinted, UAB",
+      avatar: "Vinted",
+      short: "VNT",
+      position: `${t("workExperienceJson_position_engineer")}`,
+      duration: `${t("month_10")} 2023 - ${t("present")}`,
+      year: "2023",
+      description: `${t("workExperienceJson_description_06")}`,
+      website: [],
+      tools: [next, ts, react, sass, node, api, test],
+    },
+    {
+      id: "02",
       business: "Assembler Institute of Technology",
       avatar: "Assembler Institute",
       short: "AIT",
@@ -32,12 +45,10 @@ export const WorkExperience = () => {
       year: "2023",
       description: `${t("workExperienceJson_description_01")}`,
       website: [],
-      tools: [
-        react, ts, sass, node, api, sql, php, bs, test
-      ]
+      tools: [react, ts, sass, node, api, sql, php, bs, test],
     },
     {
-      id: "02",
+      id: "03",
       business: "Massages & Wellness at Home",
       avatar: "Massagist Daniel",
       short: "M&W",
@@ -51,14 +62,12 @@ export const WorkExperience = () => {
           desc: `${t("workExperienceJson_website_02_desc")}`,
           image: MWPreview,
           url: "massageswellnessathome.com",
-        }
+        },
       ],
-      tools: [
-        wix, stripe
-      ]
+      tools: [wix, stripe],
     },
     {
-      id: "03",
+      id: "04",
       business: "eCommerce Priccesa",
       avatar: "Priccesa",
       short: "PRC",
@@ -67,12 +76,10 @@ export const WorkExperience = () => {
       year: "2021",
       description: `${t("workExperienceJson_description_03")}`,
       website: [],
-      tools: [
-        ionos, wix, stripe, js, php
-      ]
+      tools: [ionos, wix, stripe, js, php],
     },
     {
-      id: "04",
+      id: "05",
       business: "DTB Take Away Restaurant",
       avatar: "DTB Take Away",
       short: "DTB",
@@ -81,12 +88,10 @@ export const WorkExperience = () => {
       year: "2020",
       description: `${t("workExperienceJson_description_04")}`,
       website: [],
-      tools: [
-        html, css, js
-      ]
+      tools: [html, css, js],
     },
     {
-      id: "05",
+      id: "06",
       business: "Andalusian Health Retreats",
       avatar: "Health Retreats",
       short: "AHR",
@@ -100,13 +105,11 @@ export const WorkExperience = () => {
           desc: `${t("workExperienceJson_website_05_desc")}`,
           image: AHRPreview,
           url: "andalusianhealthretreats.com",
-        }
+        },
       ],
-      tools: [
-        wix, js, stripe
-      ]
-    }
-  ]
+      tools: [wix, js, stripe],
+    },
+  ];
 
   return workExperience;
-}
+};

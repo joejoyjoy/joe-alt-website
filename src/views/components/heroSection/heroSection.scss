@@ -111,17 +111,6 @@
           padding: 1.2rem 1rem !important;
         }
       }
-
-      &__download {
-        @include callToActionButton(1.25rem 1.75rem);
-
-        @media (max-width: 450px) {
-          width: 100%;
-          max-width: 150px;
-          min-width: unset;
-          padding: 1.2rem 1rem !important;
-        }
-      }
     }
   }
 

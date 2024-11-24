@@ -13,30 +13,32 @@ const spanishTranslation = {
   // FOOTER COMPONENT
   footer_credit: "Diseñado y construido por Joe Alt",
 
-
-
   /*** Secciones de la Páginas ***/
 
   // HERO SECCIÓN
   heroSection_welcome: "Hola, mi nombre es",
   heroSection_position: "Desarrollador Full Stack.",
-  heroSection_description: "Soy un desarrollador de software especializado en desarrollo web programmando experiencias web excepcionales de frontend y backend. Actualmente, me estoy enfocando en aprender más librerías y frameworks de JavaScript para enriquecer mis próximos proyectos, y estoy en buscueda activa para un puesto de trabajo.",
+  heroSection_description: `Soy un desarrollador de software especializado en desarrollo web, creando experiencias web excepcionales de frontend y backend. 
+    Actualmente, trabajo como Ingeniero Web, manteniendo e implementando nuevas funcionalidades para mejorar la experiencia del usuario en la plataforma de <aTag>Vinted</aTag>.`,
   heroSection_btns_action: "Habla conmigo",
-  heroSection_btns_download: "Mi currículum",
 
   // ABOUT SECCIÓN
   aboutSection_header: "Sobre Mí",
-  aboutSection_body_span1: `¡Hola! Soy Joe, apasionado de las tecnologías orientadas a la web con la finalidad de impactar de manera positiva el día a día de los clientes. Llevo creando <bold>sitios webs para clientes</bold> desde 2019. 
+  aboutSection_body_span1: `¡Hola! Soy Joe, apasionado de las tecnologías orientadas a la web con la finalidad de impactar de manera positiva el día a día 
+  de los clientes. Llevo creando <bold>sitios webs para clientes</bold> desde 2019. 
   Estoy agradecido de haber trabajando como <bold>autónomo</bold> durante varios años. Creando sitios webs para diferentes finalidades y funcionalidades involucradas. 
   Por ejemplo, filtrado y ordenación de productos, pagos en línea, conexión con logística mediante API, entre otros.`,
   aboutSection_body_span2: `Después de crear varios sitios web exitosos para diferentes empresas,
   realicé un <aTag>Máster de jornada completa</aTag> enseñando <bold>Full Stack Web Development</bold> en 2022
   para mejorar y aprender tecnologías más avanzadas junto con la implementación de <bold>metodologías Ágiles</bold> como <bold>Scrum</bold>.`,
-  aboutSection_body_span3: `Avanzando rápidamente hasta hoy, mi enfoque principal es construir <bold>sitios web accesibles</bold> para que todos mejoren aún más mi conocimiento, experiencia y mi pasión.
-  Actualmente estoy buscando un puesto de trabajo como <bold>Full Stack Web Developer</bold> o <bold>Front-end Web Developer</bold> donde puedo seguir creciendo.`,
-  aboutSection_body_span4: "Tecnologías con las que he trabajando recientemente:",
-  aboutSection_image_alt: "Imagen de retrato del desarrollador del sitio web Joe Alt",
-  aboutSection_image_location: "Málaga, España",
+  aboutSection_body_span3: `Avanzando rápidamente hasta hoy, trabajo como <bold>Ingeniero Web</bold> en Vinted, manteniendo y desarrollando nuevas 
+  funcionalidades para su plataforma de moda de segunda mano. Este puesto me permite aplicar mi pasión por las tecnologías web y el diseño centrado en el cliente, 
+  mientras sigo desarrollando mis habilidades y contribuyendo a proyectos significativos.`,
+  aboutSection_body_span4:
+    "Tecnologías con las que he trabajando recientemente:",
+  aboutSection_image_alt:
+    "Imagen de retrato del desarrollador del sitio web Joe Alt",
+  aboutSection_image_location: "Vilna, Lituania",
 
   // EXPERIENCE SECCIÓN
   experienceSection_header: "Donde trabajé",
@@ -52,9 +54,8 @@ const spanishTranslation = {
   // CONTACT SECCIÓN
   contactSection_header: "04. ¿Qué Hago Ahora?",
   contactSection_title: "Ponerse En Contacto",
-  contactSection_text: "¿Quieres saber más acerca de mí? No dudes en dejar un mensaje abajo, siempre estoy abierto a conocer nuevas personas y oportunidades.",
-
-
+  contactSection_text:
+    "¿Quieres saber más acerca de mí? No dudes en dejar un mensaje abajo, siempre estoy abierto a conocer nuevas personas y oportunidades.",
 
   /*** UI Reutilizable ***/
 
@@ -73,12 +74,17 @@ const spanishTranslation = {
   // ANT DESIGN MENSAJE
   antDesignMessage_content: "Enviando su mensaje...",
 
-
-
   /*** Work Experience JSON ***/
+  workExperienceJson_position_engineer: "Ingeniero Web",
   workExperienceJson_position_developer: "Desarollador web Full Stack",
   workExperienceJson_position_builder: "Autónomo creador web",
   workExperienceJson_position_backend: "Autónomo en desarrollo backend",
+  workExperienceJson_description_06: `Trabajo para Vinted como Ingeniero Web para contribuir a su plataforma de moda de segunda mano, trabajando en un equipo usando metodología ágil, 
+  colaborativo y multifuncional con el objetivo de entregar funcionalidades de alta calidad de manera eficiente. Mi trabajo se centra en desarrollar soluciones web escalables tanto para 
+  la plataforma de Vinted como para herramientas internas, garantizando una funcionalidad fluida y una mejor experiencia para los usuarios.
+  He perfeccionado mis habilidades escribiendo componentes testeables, limpios y accesibles, priorizando la mantenibilidad y la usabilidad. Al colaborar estrechamente con diseñadores, 
+  gerentes de producto y desarrolladores backend, he profundizado mi comprensión de las dinámicas de trabajo en equipo y del impacto del desarrollo web escalable en una plataforma de gran escala. 
+  Esta experiencia me ha permitido crecer como desarrollador mientras contribuyo a una plataforma que hace la moda sostenible accesible para millones de usuarios.`,
   workExperienceJson_description_01: `Durante el Máster enseñaron Desarrollo Web Full Stack en un entorno real de trabajo 
   programando en equipo, 1200 horas, jornada completa y de forma remota. He realizado +20 proyectos con un enfoque profundo en las 
   pilas MERN y LAMP. También utilizando técnicas de desarrollo Ágiles como Scrum. Aprendí aplicar buenas prácticas en el código 
@@ -108,8 +114,6 @@ const spanishTranslation = {
   workExperienceJson_website_05_desc: `Forma equipo con Andalusian Health Retreats para que puedas crear un retiro de salud que estés
   ¡orgulloso de! Puedes centrarte en facilitar tus enseñanzas, mientras nosotros nos encargamos de la parte organizativa.`,
 
-
-
   /*** Work Cases JSON ***/
   workCases_name_01: "Audity Music - Clon De Spotify",
   workCases_name_02: "Github Ultimate - Buscador De Repos",
@@ -131,8 +135,6 @@ const spanishTranslation = {
   programa donde puede conectarse a las VPNs desde como cliente o crearlas, editarlas o eliminarlas como administrador. Yo era el líder 
   del equipo y todo se programó en una semana. Ten en cuenta que no se conecta a ninguna VPN, solo se representan gráficos visuales.`,
 
-
-
   /*** Recommends JSON ***/
   recommendsJson_position_coWorkerM: "Compañero de trabajo",
   recommendsJson_position_coWorkerF: "Compañera de trabajo",
@@ -151,8 +153,6 @@ const spanishTranslation = {
   rápidamente nuevas tecnologías. Siempre estás abierto a compartir tus conocimientos y puedes trabajar de forma independiente con gran eficiencia. 
   ¡Recomiendo encarecidamente a Joe para cualquier desafío de desarrollo frontend!`,
 
-
-
   /*** Reuseable words ***/
   month_2: "Febrero",
   month_3: "Marzo",
@@ -164,6 +164,7 @@ const spanishTranslation = {
   month_12: "Diciembre",
   code: "Código",
   website: "Sitio web",
-}
+  present: "Presente",
+};
 
 export default spanishTranslation;

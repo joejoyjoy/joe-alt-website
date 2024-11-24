@@ -13,15 +13,13 @@ const englishTranslation = {
   // FOOTER COMPONENT
   footer_credit: "Designed & Built by Joe Alt",
 
-
-
   /*** Page Sections ***/
 
   // HERO SECTION
   heroSection_welcome: "Hi, my name is",
   heroSection_position: "Full Stack Web Developer.",
-  heroSection_description: `I'm a software developer specializing in web development, building exceptional frontend and backend web experiences. Currently, I'm focusing on 
-  learning more JavaScript libraries and frameworks to improve my next projects and am also actively searching for a job opportunity.`,
+  heroSection_description: `I'm a software developer specializing in web development, creating exceptional frontend and backend web experiences. Currently, I work as a Web Engineer, 
+  maintaining and implementing new features to enhance the user experience on <aTag>Vinted</aTag> marketplace platform.`,
   heroSection_btns_action: "Get In Touch",
   heroSection_btns_download: "My Resume",
 
@@ -32,11 +30,12 @@ const englishTranslation = {
   different functionalities involved. For example, product filtering and sorting, online payments, and connecting with logistics through an API, among others.`,
   aboutSection_body_span2: `After creating several successful websites for different businesses, I started a Master's program in <aTag>Master's program</aTag> in 
   <bold>Full Stack Web Development</bold> in 2022 to improve and learn more advanced technologies, along with implementing <bold>Agile methodologies</bold> like <bold>Scrum</bold>.`,
-  aboutSection_body_span3: `Fast-forward to today, and my main focus is building <bold>accessible websites</bold> for all to further improve my knowledge, experience, and passion. 
-  I'm currently searching for a Job position as a <bold>Full Stack Web Developer</bold> or <bold>Front-end Web Developer</bold>  where I can continue to grow.`,
-  aboutSection_body_span4: "Here are a few technologies I've been working with recently:",
+  aboutSection_body_span3: `Fast-forward to today, I work as a <bold>Web Engineer</bold> at Vinted, maintaining and developing new features for their second-hand fashion platform. This role allows me to apply my passion for 
+  web technologies and customer-centric design while continuing to grow my skills and contribute to meaningful projects.`,
+  aboutSection_body_span4:
+    "Here are a few technologies I've been working with recently:",
   aboutSection_image_alt: "Portrait picture of Joe Alt website developer",
-  aboutSection_image_location: "Malaga, Spain",
+  aboutSection_image_location: "Vilnius, Lithuania",
 
   // EXPERIENCE SECTION
   experienceSection_header: "Where I've Worked",
@@ -52,9 +51,8 @@ const englishTranslation = {
   // CONTACT SECTION
   contactSection_header: "04. What's Next?",
   contactSection_title: "Get In Touch",
-  contactSection_text: "Want to know more about me? Feel free to leave a message, I'm always open to get to know new people and opportunities.",
-
-
+  contactSection_text:
+    "Want to know more about me? Feel free to leave a message, I'm always open to get to know new people and opportunities.",
 
   /*** Reuseable UI ***/
 
@@ -73,12 +71,17 @@ const englishTranslation = {
   // ANT DESIGN MESSAGE
   antDesignMessage_content: "Sending your message...",
 
-
-
   /*** Work Experience JSON ***/
+  workExperienceJson_position_engineer: "Web Engineer",
   workExperienceJson_position_developer: "Full Stack Web Developer",
   workExperienceJson_position_builder: "Freelance Web Builder",
   workExperienceJson_position_backend: "Freelance Backend Developer",
+  workExperienceJson_description_06: `I work at Vinted as a Web Engineer to contribute to their second-hand fashion platform, working in a collaborative, 
+  cross-functional agile team to deliver high-quality features efficiently. My role focuses on developing scalable web solutions for both the Vinted platform and internal tools, 
+  ensuring seamless functionality and improved user experience.
+  I have honed my skills in writing testable, clean, and accessible components, prioritizing maintainability and usability. 
+  By collaborating closely with designers, product managers, and backend developers, I've deepened my understanding of cross-team dynamics and the impact of scalable web development 
+  on a large-scale platform. This experience has allowed me to grow as a developer while contributing to a platform that makes sustainable fashion accessible to millions of users.`,
   workExperienceJson_description_01: `I joined this Master's program to learn in depth about Full Stack Web Development by building with a team.
   real-case projects from scratch, 1200 hours full-time and remotely. I have done 20 real-world projects with
   a deep focus on MERN and LAMP stacks. Also using Agile development techniques like Scrum. I learned how to
@@ -111,8 +114,6 @@ const englishTranslation = {
   workExperienceJson_website_05_desc: `Team up with Andalusian Health Retreats so that you can create a health retreat you're 
   proud of! You can focus on facilitating your teachings, whilst we take care of the organizational part.`,
 
-
-
   /*** Work Cases JSON ***/
   workCases_name_01: "Audity Music - Spotify Clone",
   workCases_name_02: "Github Ultimate - Repo Searcher",
@@ -134,8 +135,6 @@ const englishTranslation = {
   program where you can connect to VPNs from the client side or create, edit, or delete them as an administrator. I was on the team.
   leader, and it was all built within a week. Note that it doesn't connect you to any VPNs; only visual graphics are used.`,
 
-
-
   /*** Recommends JSON ***/
   recommendsJson_position_coWorkerM: "Co-Worker",
   recommendsJson_position_coWorkerF: "Co-Worker",
@@ -155,8 +154,6 @@ const englishTranslation = {
   and has a remarkable ability to quickly grasp new technologies. He is always open to sharing his knowledge and works 
   independently with great efficiency. I highly recommend Joe for any frontend development role!`,
 
-
-
   /*** Reuseable words ***/
   month_2: "February",
   month_3: "March",
@@ -168,6 +165,7 @@ const englishTranslation = {
   month_12: "December",
   code: "Code",
   website: "Website",
-}
+  present: "Present",
+};
 
 export default englishTranslation;
