@@ -29,7 +29,7 @@ const spanishTranslation = {
   Estoy agradecido de haber trabajando como <bold>autónomo</bold> durante varios años. Creando sitios webs para diferentes finalidades y funcionalidades involucradas. 
   Por ejemplo, filtrado y ordenación de productos, pagos en línea, conexión con logística mediante API, entre otros.`,
   aboutSection_body_span2: `Después de crear varios sitios web exitosos para diferentes empresas,
-  realicé un <aTag>Máster de jornada completa</aTag> enseñando <bold>Full Stack Web Development</bold> en 2022
+  realicé un <aTag>Máster</aTag> de jornada completa enseñando <bold>Full Stack Web Development</bold> en 2022
   para mejorar y aprender tecnologías más avanzadas junto con la implementación de <bold>metodologías Ágiles</bold> como <bold>Scrum</bold>.`,
   aboutSection_body_span3: `Avanzando rápidamente hasta hoy, trabajo como <bold>Ingeniero Web</bold> en Vinted, manteniendo y desarrollando nuevas 
   funcionalidades para su plataforma de moda de segunda mano. Este puesto me permite aplicar mi pasión por las tecnologías web y el diseño centrado en el cliente, 
